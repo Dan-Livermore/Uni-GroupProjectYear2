@@ -1,3 +1,3 @@
-#Reset repo
+# Prototype Repository
 
-Starting Over
+Javascript with Bulma application

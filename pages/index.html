@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FaceIt</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-</head>
-<body>
-<!--Navbar-->
-  <nav class="navbar has-shadow is-primary ">
+
+  <nav class="navbar has-shadow is-white">
     <div class="navbar-brand">
         <a class="navbar-item" href="index.html">
             <img src="../assets/logo.png" alt="site logo" style="max-height: 70px;" class="py-2 px-2">
@@ -19,24 +17,6 @@
             <span></span>
         </a>
     </div>
-
-    <div class="navbar-menu" id="nav-links">
-        <div class="navbar-start">
-            <a href="about.html" class="navbar-item">About</a>
-            <a href="news.html" class="navbar-item">News</a>
-            <a href="sessions.html" class="navbar-item">Sessions</a>
-            <a href="team.html" class="navbar-item">Team</a>
-            <a href="heallthprofs.html" class="navbar-item">Health Profs</a>
-            <a href="contact.html" class="navbar-item">Contact</a>
-            <a href="furthersupport.html" class="navbar-item">Further Support</a>
-        </div>  
-        <div class="navbar-end">
-            <a href="login.html" class="navbar-item">Log In</a>
-        </div>
-    </div>
-</nav>
-
-<<<<<<< HEAD
 
     <!-- Main Content -->
     <section class="Main Content">
@@ -61,24 +41,47 @@
                     <p>In 2012 The Centre for Appearance research at the University of the West of England (UWE), Bristol launched their new online support tool for adults with disfigurements - ‘Face IT'...</p>
                     <a href="news.html" class="readMore">Read More</a>
                 </div>
-=======
-        <div class="navbar-menu" id="nav-links">
-            <div class="navbar-start">
-                <a href="about.html" class="navbar-item">About</a>
-                <a href="sessions.html" class="navbar-item">Sessions</a>
-                <a href="team.html" class="navbar-item">Team</a>
-                <a href="heallthprofs.html" class="navbar-item">Health Profs</a>
-                <a href="contact.html" class="navbar-item">Contact</a>
-                <a href="furthersupport.html" class="navbar-item">Further Support</a>
-            </div>  
-            <div class="navbar-end">
-                <a href="login.html" class="navbar-item">Log In</a>
->>>>>>> af8608019d8354cdb1ed29f7e787b5283b4f046e
+
             </div>
         </div>
     </section>
 
-<<<<<<< HEAD
+
+
+    <script type=module src=main.js></script>
+</head>
+
+
+<my-header></my-header>
+
+<body>
+    <!-- Main Content -->
+    <section class="Main Content">
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h1>YPFaceIT</h1>
+                    <p>Aged 12 -17 years Or a health professional of someone this age? Please visit
+                    <a href="https://www.ypfaceit.co.uk" target="_blank">YPFaceIT</a></p>
+                    <a href="https://www.ypfaceit.co.uk" class="readMore">Go to site</a>
+                    <h1>About</h1>
+                    <p>The website has been designed by users and includes various activities, illustrations, photographs, videos and advice from people with visible differences.</p>
+                    <a href="/Home/About" class="readMore">Read More</a>
+                </div>
+                <div class="column has-text-centered">
+                    <img src="../assets/index/home_header_image.webp">                    
+                </div>
+                <div class="column">
+                    <h1>Your Guides</h1>
+                    <p>Get familiar with these faces; Aly, Alistair &amp; Alex will be your guides around the new Face IT platform</p>
+                    <h1>News</h1>
+                    <p>In 2012 The Centre for Appearance research at the University of the West of England (UWE), Bristol launched their new online support tool for adults with disfigurements - ‘Face IT'...</p>
+                    <a href="/Home/News" class="readMore">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Secondary Content -->
     <section class="Main Content">
@@ -97,7 +100,8 @@
                 <div class="column">
                     <h1>Forum</h1>
                     <p>This is a place where you can meet and socialise with other people with a visible difference. You can discuss your experience of Face IT@home, talk about any worries you may have or offer support to others.</p>
-                    <a href="forum.html" class="readMore">Read More</a>
+                    <a href="/Forum" class="readMore">Read More</a>
+
                 </div>
                 <div class="column">
                     <h1>Reviews</h1>
@@ -105,12 +109,7 @@
 
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer has-shadow is-primary">
-=======
     <!-- Main Content -->
     <section class="Main Content">
         <div class="container">
@@ -168,16 +167,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer has-shadow">
->>>>>>> af8608019d8354cdb1ed29f7e787b5283b4f046e
-        <div class="content has-text-centered">
-            <!--Removed unneccessary text and reorganized sections. Links not added-->
-            <img src="../assets/footer.webp" alt="Footer image containing related helpful links">
-            <p>Copyright 2022 Face It | Registered Charity No. 1011222 </p>
-            <p>Terms & Conditions | ??????????????????</p>
-            
-        </div>
+
     </footer>
+    <my-footer></my-footer>
     
     <script src="../functions/index.js"></script>
 </body>

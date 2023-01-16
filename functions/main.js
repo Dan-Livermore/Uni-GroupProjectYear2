@@ -17,7 +17,7 @@ class MyHeader extends HTMLElement {
            <div class="navbar-start">
                <a href="about.html" class="navbar-item">About</a>
                <a href="news.html" class="navbar-item">News</a>
-               <a href="sessions.html" class="navbar-item">Sessions</a>
+               <a href="sessions/session1/contents.html" class="navbar-item">Sessions</a>
                <a href="team.html" class="navbar-item">Team</a>
                <a href="heallthprofs.html" class="navbar-item">Health Profs</a>
                <a href="contact.html" class="navbar-item">Contact</a>
@@ -40,10 +40,11 @@ class MyHeader extends HTMLElement {
       this.innerHTML = `   
         <footer class="footer has-shadow">
             <div class="content has-text-centered">
-                <!--Removed unneccessary text and reorganized sections. Links not added-->
                 <img src="../assets/footer.webp" alt="Footer image containing related helpful links">
                 <p>Copyright 2022 Face It | Registered Charity No. 1011222 </p>
-                <p>Terms & Conditions | ??????????????????</p>
+                <a href="terms.html">Terms + Conditions  |  </a>
+                <a href="contact.html">Contact Us</a>
+                
                 
             </div>
         </footer>

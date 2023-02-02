@@ -1,3 +1,6 @@
+Video of demo:
+https://youtu.be/xnW3gnVoauw
+
 # COMP2003 GROUP Z PROJECT #
 
 ### By DAN L, HU C, LUCAS P, ELIOT N ###

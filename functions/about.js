@@ -1,3 +1,10 @@
+
+burgerIcon.addEventListener("click", (event) => {
+    navbarMenu.classList.toggle("is-active");
+    event.preventDefault();
+  });
+
+
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
     function openModal($el) {

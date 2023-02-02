@@ -6,17 +6,43 @@
     <title>FaceIt</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
-    <script type=module src=../functions/main.js></script>
+    <script type=module src=/./functions/main.js></script>
 </head>
 
-<my-header></my-header>
+<nav class="navbar has-shadow is-primary">
+  <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+          <img src="/./assets/logo.png" alt="site logo" style="max-height: 70px;" class="py-2 px-2">
+      </a>
+      <a href="" class="navbar-burger" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </a>
+  </div>
+
+  <div class="navbar-menu" id="nav-links">
+      <div class="navbar-start">
+          <a href="/./pages/about.html" class="navbar-item">About</a>
+          <a href="/./pages/news.html" class="navbar-item">News</a>
+          <a href="/./pages/sessions/session1/contents.html" class="navbar-item">Sessions</a>
+          <a href="/./pages/team.html" class="navbar-item">Team</a>
+          <a href="/./pages/heallthprofs.html" class="navbar-item">Health Profs</a>
+          <a href="/./pages/contact.html" class="navbar-item">Contact</a>
+          <a href="/./pages/furthersupport.html" class="navbar-item">Further Support</a>
+      </div>  
+      <div class="navbar-end">
+          <a href="login.html" class="navbar-item">Log In</a>
+      </div>
+  </div>
+</nav>
 
 <body>
 
 <div class="container has-text-centered has-shadow py-6" id="about-content"> 
     <p class="py-2">
         <h1 class="title has-text-centered">About FaceIt</h1>
-        <h2 class="subtitle has-text-centered">Subtitle</h2>
+        <h2 class="subtitle has-text-centered">Click a button to see answers...</h2>
 
         <div class="box has-shadow is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
             <button class="js-modal-trigger is-primary" data-target="modal-js-example">

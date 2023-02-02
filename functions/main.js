@@ -25,7 +25,7 @@ class MyHeader extends HTMLElement {
            <div class="navbar-start">
                <a href="/./pages/about.html" class="navbar-item">About</a>
                <a href="/./pages/news.html" class="navbar-item">News</a>
-               <a href="/./pages/sessions/session1/contents.html" class="navbar-item">Sessions</a>
+               <a href="/./pages/session1/contents.html" class="navbar-item">Sessions</a>
                <a href="/./pages/team.html" class="navbar-item">Team</a>
                <a href="/./pages/heallthprofs.html" class="navbar-item">Health Profs</a>
                <a href="/./pages/contact.html" class="navbar-item">Contact</a>

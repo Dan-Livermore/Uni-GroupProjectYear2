@@ -4,37 +4,46 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin_Sans:400,700%27');
 
 // Set your brand colors
-$background-colour-light: #EAF4F5;
-$background-colour-blue: #98C7CD;
-$background-colour-grey: #151515;
 
+$half-baked: #98C7CD;
 $warning-colour: #CD9E98;
 $neutral-colour: #E9EE11;
 $confirm-colour: #ADCD98;
+$trendy-pink: #937AA4;
 
-$link-colour: #937AA4;
-$alternate-link-colour: #597478;
-
-$grey-light-colour: #597478;
-$grey-dark-colour: #1A2223;
-
+$catsilk-white: #EAF4F5;
+$cutty-shark: #597478;
+$shark: #1A2223;
+$cod-grey: #151515;
 
 // Update Bulma's global variables
 $family-sans-serif: "Josefin San", sans-serif;
+$link: $trendy-pink;
+$primary: $half-baked;
+$info: $shark;
+$grey: $cod-grey;
 
 // Update some of Bulma's component variables
-$body-background-color: $background-colour-grey;
+$body-background-color: $half-baked;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+$card-radius: 0.75rem;
+
+$card-content-background-color: $catsilk-white;
+$navbar-box-shadow-color: $trendy-pink;
+
+$footer-background-color: $catsilk-white;
+
+$column-gap: 0.7rem;
+
 
 // Import only what you need from Bulma
-@import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
-@import "../node_modules/bulma/sass/elements/button.sass";
-@import "../node_modules/bulma/sass/elements/container.sass";
-@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/components/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
 @import "../node_modules/bulma/sass/form/_all.sass";
-@import "../node_modules/bulma/sass/components/navbar.sass";
-@import "../node_modules/bulma/sass/layout/hero.sass";
-@import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+@import "../node_modules/bulma/sass/utilities/_all.sass";

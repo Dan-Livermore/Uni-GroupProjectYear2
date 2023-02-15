@@ -11,4 +11,8 @@
     <Folder Include="Functions\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\pages\About.html" />
+  </ItemGroup>
+
 </Project>

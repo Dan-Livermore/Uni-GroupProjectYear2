@@ -6,10 +6,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FaceIt2023.Models;
 
-[Keyless]
+[PrimaryKey("UserId", "EntryDate")]
 [Table("Journal", Schema = "FaceIt")]
 public partial class Journal
 {
+    [Key]
     [Column("user_id")]
     public int UserId { get; set; }
 
@@ -18,6 +19,7 @@ public partial class Journal
     [Unicode(false)]
     public string? JournalEntry { get; set; }
 
+    [Key]
     [Column("entry_date")]
     [StringLength(10)]
     [Unicode(false)]

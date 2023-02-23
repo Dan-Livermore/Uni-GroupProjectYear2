@@ -54,6 +54,11 @@ public partial class Comp2003ZContext : DbContext
             entity.HasKey(e => new { e.ProfId, e.UserId }).HasName("AssignedUsers");
         });
 
+        modelBuilder.Entity<Journal>(entity =>
+        {
+            entity.HasKey(e => new { e.UserId, e.EntryDate }).HasName("UserPostsByDate");
+        });
+
         modelBuilder.Entity<Quiz1>(entity =>
         {
             entity.HasKey(e => e.UserId).HasName("PK__QUIZ1__B9BE370FC884CEB5");

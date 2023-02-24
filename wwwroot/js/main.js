@@ -9,7 +9,7 @@ const navbarMenu = document.querySelector('#nav-links');
       this.innerHTML = ` 
       <nav class="navbar has-shadow is-info">
         <div class="navbar-brand">
-          <a class="navbar-item" href="index.html">
+          <a class="navbar-item" href="/./Pages/index.cshtml">
             <img src="/wwwroot/images/logo.png" alt="site logo" style="max-height: 70px;" class="py-2 px-2"></img>
           </a>
           <a href="" class="navbar-burger" id="burger">

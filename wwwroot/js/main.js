@@ -23,7 +23,7 @@ const navbarMenu = document.querySelector('#nav-links');
           <div class="navbar-start">
               <a href="/wwwroot/pages/about.html" class="navbar-item">About</a>
               <a href="/wwwroot/pages/news.html" class="navbar-item">News</a>
-              <a href="/wwwroot/pages/sessions/session1/contents.html" class="navbar-item">Sessions</a>
+              <a href="/wwwroot/pages/sessions/menu.html" class="navbar-item">Sessions</a>
               <a href="/wwwroot/pages/team.html" class="navbar-item">Team</a>
               <a href="/wwwroot/pages/heallthprofs.html" class="navbar-item">Health Profs</a>
               <a href="/wwwroot/pages/contact.html" class="navbar-item">Contact</a>

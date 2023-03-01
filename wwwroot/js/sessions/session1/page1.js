@@ -1,9 +1,3 @@
-// window.on=function(){
-//   const burgerIcon = document.querySelector('#burger');
-//   //const burgerIcon = document.getElementById('#burger');
-//   const navbarMenu = document.querySelector('#nav-links');
-// }
-
 document.addEventListener('DOMContentLoaded', function() {
 	let cardToggles = document.getElementsByClassName('card-toggle');
 	for (let i = 0; i < cardToggles.length; i++) {
@@ -13,7 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 });
 
-// burgerIcon.addEventListener("click", (event) => {
-//     navbarMenu.classList.toggle("is-active");
-//     event.preventDefault();
-//   });
+window.on=function(){
+	const burgerIcon = document.querySelector('#burger');
+	const navbarMenu = document.querySelector('#nav-links');
+}
+
+burgerIcon.addEventListener("click", (event) => {
+    navbarMenu.classList.toggle("is-active");
+    event.preventDefault();
+  });

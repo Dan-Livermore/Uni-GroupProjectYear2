@@ -1,8 +1,4 @@
-//window.on=function(){
-  const burgerIcon = document.querySelector('#burger');
-  //const burgerIcon = document.getElementById('#burger');
-const navbarMenu = document.querySelector('#nav-links');
-//}
+
 
   class MyHeader extends HTMLElement {
     connectedCallback() {

@@ -6,6 +6,8 @@ namespace FaceIt2023.Models;
 
 public partial class Comp2003ZContext : DbContext
 {
+
+
     public Comp2003ZContext()
     {
     }

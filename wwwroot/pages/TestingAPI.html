@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <b id="changeMe"> Hello World </b>
+</head>
+
+<body>
+
+    <button id="get-data-button">Get Data</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#get-data-button').click(function () {
+                $.ajax({
+                    url: '/api/Accounts', // Replace with your API endpoint URL
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (data) {
+                        // Handle the response data here
+                        $('#changeMe').text(data); // Update the text of the b tag with the fetched data
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        // Handle the error here
+                        console.log('Error:', textStatus, errorThrown);
+                        $('#changeMe').text(textStatus + ' ' + errorThrown);
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <script>
+            //Run your Web API project: Start your ASP.NET Web API project and navigate to the Swagger UI URL (usually http://localhost:<port>/swagger).
+
+    </script>
+
+
+
+
+
+</body>
+
+

@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\css\\mystyles.css",
+      "PackagePath": "staticwebassets\\css\\mystyles.css"
     },
     {
       "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\favicon.ico",
@@ -45,6 +45,46 @@
       "PackagePath": "staticwebassets\\images\\Team\\tim_m.webp"
     },
     {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\characters\\aaron.webp",
+      "PackagePath": "staticwebassets\\images\\characters\\aaron.webp"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\characters\\alice.webp",
+      "PackagePath": "staticwebassets\\images\\characters\\alice.webp"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\characters\\jacob.webp",
+      "PackagePath": "staticwebassets\\images\\characters\\jacob.webp"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\characters\\jake.webp",
+      "PackagePath": "staticwebassets\\images\\characters\\jake.webp"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\characters\\lucy.webp",
+      "PackagePath": "staticwebassets\\images\\characters\\lucy.webp"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\characters\\luke.webp",
+      "PackagePath": "staticwebassets\\images\\characters\\luke.webp"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\characters\\miranda.webp",
+      "PackagePath": "staticwebassets\\images\\characters\\miranda.webp"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\characters\\peter.webp",
+      "PackagePath": "staticwebassets\\images\\characters\\peter.webp"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\characters\\rebecca.webp",
+      "PackagePath": "staticwebassets\\images\\characters\\rebecca.webp"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\characters\\ruby.webp",
+      "PackagePath": "staticwebassets\\images\\characters\\ruby.webp"
+    },
+    {
       "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\footer.webp",
       "PackagePath": "staticwebassets\\images\\footer.webp"
     },
@@ -53,92 +93,48 @@
       "PackagePath": "staticwebassets\\images\\index\\home_header_image.webp"
     },
     {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\Gestures.png",
-      "PackagePath": "staticwebassets\\images\\session1 images\\Gestures.png"
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1\\part1\\commonproblems1.webp",
+      "PackagePath": "staticwebassets\\images\\session1\\part1\\commonproblems1.webp"
     },
     {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\Posture.png",
-      "PackagePath": "staticwebassets\\images\\session1 images\\Posture.png"
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1\\part1\\commonproblems2.webp",
+      "PackagePath": "staticwebassets\\images\\session1\\part1\\commonproblems2.webp"
     },
     {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\aaron.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\aaron.webp"
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1\\part1\\commonproblems3.webp",
+      "PackagePath": "staticwebassets\\images\\session1\\part1\\commonproblems3.webp"
     },
     {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\alice.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\alice.webp"
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1\\part1\\commonproblems4.webp",
+      "PackagePath": "staticwebassets\\images\\session1\\part1\\commonproblems4.webp"
     },
     {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\appearancematter1.png",
-      "PackagePath": "staticwebassets\\images\\session1 images\\appearancematter1.png"
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1\\part1\\session.1.1.3_diagram.webp",
+      "PackagePath": "staticwebassets\\images\\session1\\part1\\session.1.1.3_diagram.webp"
     },
     {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\appearancematter2.png",
-      "PackagePath": "staticwebassets\\images\\session1 images\\appearancematter2.png"
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1\\part2\\appearancematter1.webp",
+      "PackagePath": "staticwebassets\\images\\session1\\part2\\appearancematter1.webp"
     },
     {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\appearancematter3.png",
-      "PackagePath": "staticwebassets\\images\\session1 images\\appearancematter3.png"
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1\\part2\\appearancematter2.webp",
+      "PackagePath": "staticwebassets\\images\\session1\\part2\\appearancematter2.webp"
     },
     {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\commonproblems1.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\commonproblems1.webp"
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1\\part2\\appearancematter3.webp",
+      "PackagePath": "staticwebassets\\images\\session1\\part2\\appearancematter3.webp"
     },
     {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\commonproblems2.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\commonproblems2.webp"
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1\\part3\\Gestures.webp",
+      "PackagePath": "staticwebassets\\images\\session1\\part3\\Gestures.webp"
     },
     {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\commonproblems3.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\commonproblems3.webp"
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1\\part3\\Posture.webp",
+      "PackagePath": "staticwebassets\\images\\session1\\part3\\Posture.webp"
     },
     {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\commonproblems4.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\commonproblems4.webp"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\facial expressions.png",
-      "PackagePath": "staticwebassets\\images\\session1 images\\facial expressions.png"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\jacob.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\jacob.webp"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\jake.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\jake.webp"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\lucy.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\lucy.webp"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\luke.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\luke.webp"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\miranda.png",
-      "PackagePath": "staticwebassets\\images\\session1 images\\miranda.png"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\miranda.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\miranda.webp"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\peter.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\peter.webp"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\rebecca.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\rebecca.webp"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\ruby.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\ruby.webp"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1 images\\session.1.1.3_diagram.webp",
-      "PackagePath": "staticwebassets\\images\\session1 images\\session.1.1.3_diagram.webp"
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\images\\session1\\part3\\facial expressions.webp",
+      "PackagePath": "staticwebassets\\images\\session1\\part3\\facial expressions.webp"
     },
     {
       "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\about.js",
@@ -177,44 +173,48 @@
       "PackagePath": "staticwebassets\\js\\news.js"
     },
     {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\session1\\contents.js",
-      "PackagePath": "staticwebassets\\js\\session1\\contents.js"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\session1\\page1.js",
-      "PackagePath": "staticwebassets\\js\\session1\\page1.js"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\session1\\page2.js",
-      "PackagePath": "staticwebassets\\js\\session1\\page2.js"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\session1\\page3.js",
-      "PackagePath": "staticwebassets\\js\\session1\\page3.js"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\session1\\page4.js",
-      "PackagePath": "staticwebassets\\js\\session1\\page4.js"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\session1\\page5.js",
-      "PackagePath": "staticwebassets\\js\\session1\\page5.js"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\session1\\page6quiz.js",
-      "PackagePath": "staticwebassets\\js\\session1\\page6quiz.js"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\session1\\page7feedback.js",
-      "PackagePath": "staticwebassets\\js\\session1\\page7feedback.js"
-    },
-    {
-      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\session1\\page8activity.js",
-      "PackagePath": "staticwebassets\\js\\session1\\page8activity.js"
-    },
-    {
       "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\sessions.js",
       "PackagePath": "staticwebassets\\js\\sessions.js"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\sessions\\menu.js",
+      "PackagePath": "staticwebassets\\js\\sessions\\menu.js"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\sessions\\session1\\contents.js",
+      "PackagePath": "staticwebassets\\js\\sessions\\session1\\contents.js"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\sessions\\session1\\page1.js",
+      "PackagePath": "staticwebassets\\js\\sessions\\session1\\page1.js"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\sessions\\session1\\page2.js",
+      "PackagePath": "staticwebassets\\js\\sessions\\session1\\page2.js"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\sessions\\session1\\page3.js",
+      "PackagePath": "staticwebassets\\js\\sessions\\session1\\page3.js"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\sessions\\session1\\page4.js",
+      "PackagePath": "staticwebassets\\js\\sessions\\session1\\page4.js"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\sessions\\session1\\page5.js",
+      "PackagePath": "staticwebassets\\js\\sessions\\session1\\page5.js"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\sessions\\session1\\page6quiz.js",
+      "PackagePath": "staticwebassets\\js\\sessions\\session1\\page6quiz.js"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\sessions\\session1\\page7feedback.js",
+      "PackagePath": "staticwebassets\\js\\sessions\\session1\\page7feedback.js"
+    },
+    {
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\sessions\\session1\\page8activity.js",
+      "PackagePath": "staticwebassets\\js\\sessions\\session1\\page8activity.js"
     },
     {
       "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\wwwroot\\js\\site.js",

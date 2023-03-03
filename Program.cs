@@ -24,6 +24,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.MapControllers();
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {

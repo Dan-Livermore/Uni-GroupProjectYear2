@@ -19,10 +19,12 @@ namespace FaceIt2023
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<Comp2003ZContext>(options =>
+            services.AddDbContext<FaceIt2023.Models.Comp2003ZContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("MyConnectionString")));
 
+            
             services.AddControllers();
+            //services.AddScoped<Comp2003ZContext>();
 
             services.AddSwaggerGen(c =>
             {

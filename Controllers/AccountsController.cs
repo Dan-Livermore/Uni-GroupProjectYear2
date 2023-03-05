@@ -15,8 +15,9 @@ namespace FaceIt2023.Controllers
     {
         private readonly Comp2003ZContext _context;
 
-        public AccountsController(Comp2003ZContext context)
+        public AccountsController([FromServices] Comp2003ZContext context)
         {
+            Console.WriteLine("###################################AccountsController constructor called");
             _context = context;
         }
 

@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\FaceIt2023.csproj": {}
+    "C:\\Users\\lucas\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\FaceIt2023.csproj": {
+    "C:\\Users\\lucas\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\FaceIt2023.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023.csproj",
         "projectName": "FaceIt2023",
-        "projectPath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\FaceIt2023.csproj",
-        "packagesPath": "C:\\Users\\eliot\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\comp2003_2022-team-z\\obj\\",
+        "projectPath": "C:\\Users\\lucas\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023.csproj",
+        "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lucas\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\eliot\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -138,7 +134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -17,4 +17,13 @@ namespace FaceIt2023.Pages
 
         }
     }
+
+    
+    public class HomeController : Controller
+    {
+        public IActionResult MyPage()
+        {
+            return View("Index");
+        }
+    }
 }

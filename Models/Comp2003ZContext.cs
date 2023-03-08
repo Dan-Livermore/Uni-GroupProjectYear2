@@ -6,6 +6,8 @@ namespace FaceIt2023.Models;
 
 public partial class Comp2003ZContext : DbContext
 {
+
+
     public Comp2003ZContext()
     {
     }
@@ -13,6 +15,7 @@ public partial class Comp2003ZContext : DbContext
     public Comp2003ZContext(DbContextOptions<Comp2003ZContext> options)
         : base(options)
     {
+        Console.WriteLine("###############################Comp2003ZContext constructor called");
     }
 
     public virtual DbSet<Account> Accounts { get; set; }

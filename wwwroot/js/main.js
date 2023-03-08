@@ -43,8 +43,8 @@
             <div class="content has-text-centered">
                 <img src="/wwwroot/images/footer.webp" alt="Footer image containing related helpful links">
                 <p>Copyright 2022 Face It | Registered Charity No. 1011222 </p>
-                <a href="/wwwroot/pages/terms.html">Terms + Conditions  |  </a>
-                <a href="/wwwroot/pages/contact.html">Contact Us</a>
+                <a href="/wwwroot/pages/terms.html">Terms + Conditions  |  </a><a href="/wwwroot/pages/contact.html">Contact Us</a>
+                <p>Developed by Team Z</p>
             </div>
         </footer>
   `;

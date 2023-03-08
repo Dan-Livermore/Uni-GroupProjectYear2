@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 
 namespace FaceIt2023.Models;
@@ -11,6 +12,7 @@ public partial class Account
 {
     [Key]
     [Column("user_id")]
+    [JsonIgnore]
     public int UserId { get; set; }
 
     [Column("user_email")]

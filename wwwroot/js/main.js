@@ -5,7 +5,7 @@
       this.innerHTML = ` 
       <nav class="navbar has-shadow is-info">
         <div class="navbar-brand">
-          <a class="navbar-item" href="/">
+          <a class="navbar-item" href="/Pages/about.html">
             <img src="/wwwroot/images/logo.png" alt="site logo" style="max-height: 70px;" class="py-2 px-2"></img>
           </a>
           <a href="" class="navbar-burger" id="burger">
@@ -26,7 +26,7 @@
               <a href="/wwwroot/lib/furthersupport.html" class="navbar-item">Further Support</a>
           </div>  
           <div class="navbar-end">
-            <a href="login.html" class="navbar-item">Log In</a>
+            <a href="/wwwroot/lib/login.html" class="navbar-item">Log In</a>
           </div>
         </div>
       </nav>

@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FaceIt2023.Models;
+using System.Data.SqlClient;
+
 
 namespace FaceIt2023.Controllers
 {
@@ -20,6 +22,34 @@ namespace FaceIt2023.Controllers
             Console.WriteLine("###################################AccountsController constructor called");
             _context = context;
         }
+
+        [HttpGet]
+        public IActionResult GetIdByEmailAndPassword(string email, string pass)
+        {
+            try
+            {
+                SqlParameter emailParam = new SqlParameter("@email", email);
+                SqlParameter passParam = new SqlParameter("@pass", pass);
+
+                var result = _context.IdByEmailAndPassword
+                    .FromSqlRaw("EXECUTE FaceIt.Id_By_Email_and_Password @email, @pass",
+                        emailParam, passParam)
+                    .ToList();
+
+                if (result == null || result.Count == 0)
+                {
+                    return NotFound();
+                }
+
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                // log the exception or return an error response
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+
 
         // GET: api/Accounts
         [HttpGet]

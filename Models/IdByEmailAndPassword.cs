@@ -12,6 +12,7 @@ namespace FaceIt2023.Models
         [StringLength(100)]
         public string Password { get; set; }
 
+        [Key]
         public int UserId { get; set; }
     }
 }

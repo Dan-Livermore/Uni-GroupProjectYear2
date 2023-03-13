@@ -24,6 +24,8 @@ public partial class Comp2003ZContext : DbContext
 
     public virtual DbSet<IdByEmailAndPassword> IdByEmailAndPassword { get; set; }
 
+    public DbSet<IdByEmailAndPasswordResult> IdByEmailAndPasswordResult { get; set; }
+
     public virtual DbSet<FeedbackForm> FeedbackForms { get; set; }
 
     public virtual DbSet<HealthProfUser> HealthProfUsers { get; set; }

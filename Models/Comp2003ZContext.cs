@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using FaceIt2023.Models;
+
 
 namespace FaceIt2023.Models;
 
@@ -19,6 +21,10 @@ public partial class Comp2003ZContext : DbContext
     }
 
     public virtual DbSet<Account> Accounts { get; set; }
+
+    public virtual DbSet<IdByEmailAndPassword> IdByEmailAndPassword { get; set; }
+
+    public DbSet<IdByEmailAndPasswordResult> IdByEmailAndPasswordResult { get; set; }
 
     public virtual DbSet<FeedbackForm> FeedbackForms { get; set; }
 

@@ -1,0 +1,8 @@
+docker build -t myapp .
+^run this in vscode terminal to build it
+
+
+docker run -p 5000:5000 -p 5001:5001 myapp
+^run this to run it
+
+YOU WILL NEED TO REBUILD A DOCKER IMAGE EACH TIME TO UPDATE CHANGES

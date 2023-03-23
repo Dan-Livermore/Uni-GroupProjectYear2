@@ -58,8 +58,9 @@
         const email = emailInput.value;
         const password = passwordInput.value;
 
-        const apiUrl = `http://${window.location.hostname}:5000/api/idbyemailandpassword?email=${email}&pass=${password}`;
-        //https://localhost:7275/api/IdByEmailAndPasswords?email=test%40email3&pass=testpassword3
+        const apiUrl = `https://${window.location.hostname}:5001/api/idbyemailandpasswords?email=${email}&pass=${password}`;
+        //const apiUrl = 'https://localhost:44319/api/idbyemailandpasswords?email=${email}&pass=${password}';
+
         fetch(apiUrl)
           .then(response => {
             if (!response.ok) {

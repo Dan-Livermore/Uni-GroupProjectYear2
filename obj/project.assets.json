@@ -12202,11 +12202,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\Desktop Pull\\comp2003_2022-team-z\\FaceIt2023.csproj",
+      "projectUniqueName": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\LaptopPull\\comp2003_2022-team-z\\FaceIt2023.csproj",
       "projectName": "FaceIt2023",
-      "projectPath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\Desktop Pull\\comp2003_2022-team-z\\FaceIt2023.csproj",
+      "projectPath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\LaptopPull\\comp2003_2022-team-z\\FaceIt2023.csproj",
       "packagesPath": "C:\\Users\\eliot\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\Desktop Pull\\comp2003_2022-team-z\\obj\\",
+      "outputPath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\LaptopPull\\comp2003_2022-team-z\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

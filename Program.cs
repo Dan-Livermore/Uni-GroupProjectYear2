@@ -20,17 +20,10 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 //cors
-
+var AllowAny = "allowAny";
 builder.Services.AddCors(options =>
 {
-        options.AddPolicy("AllowAll",
-            builder =>
-            {
-                builder
-                    .AllowAnyOrigin()
-                    .AllowAnyHeader()
-                    .AllowAnyMethod();
-            });
+        options.AddPolicy(name: AllowAny, policy => policy.AllowAnyOrigin());
     });
 
 var app = builder.Build();

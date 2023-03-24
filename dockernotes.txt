@@ -5,6 +5,8 @@ docker build -t myapp .
 docker run -p 5000:5000 -p 5001:5001 myapp
 ^run this to run it
 
+docker run -p 5503:5000 -p 5001:5001 myapp
+
 docker run -p 8080:5000 myapp
 ^ i think this will make running the app without live server just normal way map to docker 
 

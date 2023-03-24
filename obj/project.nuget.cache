@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TtJxlA9oiNqUCT9GwOGak7WdSiHIaO76yrDg4GqQviKVQL9szEdlcL2y1HtV4qCG4l5KEOELRv3spuZnMnUW9g==",
+  "dgSpecHash": "2dCeehdJlKXf8USyazB5NEaFw8tMUUSggwqobWf9IvRZghYMHujIduSvsopGdvLI1CfPp6UZn1zRwbYrfi2GeQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\Desktop Pull\\comp2003_2022-team-z\\FaceIt2023.csproj",
+  "projectFilePath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\LaptopPull\\comp2003_2022-team-z\\FaceIt2023.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eliot\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\eliot\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

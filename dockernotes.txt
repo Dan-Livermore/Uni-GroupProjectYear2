@@ -1,0 +1,15 @@
+docker build -t myapp .
+^run this in vscode terminal to build it
+
+
+docker run -p 5000:5000 -p 5001:5001 myapp
+^run this to run it
+
+docker run -p 5503:5000 -p 5001:5001 myapp
+
+docker run -p 8080:5000 myapp
+^ i think this will make running the app without live server just normal way map to docker 
+
+docker run -p 8080:5000 -p 8081:5001 myapp
+
+YOU WILL NEED TO REBUILD A DOCKER IMAGE EACH TIME TO UPDATE CHANGES

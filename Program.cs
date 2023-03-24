@@ -7,7 +7,7 @@ using System.Configuration;
 using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
-
+var MyAllowSpecificOrigins ="_myAllowSpecificOrigins"; //cors
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<FaceIt2023.Models.Comp2003ZContext>();
@@ -19,6 +19,12 @@ builder.Services.AddSwaggerGen(c =>
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "The API", Version = "v1" });
 });
 
+//cors
+var AllowAny = "allowAny";
+builder.Services.AddCors(options =>
+{
+        options.AddPolicy(name: AllowAny, policy => policy.AllowAnyOrigin());
+    });
 
 var app = builder.Build();
 
@@ -30,7 +36,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
+//cors
+app.UseCors(MyAllowSpecificOrigins);
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {

@@ -1,5 +1,5 @@
 
-
+window.onload{
   class MyHeader extends HTMLElement {
     connectedCallback() {
       this.innerHTML = ` 
@@ -53,3 +53,4 @@
   }
       
   customElements.define('my-footer', MyFooter);
+}

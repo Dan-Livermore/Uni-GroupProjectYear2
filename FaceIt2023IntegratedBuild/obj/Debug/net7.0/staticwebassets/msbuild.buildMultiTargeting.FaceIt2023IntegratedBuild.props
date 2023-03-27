@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FaceIt2023IntegratedBuild.props" />
+</Project>

@@ -61,6 +61,7 @@
         //const apiUrl = `https://${window.location.hostname}:5001/api/idbyemailandpasswords?email=${email}&pass=${password}`;
 
         const apiUrl = `https://localhost:7200/api/idbyemailandpasswords?email=${email}&pass=${password}`;
+        const apiGetAccountUrl = `https://localhost:7200/api/Accounts/`
         
 
         fetch(apiUrl)
@@ -72,7 +73,9 @@
           })
           .then(data => {
             localStorage.setItem('userId', data[0].userId);
-            window.location.href = '/'; // Redirect to homepage or some other page
+            const id = parseInt(data[0].userId);
+            getAccountDetails(id);            
+            //window.location.href = '/'; // Redirect to homepage or some other page
           })
           .catch(error => {
             console.error(error);

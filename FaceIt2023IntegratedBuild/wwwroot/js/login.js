@@ -21,6 +21,7 @@ function getAccountDetails (id){
       localStorage.setItem('forename', data.forename);
       localStorage.setItem('surname', data.surname);
       console.log(`Account with ID ${id} is now in local storage.`);
+      localStorage.setItem('loggedIn',true);
     })
     .catch(error => console.error(error));
 

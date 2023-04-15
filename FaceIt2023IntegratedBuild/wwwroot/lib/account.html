@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaceIt</title>
+    <link rel="stylesheet" href="/wwwroot/css/mystyles.css">
+    <script type=module src=/wwwroot/js/main.js></script>
+    <script src="/wwwroot/js/account.js"></script>
+</head>
+
+<body>
+    <my-header></my-header>
+
+    <section class="section">
+      <div class="container">
+        <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <div class="container mt-5 mb-5">
+                <div class="columns is-centered">
+                  <div class="column is-half">
+                    <div class="card">
+                      <div class="card-content">
+                        <h1 class="title is-4 has-text-centered">Edit Account Details</h1>
+                        <form>
+                            <div class="field">
+                                <label class="label">Forename</label>
+                                <div class="control">
+                                  <input class="input" type="email" placeholder="Email">
+                                </div>  
+                          <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control">
+                              <input class="input" type="email" placeholder="Email">
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label class="label">Password</label>
+                            <div class="control">
+                              <input class="input" type="password" placeholder="Password">
+                            </div>
+                          </div>
+                          <div class="field">
+                            <div class="control">
+                              <button class="button is-primary is-fullwidth is-link">Sumbit Changes</button>
+                            </div>
+                            <div id="error"></div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child box">
+              <p class="title">Tile 2</p>
+              <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel nisi in orci finibus efficitur. Sed aliquam feugiat metus, sit amet feugiat felis lobortis vel.</p>
+            </article>
+          </div>
+        </div>
+      </div>      
+      
+    </section>
+    <section class="section">
+      <div class="tile is-parent is-4">
+        <div class="tile is-child box">
+          <div class="content has-text-centered">
+            <button id="signoutButton" class="button is-danger is-medium">Sign Out</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    </section>
+  
+      
+      
+      <my-footer></my-footer>
+  
+    </body>
+  </html>

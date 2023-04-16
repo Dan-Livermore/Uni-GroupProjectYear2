@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using FaceItAPI.Models;
 
 namespace FaceItAPI.Models;
 
@@ -20,6 +21,9 @@ public partial class Comp2003ZContext : DbContext
     public virtual DbSet<IdByEmailAndPassword> IdByEmailAndPassword { get; set; }
 
     public virtual DbSet<IdByEmailAndPasswordResult> IdByEmailAndPasswordResult { get; set; }
+
+    //public virtual DbSet<HealthProfAllocatedInput> HealthProfAllocatedInput { get; set; }
+    public virtual DbSet<HealthProfAllocatedOutput> HealthProfAllocatedOutput { get; set; }
 
     public virtual DbSet<FeedbackForm> FeedbackForms { get; set; }
 
@@ -115,4 +119,6 @@ public partial class Comp2003ZContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+    public DbSet<FaceItAPI.Models.HealthProfAllocatedInput> HealthProfAllocatedInput { get; set; } = default!;
 }

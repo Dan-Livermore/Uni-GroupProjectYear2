@@ -20,29 +20,18 @@ namespace FaceItAPI.Controllers
         {
             _context = context;
         }
-
-        //// GET: api/HealthProfAllocatedInputs
-        //[HttpGet]
-        //public async Task<ActionResult<IEnumerable<HealthProfAllocatedInput>>> GetHealthProfAllocatedInput()
-        //{
-        //  if (_context.HealthProfAllocatedInput == null)
-        //  {
-        //      return NotFound();
-        //  }
-        //    return await _context.HealthProfAllocatedInput.ToListAsync();
-        //}
+                
 
         [HttpGet]
         public IActionResult GetHealthProfAllocatedInput(string hpID)
-        {
-            
+        {           
 
             try
             {
                 SqlParameter idParam = new SqlParameter("@hpID", hpID);
 
                 var result = _context.HealthProfAllocatedOutput
-                    .FromSqlRaw<IdByEmailAndPasswordResult>("EXECUTE FaceIt.get_assigned_users_by_profID @hpID",
+                    .FromSqlRaw<HealthProfAllocatedOutput>("EXECUTE FaceIt.get_assigned_users_by_profID @hpID",
                         idParam)
                     .ToList();
 

@@ -93,6 +93,7 @@ function setContent(privLevel){
   else if(privLevel==2){
 
     document.getElementById("card2Title").innerHTML = "Welcome Health Professional!";
+    myMentees=getMyMentees();
     document.getElementById("card2Body").innerHTML = "Your current mentees: ...TODO";  
 
     //fetches the names of all people assigned to the user (healthProf)

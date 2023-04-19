@@ -84,7 +84,12 @@
   
     </body>
     <script>
-      privLevel = localStorage.getItem("privilegeLevel")      
-      setContent(privLevel);
+      try{
+        privLevel = parseInt(localStorage.getItem("privilegeLevel"));
+        setContent(privLevel);
+      }
+      catch{
+        console.log("something didnt work getting priv level and setting content");
+      }
     </script>
   </html>

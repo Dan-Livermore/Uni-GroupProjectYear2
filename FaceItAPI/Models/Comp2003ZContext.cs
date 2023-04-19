@@ -22,7 +22,10 @@ public partial class Comp2003ZContext : DbContext
 
     public virtual DbSet<IdByEmailAndPasswordResult> IdByEmailAndPasswordResult { get; set; }
 
-    //public virtual DbSet<HealthProfAllocatedInput> HealthProfAllocatedInput { get; set; }
+    public virtual DbSet<UserAssignedHealthProfInput> UserAssignedHealthProfInput { get; set; }
+
+    public virtual DbSet<UserAssignedHealthProfOutput> UserAssignedHealthProfOutput { get; set; }
+
     public virtual DbSet<HealthProfAllocatedOutput> HealthProfAllocatedOutput { get; set; }
 
     public virtual DbSet<FeedbackForm> FeedbackForms { get; set; }

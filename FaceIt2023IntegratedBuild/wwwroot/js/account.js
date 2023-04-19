@@ -5,7 +5,9 @@ burgerIcon.addEventListener("click", (event) => {
 
 
 
-const privLevel = parseint(localStorage.getItem('privilegeLevel'));
+const privLevel =localStorage.getItem('privilegeLevel');
+const forename = localStorage.getItem('forename');
+const myID = localStorage.getItem('userID');
 
 //privLevel == 3 means normal user
 //privLevel == 2 means health prof
@@ -28,10 +30,41 @@ function setTitle(privLevel){
   }
 }
 
+//This needs to be edited in future it needs to call the stored procedure to return the health prof allocated to user (i will make this stored proc)
+function getMyHealthProf (myID){
+  const apiUrl = "https://localhost:7200/api/Accounts/";  
+
+  fetch(apiUrl + id)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Store the response in the local storage
+      localStorage.setItem('userEmail', data.userEmail);
+      localStorage.setItem('privilegeLevel', data.privilegeLevel);
+      localStorage.setItem('forename', data.forename);
+      localStorage.setItem('surname', data.surname);
+      console.log(`Account with ID ${id} is now in local storage.`);
+      localStorage.setItem('loggedIn',true);
+    })
+    .catch(error => console.error(error));
+} 
+
+//Need to also add a function to call stored procedure to return all users by healthProf's ID
+
 function setBody(privLevel){
 
   if(privLevel==3){
-    // fetches the name of the healthcare prof
+    
+    
+
+
+
+
+    const title = "Hello "+forename+" ."
   
   
   }

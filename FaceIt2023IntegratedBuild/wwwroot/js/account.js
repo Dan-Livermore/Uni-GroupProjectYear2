@@ -7,40 +7,8 @@ burgerIcon.addEventListener("click", (event) => {
 
 const privLevel =parseInt(localStorage.getItem('privilegeLevel'));
 const forename = localStorage.getItem('forename');
-const myID = localStorage.getItem('userID');
 const my_Health_prof = 999;
 const my_Health_prof_name = "Name not Found";
-
-
-
-function getMyHealthProf (myID){
-  const apiUrl = "https://localhost:7200/api/UserAssignedHealthProfInputs?ID=";
-  const apiUrl2 = "https://localhost:7200/api/Accounts/"
-
-  fetch(apiUrl + myID)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(data => {
-      my_Health_prof = data.prof_id;
-    })
-    .catch(error => console.error(error));
-
-  fetch(apiUrl2+my_Health_prof)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then(data => {
-    my_Health_prof_name = data.forename+" "+data.surname;
-  })
-  .catch(error => console.error(error));
-} 
 
 function getMyHealthProf2(myID) {
   const apiUrl = "https://localhost:7200/api/UserAssignedHealthProfInputs?ID=";
@@ -71,19 +39,28 @@ function getMyHealthProf2(myID) {
     .catch(error => console.error(error));
 }
 
+function get_My_HealthProf_id(myID){
+  console.log(myID);
+}
+
 
 //Need to also add a function to call stored procedure to return all users by healthProf's ID
 
 function setContent(privLevel){
 
+  const myID = localStorage.getItem('userId');
+  const forename = localStorage.getItem('forename');
+
+  const my_Health_prof = 999;
+  const my_Health_prof_name = "Name not Found";
+
   if(privLevel==3){
     console.log("Priv level was determined to be 3");
-    //errors happen here
-    getMyHealthProf(myID);    
+    
+    getMyHealthProf2(myID);    
     document.getElementById("card2Title").innerHTML = "Your Health Prof is: ";
     
-    document.getElementById("card2Body").innerHTML = "Hi: "+forename+" Your Health Prof is: "+my_Health_prof_name;
-  
+    document.getElementById("card2Body").innerHTML = "Hi: "+forename+"! Your Health Prof is: "+my_Health_prof_name;  
   
   }
   else if(privLevel==2){
@@ -106,11 +83,7 @@ function setContent(privLevel){
   else{
     document.getElementById("card2Title").innerHTML = "ERROR";
     document.getElementById("card2_Body").innerHTML = "Something with the Privilege Level went wrong."; 
-
-
-  }
-
-  
+  }  
 }
 
 function test(){

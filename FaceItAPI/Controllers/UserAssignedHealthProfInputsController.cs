@@ -6,9 +6,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FaceItAPI.Models;
+using Microsoft.Data.SqlClient;
 
 namespace FaceItAPI.Controllers
 {
+    /// <summary>
+    /// This is a Stored procedure call to give a user id and find out (return) which health prof is attatched to the account.
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class UserAssignedHealthProfInputsController : ControllerBase
@@ -20,100 +24,33 @@ namespace FaceItAPI.Controllers
             _context = context;
         }
 
-        // GET: api/UserAssignedHealthProfInputs
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<UserAssignedHealthProfInput>>> GetUserAssignedHealthProfInput()
+        public IActionResult GetHealthProf(string ID)
         {
-          if (_context.UserAssignedHealthProfInput == null)
-          {
-              return NotFound();
-          }
-            return await _context.UserAssignedHealthProfInput.ToListAsync();
-        }
-
-        // GET: api/UserAssignedHealthProfInputs/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<UserAssignedHealthProfInput>> GetUserAssignedHealthProfInput(int id)
-        {
-          if (_context.UserAssignedHealthProfInput == null)
-          {
-              return NotFound();
-          }
-            var userAssignedHealthProfInput = await _context.UserAssignedHealthProfInput.FindAsync(id);
-
-            if (userAssignedHealthProfInput == null)
-            {
-                return NotFound();
-            }
-
-            return userAssignedHealthProfInput;
-        }
-
-        // PUT: api/UserAssignedHealthProfInputs/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutUserAssignedHealthProfInput(int id, UserAssignedHealthProfInput userAssignedHealthProfInput)
-        {
-            if (id != userAssignedHealthProfInput.UserId)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(userAssignedHealthProfInput).State = EntityState.Modified;
 
             try
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!UserAssignedHealthProfInputExists(id))
+                SqlParameter idParam = new SqlParameter("@userID", ID);
+
+                var result = _context.UserAssignedHealthProfOutput
+                    .FromSqlRaw<UserAssignedHealthProfOutput>("EXECUTE FaceIt.get_assigned_prof_by_userID @userID",
+                        idParam)
+                    .ToList();
+
+                if (result == null || result.Count == 0)
                 {
                     return NotFound();
                 }
-                else
-                {
-                    throw;
-                }
+
+                return Ok(result);
             }
-
-            return NoContent();
-        }
-
-        // POST: api/UserAssignedHealthProfInputs
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<UserAssignedHealthProfInput>> PostUserAssignedHealthProfInput(UserAssignedHealthProfInput userAssignedHealthProfInput)
-        {
-          if (_context.UserAssignedHealthProfInput == null)
-          {
-              return Problem("Entity set 'Comp2003ZContext.UserAssignedHealthProfInput'  is null.");
-          }
-            _context.UserAssignedHealthProfInput.Add(userAssignedHealthProfInput);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetUserAssignedHealthProfInput", new { id = userAssignedHealthProfInput.UserId }, userAssignedHealthProfInput);
-        }
-
-        // DELETE: api/UserAssignedHealthProfInputs/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUserAssignedHealthProfInput(int id)
-        {
-            if (_context.UserAssignedHealthProfInput == null)
+            catch (Exception ex)
             {
-                return NotFound();
+                // log the exception or return an error response
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-            var userAssignedHealthProfInput = await _context.UserAssignedHealthProfInput.FindAsync(id);
-            if (userAssignedHealthProfInput == null)
-            {
-                return NotFound();
-            }
-
-            _context.UserAssignedHealthProfInput.Remove(userAssignedHealthProfInput);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
         }
+
 
         private bool UserAssignedHealthProfInputExists(int id)
         {

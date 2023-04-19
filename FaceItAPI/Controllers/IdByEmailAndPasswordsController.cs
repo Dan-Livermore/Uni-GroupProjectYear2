@@ -49,32 +49,32 @@ namespace FaceItAPI.Controllers
             }
         }
 
-        [HttpPost]
-        public async Task<ActionResult<IdByEmailAndPasswordResult>> PostIdByEmailAndPassword([FromBody] IdByEmailAndPassword request)
-        {
-            var email = request.Email;
-            var password = request.Password;            
+        //[HttpPost]
+        //public async Task<ActionResult<IdByEmailAndPasswordResult>> PostIdByEmailAndPassword([FromBody] IdByEmailAndPassword request)
+        //{
+        //    var email = request.Email;
+        //    var password = request.Password;            
 
-            var idParameter = new SqlParameter("@user_id", SqlDbType.Int) { Direction = ParameterDirection.Output };
+        //    var idParameter = new SqlParameter("@user_id", SqlDbType.Int) { Direction = ParameterDirection.Output };
 
-            await _context.Database.ExecuteSqlRawAsync(
-                "EXEC FaceIt.Id_By_Email_and_Password @Email, @Password",
-                new SqlParameter("@Email", email),
-                new SqlParameter("@Password", password),
-                idParameter
-            );
+        //    await _context.Database.ExecuteSqlRawAsync(
+        //        "EXEC FaceIt.Id_By_Email_and_Password @Email, @Password",
+        //        new SqlParameter("@Email", email),
+        //        new SqlParameter("@Password", password),
+        //        idParameter
+        //    );
 
-            var id = (int)idParameter.Value;
+        //    var id = (int)idParameter.Value;
 
-            if (id == -1)
-            {
-                return BadRequest("Invalid email or password");
-            }
+        //    if (id == -1)
+        //    {
+        //        return BadRequest("Invalid email or password");
+        //    }
 
-            var result = new IdByEmailAndPasswordResult { UserId = id };
+        //    var result = new IdByEmailAndPasswordResult { UserId = id };
 
-            return result;
-        }
+        //    return result;
+        //}
         private bool IdByEmailAndPasswordExists(int id)
         {
             return (_context.IdByEmailAndPassword?.Any(e => e.UserId == id)).GetValueOrDefault();

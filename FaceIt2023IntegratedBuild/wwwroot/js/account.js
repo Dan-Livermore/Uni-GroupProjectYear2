@@ -15,22 +15,22 @@ const my_Health_prof_name = "Name not Found";
 //privLevel == 2 means health prof
 //privLevel == 1 means administrator
 
-function setTitle(privLevel){
+// function setTitle(privLevel){
   
-  let card2_Title = document.getElementById("card2Title");
+//   let card2_Title = document.getElementById("card2Title");
 
-  if (privLevel==3) {
-    card2_Title.textContent = "Your Assigned Health Prof:";
-  } else if (privLevel==2){
-    card2_Title.textContent = "Your Assigned Users:";
-  }
-  else if (privLevel==1){
-    card2_Title.textContent = "Health Profs:"
-  }
-  else{
-    card2_Title.textContent = "Something Went Wrong regarding account's Privelege Level"
-  }
-}
+//   if (privLevel==3) {
+//     card2_Title.textContent = "Your Assigned Health Prof:";
+//   } else if (privLevel==2){
+//     card2_Title.textContent = "Your Assigned Users:";
+//   }
+//   else if (privLevel==1){
+//     card2_Title.textContent = "Health Profs:"
+//   }
+//   else{
+//     card2_Title.textContent = "Something Went Wrong regarding account's Privelege Level"
+//   }
+// }
 
 //This needs to be edited in future it needs to call the stored procedure to return the health prof allocated to user (i will make this stored proc)
 function getMyHealthProf (myID){
@@ -64,22 +64,28 @@ function getMyHealthProf (myID){
 
 //Need to also add a function to call stored procedure to return all users by healthProf's ID
 
-function setBody(privLevel){
-
-  let card2_Body = document.getElementById("card2Body");
+function setContent(privLevel){
 
   if(privLevel==3){
-     //card2_Body. "Hello "+forename+" ."
+    getMyHealthProf(myID);    
+    document.getElementById("card2Title").innerHTML = "Your Health Prof is: ";
+    //card2_Title.textContent = "Your Assigned Health Prof:";
+    document.getElementById("card2_Body").innerHTML = "Hi: "+forename+" Your Health Prof is: "+my_Health_prof_name;
   
   
   }
   if(privLevel==2){
+    document.getElementById("card2Title").innerHTML = "Welcome Health Prof";
+    document.getElementById("card2_Body").innerHTML = "Your current mentees: ...TODO";  
+
     //fetches the names of all people assigned to the user (healthProf)
 
     //gives option to add an existing user to your care
     //gives an option to create a user
   }
-  if(privLevel==0){
+  if(privLevel==1){
+    document.getElementById("card2Title").innerHTML = "Welcome Admin";
+    document.getElementById("card2_Body").innerHTML = "Manage Accounts... TODO";  
     //show all health profs
     //option to CRUD a health prof
     //option to CRUD an admin

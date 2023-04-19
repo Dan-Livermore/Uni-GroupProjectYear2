@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/wwwroot/css/mystyles.css">
     <script type=module src=/wwwroot/js/main.js></script>
     <script src="/wwwroot/js/account.js"></script>
+    
 </head>
 
 <body>
@@ -84,12 +85,20 @@
   
     </body>
     <script>
-      try{
-        privLevel = parseInt(localStorage.getItem("privilegeLevel"));
-        setContent(privLevel);
-      }
-      catch{
-        console.log("something didnt work getting priv level and setting content");
-      }
+
+      window.addEventListener('load', () => {
+        
+        test();
+
+        try{
+          const privLevel5 = parseInt(localStorage.getItem("privilegeLevel"));
+          console.log(privLevel5);
+          setContent(privLevel5);
+        }
+        catch{
+          console.log("something didnt work getting priv level and setting content");
+        }
+      });
+
     </script>
   </html>

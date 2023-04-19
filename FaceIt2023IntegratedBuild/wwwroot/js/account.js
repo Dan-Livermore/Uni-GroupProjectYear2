@@ -105,4 +105,10 @@ function setContent(privLevel){
 
 
   }
+
+  
+}
+
+function test(){
+  console.log("test successfully called from account.js");
 }

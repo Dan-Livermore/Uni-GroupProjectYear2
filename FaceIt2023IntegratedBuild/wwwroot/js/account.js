@@ -39,9 +39,35 @@ function getMyHealthProf2(myID) {
     .catch(error => console.error(error));
 }
 
-function get_My_HealthProf_id(myID){
-  console.log(myID);
+function getMyMentees(hpID){
+  // An API Get that triggers the stored procedure that returns all users linked to the ID given.
+  
+
+  const ListMyMentees= [];
+  const apiUrl = "https://localhost:7200/api/HealthProfAllocatedInputs?hpID=";
+
+  fetch(apiUrl+hpID)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      // Store the response in the local storage
+      data.forEach(item=>{
+        ListMyMentees.push(item.userId);
+      })
+      
+    })
+    .catch(error => console.error(error));
+
+    console.log(ListMyMentees);
+  
+    return ListMyMentees;
+
 }
+
 
 
 //Need to also add a function to call stored procedure to return all users by healthProf's ID
@@ -55,6 +81,7 @@ function setContent(privLevel){
   const my_Health_prof_name = "Name not Found";
 
   if(privLevel==3){
+    ///---------------------DONE----------------------
     console.log("Priv level was determined to be 3");
     
     getMyHealthProf2(myID);    
@@ -64,7 +91,8 @@ function setContent(privLevel){
   
   }
   else if(privLevel==2){
-    document.getElementById("card2Title").innerHTML = "Welcome Health Prof";
+
+    document.getElementById("card2Title").innerHTML = "Welcome Health Professional!";
     document.getElementById("card2Body").innerHTML = "Your current mentees: ...TODO";  
 
     //fetches the names of all people assigned to the user (healthProf)

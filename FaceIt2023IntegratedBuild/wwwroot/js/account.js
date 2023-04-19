@@ -14,7 +14,7 @@ const my_Health_prof_name = "Name not Found";
 
 
 function getMyHealthProf (myID){
-  const apiUrl = "https://localhost:7200/api/UserAssignedHealthProfInputs/";
+  const apiUrl = "https://localhost:7200/api/UserAssignedHealthProfInputs?ID=";
   const apiUrl2 = "https://localhost:7200/api/Accounts/"
 
   fetch(apiUrl + myID)
@@ -43,10 +43,10 @@ function getMyHealthProf (myID){
 } 
 
 function getMyHealthProf2(myID) {
-  const apiUrl = "https://localhost:7200/api/UserAssignedHealthProfInputs/";
+  const apiUrl = "https://localhost:7200/api/UserAssignedHealthProfInputs?ID=";
   const apiUrl2 = "https://localhost:7200/api/Accounts/"
 
-  fetch(apiUrl + myID)
+  fetch(apiUrl + myID)    
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -54,7 +54,9 @@ function getMyHealthProf2(myID) {
       return response.json();
     })
     .then(data => {
+      console.log(apiUrl + myID);
       my_Health_prof = data.prof_id;
+      console.log("healthprof id is "+my_Health_prof)
       return fetch(apiUrl2 + my_Health_prof);
     })
     .then(response => {
@@ -75,16 +77,18 @@ function getMyHealthProf2(myID) {
 function setContent(privLevel){
 
   if(privLevel==3){
-    getMyHealthProf2(myID);    
+    console.log("Priv level was determined to be 3");
+    //errors happen here
+    getMyHealthProf(myID);    
     document.getElementById("card2Title").innerHTML = "Your Health Prof is: ";
-    //card2_Title.textContent = "Your Assigned Health Prof:";
-    document.getElementById("card2_Body").innerHTML = "Hi: "+forename+" Your Health Prof is: "+my_Health_prof_name;
+    
+    document.getElementById("card2Body").innerHTML = "Hi: "+forename+" Your Health Prof is: "+my_Health_prof_name;
   
   
   }
   else if(privLevel==2){
     document.getElementById("card2Title").innerHTML = "Welcome Health Prof";
-    document.getElementById("card2_Body").innerHTML = "Your current mentees: ...TODO";  
+    document.getElementById("card2Body").innerHTML = "Your current mentees: ...TODO";  
 
     //fetches the names of all people assigned to the user (healthProf)
 
@@ -93,7 +97,7 @@ function setContent(privLevel){
   }
   else if(privLevel==1){
     document.getElementById("card2Title").innerHTML = "Welcome Admin";
-    document.getElementById("card2_Body").innerHTML = "Manage Accounts... TODO";  
+    document.getElementById("card2Body").innerHTML = "Manage Accounts... TODO";  
     //show all health profs
     //option to CRUD a health prof
     //option to CRUD an admin

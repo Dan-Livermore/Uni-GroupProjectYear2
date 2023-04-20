@@ -5,36 +5,48 @@ burgerIcon.addEventListener("click", (event) => {
 
 
 
-const privLevel =localStorage.getItem('privilegeLevel');
+const privLevel =parseInt(localStorage.getItem('privilegeLevel'));
 const forename = localStorage.getItem('forename');
-const myID = localStorage.getItem('userID');
+const my_Health_prof = 999;
+const my_Health_prof_name = "Name not Found";
 
-//privLevel == 3 means normal user
-//privLevel == 2 means health prof
-//privLevel == 1 means administrator
+function getMyHealthProf2(myID) {
+  const apiUrl = "https://localhost:7200/api/UserAssignedHealthProfInputs?ID=";
+  const apiUrl2 = "https://localhost:7200/api/Accounts/"
 
-function setTitle(privLevel){
-  
-  let card2_Title = document.getElementById("card2Title");
-
-  if (privLevel==3) {
-    card2_Title.textContent = "Your Assigned Health Prof:";
-  } else if (privLevel==2){
-    card2_Title.textContent = "Your Assigned Users:";
-  }
-  else if (privLevel==1){
-    card2_Title.textContent = "Health Profs:"
-  }
-  else{
-    card2_Title.textContent = "Something Went Wrong regarding account's Privelege Level"
-  }
+  fetch(apiUrl + myID)    
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log(apiUrl + myID);
+      my_Health_prof = data.prof_id;
+      console.log("healthprof id is "+my_Health_prof)
+      return fetch(apiUrl2 + my_Health_prof);
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      my_Health_prof_name = data.forename + " " + data.surname;
+    })
+    .catch(error => console.error(error));
 }
 
-//This needs to be edited in future it needs to call the stored procedure to return the health prof allocated to user (i will make this stored proc)
-function getMyHealthProf (myID){
-  const apiUrl = "https://localhost:7200/api/Accounts/";  
+function getMyMentees(hpID){
+  // An API Get that triggers the stored procedure that returns all users linked to the ID given.
+  
 
-  fetch(apiUrl + id)
+  const ListMyMentees= [];
+  const apiUrl = "https://localhost:7200/api/HealthProfAllocatedInputs?hpID=";
+
+  fetch(apiUrl+hpID)
     .then(response => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -43,49 +55,66 @@ function getMyHealthProf (myID){
     })
     .then(data => {
       // Store the response in the local storage
-      localStorage.setItem('userEmail', data.userEmail);
-      localStorage.setItem('privilegeLevel', data.privilegeLevel);
-      localStorage.setItem('forename', data.forename);
-      localStorage.setItem('surname', data.surname);
-      console.log(`Account with ID ${id} is now in local storage.`);
-      localStorage.setItem('loggedIn',true);
+      data.forEach(item=>{
+        ListMyMentees.push(item.userId);
+      })
+      
     })
     .catch(error => console.error(error));
-} 
+
+    console.log(ListMyMentees);
+  
+    return ListMyMentees;
+
+}
+
+
 
 //Need to also add a function to call stored procedure to return all users by healthProf's ID
 
-function setBody(privLevel){
+function setContent(privLevel){
+
+  const myID = localStorage.getItem('userId');
+  const forename = localStorage.getItem('forename');
+
+  const my_Health_prof = 999;
+  const my_Health_prof_name = "Name not Found";
 
   if(privLevel==3){
+    ///---------------------DONE----------------------
+    console.log("Priv level was determined to be 3");
     
+    getMyHealthProf2(myID);    
+    document.getElementById("card2Title").innerHTML = "Your Health Prof is: ";
     
-
-
-
-
-    const title = "Hello "+forename+" ."
-  
+    document.getElementById("card2Body").innerHTML = "Hi: "+forename+"! Your Health Prof is: "+my_Health_prof_name;  
   
   }
-  if(privLevel==2){
+  else if(privLevel==2){
+
+    document.getElementById("card2Title").innerHTML = "Welcome Health Professional!";
+    myMentees=getMyMentees();
+    document.getElementById("card2Body").innerHTML = "Your current mentees: ...TODO";  
+
     //fetches the names of all people assigned to the user (healthProf)
 
     //gives option to add an existing user to your care
     //gives an option to create a user
   }
-  if(privLevel==0){
+  else if(privLevel==1){
+    document.getElementById("card2Title").innerHTML = "Welcome Admin";
+    document.getElementById("card2Body").innerHTML = "Manage Accounts... TODO";  
     //show all health profs
     //option to CRUD a health prof
     //option to CRUD an admin
     //option to create a user
   }
+  else{
+    document.getElementById("card2Title").innerHTML = "ERROR";
+    document.getElementById("card2_Body").innerHTML = "Something with the Privilege Level went wrong."; 
+  }  
+}
 
-  return 0;
-
-
-
-
-
-
+function test(){
+  console.log("test successfully called from account.js");
 }

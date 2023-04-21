@@ -52,13 +52,15 @@
         errorDiv.textContent = 'Error occurred: ' + error.message;
 }
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
 
+
+form.addEventListener('submit', (event) => {
+
+  event.preventDefault();
+  //Takes input fields
   const email = emailInput.value;
   const password = passwordInput.value;
-  var good2go = false;
-
+  //API urls (The first returns ID if the password and username match (returns '-1' if dont match), the second gets all the information of the account into local storage)
   const apiUrl = `https://localhost:7200/api/idbyemailandpasswords?email=${email}&pass=${password}`;
   const apiGetAccountUrl = `https://localhost:7200/api/Accounts/`;
 
@@ -71,20 +73,25 @@ form.addEventListener('submit', (event) => {
     
   })
   .then(data => {
+    //Saves user ID in browser
     localStorage.setItem('userId', data[0].userId);
+    
+    //User ID is put through the getAccountDetails to save all necessary account details to local storage
     const id = parseInt(data[0].userId);
-    getAccountDetails(id); 
-    getID = localStorage.getItem('userID');
+    getAccountDetails(id);    
 
-    if(getID != (-1)){
-      good2go = true;
-      console.log("Good 2 go! you can log in");
+    if(id==(-1)){
+      
+      console.log("-1 response means that the account does not exist");
+      errorDiv.textContent = 'Incorrect Login username or password! ';
+      
+    }
+    else{
       window.location.href = "account.html";
     }             
   })
   .catch(error => {
-    console.error(error);
-    good2go = false;
+    console.error(error);    
     errorDiv.textContent = 'Incorrect Login username or password! ';
   }) 
 

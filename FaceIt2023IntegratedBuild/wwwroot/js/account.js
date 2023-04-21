@@ -6,9 +6,10 @@ burgerIcon.addEventListener("click", (event) => {
 
 
 const privLevel =parseInt(localStorage.getItem('privilegeLevel'));
-const forename = localStorage.getItem('forename');
+const my_forename = localStorage.getItem('forename');
 const my_Health_prof = 999;
-const my_Health_prof_name = "Name not Found";
+const my_Health_prof_name = " <Name not Found> ";
+const my_Health_prof_email = " <No email address found> "
 
 function getMyHealthProf2(myID) {
   const apiUrl = "https://localhost:7200/api/UserAssignedHealthProfInputs?ID=";
@@ -34,7 +35,10 @@ function getMyHealthProf2(myID) {
       return response.json();
     })
     .then(data => {
+      console.log(data);
       my_Health_prof_name = data.forename + " " + data.surname;
+      my_Health_prof_email = data.user_email;
+
     })
     .catch(error => console.error(error));
 }
@@ -75,20 +79,23 @@ function getMyMentees(hpID){
 function setContent(privLevel){
 
   const myID = localStorage.getItem('userId');
-  const forename = localStorage.getItem('forename');
-
-  const my_Health_prof = 999;
-  const my_Health_prof_name = "Name not Found";
+  const forename = localStorage.getItem('forename');  
 
   if(privLevel==3){
     ///---------------------DONE----------------------
     console.log("Priv level was determined to be 3");
     
-    getMyHealthProf2(myID);    
-    document.getElementById("card2Title").innerHTML = "Your Health Prof is: ";
+    getMyHealthProf2(myID)
+    .then(() => {
+      document.getElementById("card2Title").innerHTML = "Hi: " + forename + " !";
+      document.getElementById("card2Body").innerHTML = "Your Health Prof is: " + my_Health_prof_name + " You can contact them at: " + my_Health_prof_email;
+    })
+    .catch((error) => {
+      console.error(error);
+      console.log("couldnt get health prof2 or set content")
+    });    
     
-    document.getElementById("card2Body").innerHTML = "Hi: "+forename+"! Your Health Prof is: "+my_Health_prof_name;  
-  
+    
   }
   else if(privLevel==2){
 

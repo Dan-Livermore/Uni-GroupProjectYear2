@@ -52,36 +52,52 @@
         errorDiv.textContent = 'Error occurred: ' + error.message;
 }
 
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
 
-        const email = emailInput.value;
-        const password = passwordInput.value;
 
-        //const apiUrl = `https://${window.location.hostname}:5001/api/idbyemailandpasswords?email=${email}&pass=${password}`;
+form.addEventListener('submit', (event) => {
 
-        const apiUrl = `https://localhost:7200/api/idbyemailandpasswords?email=${email}&pass=${password}`;
-        const apiGetAccountUrl = `https://localhost:7200/api/Accounts/`
-        
+  event.preventDefault();
+  //Takes input fields
+  const email = emailInput.value;
+  const password = passwordInput.value;
+  //API urls (The first returns ID if the password and username match (returns '-1' if dont match), the second gets all the information of the account into local storage)
+  const apiUrl = `https://localhost:7200/api/idbyemailandpasswords?email=${email}&pass=${password}`;
+  const apiGetAccountUrl = `https://localhost:7200/api/Accounts/`;
 
-        fetch(apiUrl)
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            return response.json();
-          })
-          .then(data => {
-            localStorage.setItem('userId', data[0].userId);
-            const id = parseInt(data[0].userId);
-            getAccountDetails(id);            
-            //window.location.href = '/'; // Redirect to homepage or some other page
-          })
-          .catch(error => {
-            console.error(error);
-            errorDiv.textContent = 'Error occurred: ' + error.message;
-          });
-      });
+  fetch(apiUrl)
+  .then(response => {
+    if (response.status !== 200) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+    
+  })
+  .then(data => {
+    //Saves user ID in browser
+    localStorage.setItem('userId', data[0].userId);
+    
+    //User ID is put through the getAccountDetails to save all necessary account details to local storage
+    const id = parseInt(data[0].userId);
+    getAccountDetails(id);    
+
+    if(id==(-1)){
+      //Throws if account doesnt exist
+      console.log("-1 response means that the account does not exist");
+      errorDiv.textContent = 'Incorrect Login username or password! ';
+      
+    }
+    else{
+      //redirects to next page.
+      window.location.href = "account.html";
+    }             
+  })
+  .catch(error => {
+    console.error(error);    
+    errorDiv.textContent = 'Incorrect Login username or password! ';
+  }) 
+
+});
+
     </script>
     <my-footer></my-footer>
 

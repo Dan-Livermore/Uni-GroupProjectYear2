@@ -63,30 +63,27 @@ form.addEventListener('submit', (event) => {
   const apiGetAccountUrl = `https://localhost:7200/api/Accounts/`;
 
   fetch(apiUrl)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(data => {
-      localStorage.setItem('userId', data[0].userId);
-      const id = parseInt(data[0].userId);
-      getAccountDetails(id);
-      good2go = true;
-      console.log("Good to go! You can log in.");
-    })
-    .catch(error => {
-      console.error(error);
-      errorDiv.textContent = 'Incorrect login username or password!';
-    })
-    .finally(() => {
-      if (good2go) {
-        window.location.href = "account.html";
-      } else {
-        console.log("Not good to go.");
-      }
-    });
+  .then(response => {
+    if (response.status !== 200) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+    
+  })
+  .then(data => {
+    localStorage.setItem('userId', data[0].userId);
+    const id = parseInt(data[0].userId);
+    getAccountDetails(id); 
+    good2go = true;
+    console.log("Good 2 go! you can log in");
+    window.location.href = "account.html";        
+  })
+  .catch(error => {
+    console.error(error);
+    good2go = false;
+    errorDiv.textContent = 'Incorrect Login username or password! ';
+  }) 
+
 });
 
     </script>

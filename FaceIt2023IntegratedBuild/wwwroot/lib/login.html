@@ -74,9 +74,13 @@ form.addEventListener('submit', (event) => {
     localStorage.setItem('userId', data[0].userId);
     const id = parseInt(data[0].userId);
     getAccountDetails(id); 
-    good2go = true;
-    console.log("Good 2 go! you can log in");
-    window.location.href = "account.html";        
+    getID = localStorage.getItem('userID');
+
+    if(getID != (-1)){
+      good2go = true;
+      console.log("Good 2 go! you can log in");
+      window.location.href = "account.html";
+    }             
   })
   .catch(error => {
     console.error(error);

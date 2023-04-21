@@ -81,12 +81,13 @@ form.addEventListener('submit', (event) => {
     getAccountDetails(id);    
 
     if(id==(-1)){
-      
+      //Throws if account doesnt exist
       console.log("-1 response means that the account does not exist");
       errorDiv.textContent = 'Incorrect Login username or password! ';
       
     }
     else{
+      //redirects to next page.
       window.location.href = "account.html";
     }             
   })

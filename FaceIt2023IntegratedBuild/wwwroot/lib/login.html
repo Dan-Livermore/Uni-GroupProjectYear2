@@ -52,56 +52,43 @@
         errorDiv.textContent = 'Error occurred: ' + error.message;
 }
 
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-        const email = emailInput.value;
-        const password = passwordInput.value;
+  const email = emailInput.value;
+  const password = passwordInput.value;
+  var good2go = false;
 
-        //const apiUrl = `https://${window.location.hostname}:5001/api/idbyemailandpasswords?email=${email}&pass=${password}`;
+  const apiUrl = `https://localhost:7200/api/idbyemailandpasswords?email=${email}&pass=${password}`;
+  const apiGetAccountUrl = `https://localhost:7200/api/Accounts/`;
 
-        const apiUrl = `https://localhost:7200/api/idbyemailandpasswords?email=${email}&pass=${password}`;
-        const apiGetAccountUrl = `https://localhost:7200/api/Accounts/`        
+  fetch(apiUrl)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      localStorage.setItem('userId', data[0].userId);
+      const id = parseInt(data[0].userId);
+      getAccountDetails(id);
+      good2go = true;
+      console.log("Good to go! You can log in.");
+    })
+    .catch(error => {
+      console.error(error);
+      errorDiv.textContent = 'Incorrect login username or password!';
+    })
+    .finally(() => {
+      if (good2go) {
+        window.location.href = "account.html";
+      } else {
+        console.log("Not good to go.");
+      }
+    });
+});
 
-        fetch(apiUrl)
-          .then(response => {
-            if (!response.ok) {
-              throw new Error('Network response was not ok');
-            }
-            return response.json();
-          })
-          .then(data => {
-            localStorage.setItem('userId', data[0].userId);
-            const id = parseInt(data[0].userId);
-            getAccountDetails(id);            
-            //window.location.href = '/'; // Redirect to homepage or some other page
-          })
-          .catch(error => {
-            console.error(error);
-            errorDiv.textContent = 'Error occurred: ' + error.message;
-          });
-
-          try{
-              check = localStorage.getItem('loggedIn');
-             try{
-              if(check == "true"){
-                window.location.href = "account.html";            
-              }
-             }
-             catch{
-              console.log("Couldnt redirect");
-             }
-
-             
-          }
-          catch{
-            console.log("couldn't parse the boolean value that determines its logged in or not.");
-          }
-          
-          
-
-
-      });
     </script>
     <my-footer></my-footer>
 

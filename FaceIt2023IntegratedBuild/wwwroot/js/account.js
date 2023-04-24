@@ -96,8 +96,36 @@ async function setContent(privLevel){
   else if(privLevel==2){
 
     document.getElementById("card2Title").innerHTML = "Welcome Health Professional!";
-    myMentees=getMyMentees();
-    document.getElementById("card2Body").innerHTML = "Your current mentees: ...TODO";  
+    var myMentees = getMyMentees(myID);
+
+    const card2Body = document.getElementById("card2Body");
+    card2Body.innerHTML = ""; // Clear any previous content
+
+    // Create a list element and append it to card2Body
+    const menteesList = document.createElement("ul");
+    card2Body.appendChild(menteesList);
+
+    // Iterate through the myMentees array and create a list item for each mentee
+    myMentees.forEach((mentee) => {
+      const listItem = document.createElement("li");
+      listItem.textContent = mentee.name;
+      menteesList.appendChild(listItem);
+    });
+
+
+    // get the mentees' account details and display them in the card2Body element
+    myMentees.forEach((menteeId) => {
+      getAccountDetails(menteeId,false)
+    .then((mentee) => {
+      // create an HTML element for the mentee and add it to the card2Body element
+      const menteeElement = document.createElement("div");
+      menteeElement.textContent = `Name: ${mentee.firstName} ${mentee.lastName}, Email: ${mentee.email}`;
+      document.getElementById("card2Body").appendChild(menteeElement);
+    })
+    .catch((error) => {
+      console.error(`Error retrieving mentee account details: ${error}`);
+    });
+});
 
     //fetches the names of all people assigned to the user (healthProf)
 

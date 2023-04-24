@@ -8,13 +8,18 @@ burgerIcon.addEventListener("click", (event) => {
 const privLevel =parseInt(localStorage.getItem('privilegeLevel'));
 var my_forename = localStorage.getItem('forename');
 
-var my_Health_prof_name = " <Name not Found> ";
-var my_Health_prof_email = " <No email address found> ";
+// var my_Health_prof_name = " <Name not Found> ";
+// var my_Health_prof_email = " <No email address found> ";
 
 function getMyHealthProf2(myID) {
   const apiUrl = "https://localhost:7200/api/UserAssignedHealthProfInputs?ID=";
   const apiUrl2 = "https://localhost:7200/api/Accounts/"
   var my_Health_prof_id = 999;
+
+  var my_Health_prof_name = " <Name not Found> ";
+  var my_Health_prof_email = " <No email address found> ";
+
+
   fetch(apiUrl + myID)    
     .then(response => {
       if (!response.ok) {
@@ -39,11 +44,12 @@ function getMyHealthProf2(myID) {
     .then(data => {      
       my_Health_prof_name = data.forename + " " + data.surname;
       my_Health_prof_email = data.user_email;
-      console.log("function: getMyHealhProf2 successfully completed and my_healthprof_name is "+my_Health_prof_name)
 
     })
-    .catch(error => console.error(error));
-    return 0;
+    .catch(error => console.error(error))
+    .finally(() =>console.log("function: getMyHealhProf2 successfully completed and my_healthprof_name is "+my_Health_prof_name)
+    );
+    return [my_Health_prof_name,my_Health_prof_email];
 }
 
 function getMyMentees(hpID){
@@ -79,7 +85,7 @@ function getMyMentees(hpID){
 
 //Need to also add a function to call stored procedure to return all users by healthProf's ID
 
-function setContent(privLevel){
+async function setContent(privLevel){
 
   const myID = localStorage.getItem('userId');
   const forename = localStorage.getItem('forename');  
@@ -87,17 +93,12 @@ function setContent(privLevel){
   if(privLevel==3){    
     console.log("Priv level was determined to be 3");
     
-    getMyHealthProf2(myID)
-    .then(() => {
-      console.log("now going to change text on html:")
-      document.getElementById("card2Title").innerHTML = "Hi: " + forename + " !";
-      document.getElementById("card2Body").innerHTML = "Your Health Prof is: " + my_Health_prof_name + " You can contact them at: " + my_Health_prof_email;
-    })
-    .catch((error) => {
-      console.error(error);
-      console.log("couldnt get health prof2 or set content")
-    });
-    console.log("closing priv level 3 if block");
+     const[str1,str2] = await getMyHealthProf2(myID);
+
+     console.log("now going to change text on html:");
+     document.getElementById("card2Title").innerHTML = "Hi: " + forename + " !";
+      document.getElementById("card2Body").innerHTML = "Your Health Prof is: " + str1 + " You can contact them at: " + str2;
+
     return;    
     
     

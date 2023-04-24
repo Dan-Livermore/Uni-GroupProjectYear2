@@ -99,5 +99,17 @@
         }
       });
 
+      const signoutButton = document.getElementById('signoutButton');
+      signoutButton.addEventListener('click', () => {
+        console.log('sign out Button clicked');
+        localStorage.setItem('userEmail', null);
+        localStorage.setItem('privilegeLevel', null);
+        localStorage.setItem('forename', null);
+        localStorage.setItem('surname', null);
+        localStorage.setItem('loggedIn',false);
+        window.location.href = "login.html";
+
+      });
+
     </script>
   </html>

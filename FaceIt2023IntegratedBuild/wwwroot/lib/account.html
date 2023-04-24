@@ -86,18 +86,30 @@
     </body>
     <script>
 
-      window.addEventListener('load', () => {
-        
-        test();
+      window.addEventListener('load', () => {       
 
         try{
           const privLevel5 = parseInt(localStorage.getItem("privilegeLevel"));
           console.log("got priv level: " + privLevel5);
           setContent(privLevel5);
+
         }
         catch{
           console.log("something didnt work getting priv level and setting content");
         }
+      });
+
+      const signoutButton = document.getElementById('signoutButton');
+      signoutButton.addEventListener('click', () => {
+        console.log('sign out Button clicked');
+        localStorage.setItem('userEmail', null);
+        localStorage.setItem('privilegeLevel', null);
+        localStorage.setItem('forename', null);
+        localStorage.setItem('surname', null);
+        localStorage.setItem('loggedIn',false);
+        localStorage.setItem('userId',null);
+        window.location.href = "login.html";
+
       });
 
     </script>

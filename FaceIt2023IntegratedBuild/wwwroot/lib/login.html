@@ -77,18 +77,24 @@ form.addEventListener('submit', (event) => {
     localStorage.setItem('userId', data[0].userId);
     
     //User ID is put through the getAccountDetails to save all necessary account details to local storage
-    const id = parseInt(data[0].userId);
-    getAccountDetails(id);    
+    const id = parseInt(data[0].userId);      
 
     if(id==(-1)){
-      //Throws if account doesnt exist
+      //Throws if response says account doesnt exist
       console.log("-1 response means that the account does not exist");
       errorDiv.textContent = 'Incorrect Login username or password! ';
       
     }
+    else if (id == null){
+      console.log("Id is null.");
+      errorDiv.textContent = 'Something went wrong, please contact an administrator.';
+    }
     else{
-      //redirects to next page.
-      window.location.href = "account.html";
+      getAccountDetails(id,true);      
+      
+        
+      //errorDiv.textContent = 'Unable to retrieve account details. Please try logging in again.';
+      
     }             
   })
   .catch(error => {

@@ -6,41 +6,42 @@ burgerIcon.addEventListener("click", (event) => {
 
 
 const privLevel =parseInt(localStorage.getItem('privilegeLevel'));
-const my_forename = localStorage.getItem('forename');
-const my_Health_prof = 999;
-const my_Health_prof_name = " <Name not Found> ";
-const my_Health_prof_email = " <No email address found> "
+var my_forename = localStorage.getItem('forename');
 
-function getMyHealthProf2(myID) {
+// var my_Health_prof_name = " <Name not Found> ";
+// var my_Health_prof_email = " <No email address found> ";
+
+async function getMyHealthProf2(myID) {
   const apiUrl = "https://localhost:7200/api/UserAssignedHealthProfInputs?ID=";
   const apiUrl2 = "https://localhost:7200/api/Accounts/"
+  var my_Health_prof_id = 999;
+  var my_Health_prof_name = " <Name not Found> ";
+  var my_Health_prof_email = " <No email address found> ";
 
-  fetch(apiUrl + myID)    
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(data => {
-      console.log(apiUrl + myID);
-      my_Health_prof = data.prof_id;
-      console.log("healthprof id is "+my_Health_prof)
-      return fetch(apiUrl2 + my_Health_prof);
-    })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(data => {
-      console.log(data);
-      my_Health_prof_name = data.forename + " " + data.surname;
-      my_Health_prof_email = data.user_email;
+  try {
+    const response1 = await fetch(apiUrl + myID);
+    if (!response1.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data1 = await response1.json();
+    my_Health_prof_id = data1[0].prof_id;
+    console.log("healthprof id is "+my_Health_prof_id);
 
-    })
-    .catch(error => console.error(error));
+    const response2 = await fetch(apiUrl2 + my_Health_prof_id);
+    if (!response2.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data2 = await response2.json();
+    my_Health_prof_name = data2.forename + " " + data2.surname;
+    my_Health_prof_email = data2.userEmail;
+    console.log(data2);
+
+    console.log("function: getMyHealhProf2 successfully completed and my_healthprof_name is "+my_Health_prof_name);
+    return { name: my_Health_prof_name, email: my_Health_prof_email };
+  } catch (error) {
+    console.error(error);
+    return { name: my_Health_prof_name, email: my_Health_prof_email };
+  }
 }
 
 function getMyMentees(hpID){
@@ -76,32 +77,55 @@ function getMyMentees(hpID){
 
 //Need to also add a function to call stored procedure to return all users by healthProf's ID
 
-function setContent(privLevel){
+async function setContent(privLevel){
 
   const myID = localStorage.getItem('userId');
   const forename = localStorage.getItem('forename');  
 
-  if(privLevel==3){
-    ///---------------------DONE----------------------
+  if (privLevel === 3) {
     console.log("Priv level was determined to be 3");
-    
-    getMyHealthProf2(myID)
-    .then(() => {
-      document.getElementById("card2Title").innerHTML = "Hi: " + forename + " !";
-      document.getElementById("card2Body").innerHTML = "Your Health Prof is: " + my_Health_prof_name + " You can contact them at: " + my_Health_prof_email;
-    })
-    .catch((error) => {
-      console.error(error);
-      console.log("couldnt get health prof2 or set content")
-    });    
-    
-    
+
+    const { name, email } = await getMyHealthProf2(myID);
+
+    console.log("now going to change text on html:");
+    document.getElementById("card2Title").innerHTML = "Hi: " + forename + " !";
+    document.getElementById("card2Body").innerHTML = "Your Health Prof is: " + name + " You can contact them at: " + email;
+
+    return;
   }
   else if(privLevel==2){
 
     document.getElementById("card2Title").innerHTML = "Welcome Health Professional!";
-    myMentees=getMyMentees();
-    document.getElementById("card2Body").innerHTML = "Your current mentees: ...TODO";  
+    var myMentees = getMyMentees(myID);
+
+    const card2Body = document.getElementById("card2Body");
+    card2Body.innerHTML = ""; // Clear any previous content
+
+    // Create a list element and append it to card2Body
+    const menteesList = document.createElement("ul");
+    card2Body.appendChild(menteesList);
+
+    // Iterate through the myMentees array and create a list item for each mentee
+    myMentees.forEach((mentee) => {
+      const listItem = document.createElement("li");
+      listItem.textContent = mentee.name;
+      menteesList.appendChild(listItem);
+    });
+
+
+    // get the mentees' account details and display them in the card2Body element
+    myMentees.forEach((menteeId) => {
+      getAccountDetails(menteeId,false)
+    .then((mentee) => {
+      // create an HTML element for the mentee and add it to the card2Body element
+      const menteeElement = document.createElement("div");
+      menteeElement.textContent = `Name: ${mentee.firstName} ${mentee.lastName}, Email: ${mentee.email}`;
+      document.getElementById("card2Body").appendChild(menteeElement);
+    })
+    .catch((error) => {
+      console.error(`Error retrieving mentee account details: ${error}`);
+    });
+});
 
     //fetches the names of all people assigned to the user (healthProf)
 
@@ -120,6 +144,8 @@ function setContent(privLevel){
     document.getElementById("card2Title").innerHTML = "ERROR";
     document.getElementById("card2_Body").innerHTML = "Something with the Privilege Level went wrong."; 
   }  
+
+  
 }
 
 function test(){

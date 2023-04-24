@@ -6,15 +6,15 @@ burgerIcon.addEventListener("click", (event) => {
 
 
 const privLevel =parseInt(localStorage.getItem('privilegeLevel'));
-const my_forename = localStorage.getItem('forename');
-const my_Health_prof = 999;
-const my_Health_prof_name = " <Name not Found> ";
-const my_Health_prof_email = " <No email address found> "
+var my_forename = localStorage.getItem('forename');
+
+var my_Health_prof_name = " <Name not Found> ";
+var my_Health_prof_email = " <No email address found> ";
 
 function getMyHealthProf2(myID) {
   const apiUrl = "https://localhost:7200/api/UserAssignedHealthProfInputs?ID=";
   const apiUrl2 = "https://localhost:7200/api/Accounts/"
-
+  var my_Health_prof_id = 999;
   fetch(apiUrl + myID)    
     .then(response => {
       if (!response.ok) {
@@ -22,11 +22,13 @@ function getMyHealthProf2(myID) {
       }
       return response.json();
     })
-    .then(data => {
-      console.log(apiUrl + myID);
-      my_Health_prof = data.prof_id;
-      console.log("healthprof id is "+my_Health_prof)
-      return fetch(apiUrl2 + my_Health_prof);
+    .then(data => {      
+      //console.log(data);
+      //console.log(apiUrl + myID);
+      my_Health_prof_id = data[0].prof_id;
+      console.log("healthprof id is "+my_Health_prof_id)
+      //console.log(data[0].prof_id);
+      return fetch(apiUrl2 + my_Health_prof_id);
     })
     .then(response => {
       if (!response.ok) {
@@ -34,13 +36,14 @@ function getMyHealthProf2(myID) {
       }
       return response.json();
     })
-    .then(data => {
-      console.log(data);
+    .then(data => {      
       my_Health_prof_name = data.forename + " " + data.surname;
       my_Health_prof_email = data.user_email;
+      console.log("function: getMyHealhProf2 successfully completed and my_healthprof_name is "+my_Health_prof_name)
 
     })
     .catch(error => console.error(error));
+    return 0;
 }
 
 function getMyMentees(hpID){
@@ -81,19 +84,21 @@ function setContent(privLevel){
   const myID = localStorage.getItem('userId');
   const forename = localStorage.getItem('forename');  
 
-  if(privLevel==3){
-    ///---------------------DONE----------------------
+  if(privLevel==3){    
     console.log("Priv level was determined to be 3");
     
     getMyHealthProf2(myID)
     .then(() => {
+      console.log("now going to change text on html:")
       document.getElementById("card2Title").innerHTML = "Hi: " + forename + " !";
       document.getElementById("card2Body").innerHTML = "Your Health Prof is: " + my_Health_prof_name + " You can contact them at: " + my_Health_prof_email;
     })
     .catch((error) => {
       console.error(error);
       console.log("couldnt get health prof2 or set content")
-    });    
+    });
+    console.log("closing priv level 3 if block");
+    return;    
     
     
   }
@@ -120,6 +125,8 @@ function setContent(privLevel){
     document.getElementById("card2Title").innerHTML = "ERROR";
     document.getElementById("card2_Body").innerHTML = "Something with the Privilege Level went wrong."; 
   }  
+
+  
 }
 
 function test(){

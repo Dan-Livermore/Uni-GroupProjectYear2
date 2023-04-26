@@ -5,6 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
             e.currentTarget.parentElement.parentElement.childNodes[3].classList.toggle('is-hidden'); 
         }); 
     } 
+
+    const burgerIcon = document.querySelector('#burger-icon')
+		const navbarMenu = document.querySelector('#nav-links')
+	  
+		  burgerIcon.addEventListener("click", (event) => {
+			navbarMenu.classList.toggle("is-active");
+			event.preventDefault();
+		  });
 });
 
 document.addEventListener("DOMContentLoaded", function() {

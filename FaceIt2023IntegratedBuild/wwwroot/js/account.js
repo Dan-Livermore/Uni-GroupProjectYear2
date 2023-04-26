@@ -100,39 +100,37 @@ async function setContent(privLevel){
              console.error("Before getMyMentees");
         var myMentees = getMyMentees(myID);
 
-            console.error("Before clearing card2Body");
-        const card2Body = document.getElementById("card2Body");
-        card2Body.innerHTML = ""; // Clear any previous content
+        menteeDetails = [];
 
-        // Create a list element and append it to card2Body
-            console.error("Before creating and appending menteesList");
-        const menteesList = document.createElement("ul");
-        card2Body.appendChild(menteesList);
-
-        console.error("Before iterating through myMentees array");
-        // Iterate through the myMentees array and create a list item for each mentee
-        myMentees.forEach((mentee) => {
-          const listItem = document.createElement("li");
-          listItem.textContent = mentee.name;
-          menteesList.appendChild(listItem);
-          console.log("List item craeted and added.")
+        myMentees.forEach(function(mentee) {
+          var details = getMenteeDetails(mentee);
+          menteeDetails.push(details);        
         });
+
+        //     console.error("Before clearing card2Body");
+        // const card2Body = document.getElementById("card2Body");
+        // card2Body.innerHTML = ""; // Clear any previous content
+
+        // // Create a list element and append it to card2Body
+        //     console.error("Before creating and appending menteesList");
+        // const menteesList = document.createElement("ul");
+        // card2Body.appendChild(menteesList);
+
+
+        // console.error("Before iterating through myMentees array");
+        // // Iterate through the myMentees array and create a list item for each mentee
+        // myMentees.forEach((mentee) => {
+        //   const listItem = document.createElement("li");
+        //   listItem.textContent = mentee.name;
+        //   menteesList.appendChild(listItem);
+        //   console.log("List item craeted and added.")
+        // });
+
         
-        console.error("Before getting mentee details");
-        // get the mentees' account details and display them in the card2Body element
-        Promise.all(myMentees.map((mentee) => getMenteeDetails(mentee.id)))
-          .then((menteeDetails) => {
-            // Iterate through the menteeDetails array and create an HTML element for each mentee
-            menteeDetails.forEach((details) => {
-              console.log("reach a mentee");
-              const menteeElement = document.createElement("div");
-              menteeElement.textContent = `Name: ${details.forename} ${details.surname}, Email: ${details.userEmail}`;
-              card2Body.appendChild(menteeElement);
-            });
-          })
-          .catch((error) => {
-            console.error(`Error retrieving mentee account details: ${error}`);
-          });
+
+        
+
+
 
    
     
@@ -166,16 +164,14 @@ function getMenteeDetails(id) {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
-      response.json().then((data) => console.log(data));
       return response.json();
     })
     .then((data) => {
       const accountDetails = {
         forename: data.forename,
         surname: data.surname,
-        userEmail: data.userEmail,        
+        userEmail: data.userEmail,
       };
-      console.log(accountDetails);
       return accountDetails;
     })
     .catch((error) => console.error(error));

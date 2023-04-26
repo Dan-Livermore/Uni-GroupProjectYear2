@@ -7,7 +7,7 @@
           <a class="navbar-item" href="/wwwroot/lib/Index.html">
             <img src="/wwwroot/images/logo.png" alt="site logo" style="max-height: 70px;" class="py-2 px-2"></img>
           </a>
-          <a href="" class="navbar-burger" id="burger">
+          <a href="" class="navbar-burger" id="burger-icon">
             <span></span>
             <span></span>
             <span></span>

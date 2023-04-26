@@ -29,3 +29,37 @@ C:\Users\eliot\OneDrive\Documents\university\comp2003\Standalone API\FaceIt2023I
 C:\Users\eliot\OneDrive\Documents\university\comp2003\Standalone API\FaceIt2023IntegratedBuild\obj\Debug\net7.0\FaceIt2023IntegratedBuild.pdb
 C:\Users\eliot\OneDrive\Documents\university\comp2003\Standalone API\FaceIt2023IntegratedBuild\obj\Debug\net7.0\FaceIt2023IntegratedBuild.genruntimeconfig.cache
 C:\Users\eliot\OneDrive\Documents\university\comp2003\Standalone API\FaceIt2023IntegratedBuild\obj\Debug\net7.0\ref\FaceIt2023IntegratedBuild.dll
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\bin\Debug\net7.0\appsettings.json
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\bin\Debug\net7.0\mime.json
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\bin\Debug\net7.0\package-lock.json
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\bin\Debug\net7.0\package.json
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\bin\Debug\net7.0\FaceIt2023IntegratedBuild.staticwebassets.runtime.json
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\bin\Debug\net7.0\FaceIt2023IntegratedBuild.exe
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\bin\Debug\net7.0\FaceIt2023IntegratedBuild.deps.json
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\bin\Debug\net7.0\FaceIt2023IntegratedBuild.runtimeconfig.json
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\bin\Debug\net7.0\FaceIt2023IntegratedBuild.dll
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\bin\Debug\net7.0\FaceIt2023IntegratedBuild.pdb
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\FaceIt2023IntegratedBuild.csproj.AssemblyReference.cache
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\FaceIt2023IntegratedBuild.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\FaceIt2023IntegratedBuild.AssemblyInfoInputs.cache
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\FaceIt2023IntegratedBuild.AssemblyInfo.cs
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\FaceIt2023IntegratedBuild.csproj.CoreCompileInputs.cache
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\FaceIt2023IntegratedBuild.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\FaceIt2023IntegratedBuild.RazorAssemblyInfo.cache
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\FaceIt2023IntegratedBuild.RazorAssemblyInfo.cs
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\staticwebassets\msbuild.FaceIt2023IntegratedBuild.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\staticwebassets\msbuild.build.FaceIt2023IntegratedBuild.props
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.FaceIt2023IntegratedBuild.props
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.FaceIt2023IntegratedBuild.props
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\scopedcss\bundle\FaceIt2023IntegratedBuild.styles.css
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\scopedcss\projectbundle\FaceIt2023IntegratedBuild.bundle.scp.css
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\FaceIt2023IntegratedBuild.dll
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\refint\FaceIt2023IntegratedBuild.dll
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\FaceIt2023IntegratedBuild.pdb
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\FaceIt2023IntegratedBuild.genruntimeconfig.cache
+C:\Users\Lucas Pawley\OneDrive\Documents\COMP2003 - Computing Group Project\comp2003_2022-team-z\FaceIt2023IntegratedBuild\obj\Debug\net7.0\ref\FaceIt2023IntegratedBuild.dll

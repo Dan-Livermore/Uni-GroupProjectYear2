@@ -1,4 +1,20 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
+	let cardToggles = document.getElementsByClassName('card-toggle');
+	for (let i = 0; i < cardToggles.length; i++) {
+		cardToggles[i].addEventListener('click', e => {
+			e.currentTarget.parentElement.parentElement.childNodes[3].classList.toggle('is-hidden');
+		});
+	}
+
+	const burgerIcon = document.querySelector('#burger-icon');
+	const navbarMenu = document.querySelector('#nav-links');
+	
+	burgerIcon.addEventListener("click", (event) => {
+		navbarMenu.classList.toggle("is-active");
+		event.preventDefault();
+	});
+	
+
 	const textarea = document.getElementById("session1ActivityAnswer1");
 	const button = document.getElementById("save1");
 
@@ -24,18 +40,6 @@ document.addEventListener("DOMContentLoaded", function() {
 		localStorage.setItem("session1ActivityFeedback", textarea3.value);
 	  });
 
-	  let cardToggles = document.getElementsByClassName('card-toggle');
-	for (let i = 0; i < cardToggles.length; i++) {
-		cardToggles[i].addEventListener('click', e => {
-			e.currentTarget.parentElement.parentElement.childNodes[3].classList.toggle('is-hidden');
-		});
-	}
-
-	  const burgerIcon = document.querySelector('#burger-icon')
-		const navbarMenu = document.querySelector('#nav-links')
 	  
-		  burgerIcon.addEventListener("click", (event) => {
-			navbarMenu.classList.toggle("is-active");
-			event.preventDefault();
-		  });
   });
+

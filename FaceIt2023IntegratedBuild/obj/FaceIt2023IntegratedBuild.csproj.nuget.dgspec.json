@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\Standalone API\\FaceIt2023IntegratedBuild\\FaceIt2023IntegratedBuild.csproj": {}
+    "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\FaceIt2023IntegratedBuild.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\Standalone API\\FaceIt2023IntegratedBuild\\FaceIt2023IntegratedBuild.csproj": {
+    "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\FaceIt2023IntegratedBuild.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\Standalone API\\FaceIt2023IntegratedBuild\\FaceIt2023IntegratedBuild.csproj",
+        "projectUniqueName": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\FaceIt2023IntegratedBuild.csproj",
         "projectName": "FaceIt2023IntegratedBuild",
-        "projectPath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\Standalone API\\FaceIt2023IntegratedBuild\\FaceIt2023IntegratedBuild.csproj",
-        "packagesPath": "C:\\Users\\eliot\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\Standalone API\\FaceIt2023IntegratedBuild\\obj\\",
+        "projectPath": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\FaceIt2023IntegratedBuild.csproj",
+        "packagesPath": "C:\\Users\\Lucas Pawley\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\eliot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Lucas Pawley\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

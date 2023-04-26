@@ -30,7 +30,7 @@ function getAccountDetails (id,forLogin){
         return;
       }
       else{
-        return data.forename,data.surname;
+        return data.forename,data.surname,data.userEmail;
       }
       
     })

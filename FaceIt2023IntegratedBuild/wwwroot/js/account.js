@@ -95,40 +95,48 @@ async function setContent(privLevel){
   }
   else if(privLevel==2){
 
-    document.getElementById("card2Title").innerHTML = "Welcome Health Professional!";
-    var myMentees = getMyMentees(myID);
 
-    const card2Body = document.getElementById("card2Body");
-    card2Body.innerHTML = ""; // Clear any previous content
+        document.getElementById("card2Title").innerHTML = "Welcome Health Professional!";
+             console.error("Before getMyMentees");
+        var myMentees = getMyMentees(myID);
 
-    // Create a list element and append it to card2Body
-    const menteesList = document.createElement("ul");
-    card2Body.appendChild(menteesList);
+        menteeDetails = [];
 
-    // Iterate through the myMentees array and create a list item for each mentee
-    myMentees.forEach((mentee) => {
-      const listItem = document.createElement("li");
-      listItem.textContent = mentee.name;
-      menteesList.appendChild(listItem);
-    });
+        myMentees.forEach(function(mentee) {
+          var details = getMenteeDetails(mentee);
+          menteeDetails.push(details);        
+        });
+
+        //     console.error("Before clearing card2Body");
+        // const card2Body = document.getElementById("card2Body");
+        // card2Body.innerHTML = ""; // Clear any previous content
+
+        // // Create a list element and append it to card2Body
+        //     console.error("Before creating and appending menteesList");
+        // const menteesList = document.createElement("ul");
+        // card2Body.appendChild(menteesList);
 
 
-    // get the mentees' account details and display them in the card2Body element
-    myMentees.forEach((menteeId) => {
-      getAccountDetails(menteeId,false)
-    .then((mentee) => {
-      // create an HTML element for the mentee and add it to the card2Body element
-      const menteeElement = document.createElement("div");
-      menteeElement.textContent = `Name: ${mentee.firstName} ${mentee.lastName}, Email: ${mentee.email}`;
-      document.getElementById("card2Body").appendChild(menteeElement);
-    })
-    .catch((error) => {
-      console.error(`Error retrieving mentee account details: ${error}`);
-    });
-});
+        // console.error("Before iterating through myMentees array");
+        // // Iterate through the myMentees array and create a list item for each mentee
+        // myMentees.forEach((mentee) => {
+        //   const listItem = document.createElement("li");
+        //   listItem.textContent = mentee.name;
+        //   menteesList.appendChild(listItem);
+        //   console.log("List item craeted and added.")
+        // });
+
+        
+
+        
+
+
+
+   
+    
 
     //fetches the names of all people assigned to the user (healthProf)
-
+    //test
     //gives option to add an existing user to your care
     //gives an option to create a user
   }
@@ -146,6 +154,27 @@ async function setContent(privLevel){
   }  
 
   
+}
+
+function getMenteeDetails(id) {
+  const apiUrl = "https://localhost:7200/api/Accounts/";
+
+  return fetch(apiUrl + id)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      const accountDetails = {
+        forename: data.forename,
+        surname: data.surname,
+        userEmail: data.userEmail,
+      };
+      return accountDetails;
+    })
+    .catch((error) => console.error(error));
 }
 
 function test(){

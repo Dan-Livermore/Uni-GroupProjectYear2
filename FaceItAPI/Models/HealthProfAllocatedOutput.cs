@@ -7,10 +7,13 @@ namespace FaceItAPI.Models
     public class HealthProfAllocatedOutput
     {
         [Key]
+        [Column("user_id")]
+        public int UserId { get; set; }
+
+        
         [Column("prof_id")]
         public int prof_id { get; set; }
         
-        [Column("user_id")]
-        public int UserId { get; set; }
+        
     }
 }

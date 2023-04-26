@@ -44,33 +44,46 @@ async function getMyHealthProf2(myID) {
   }
 }
 
-function getMyMentees(hpID){
-  // An API Get that triggers the stored procedure that returns all users linked to the ID given.
-  
-
-  const ListMyMentees= [];
+async function getMyMentees(hpID) {
+  const ListMyMentees = [];
   const apiUrl = "https://localhost:7200/api/HealthProfAllocatedInputs?hpID=";
 
-  fetch(apiUrl+hpID)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(data => {
-      // Store the response in the local storage
-      data.forEach(item=>{
-        ListMyMentees.push(item.userId);
-      })
-      
-    })
-    .catch(error => console.error(error));
-
+  try {
+    const response = await fetch(apiUrl + hpID);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+    data.forEach(item => {
+      ListMyMentees.push(item.userId);
+    });
     console.log(ListMyMentees);
-  
     return ListMyMentees;
+  } catch (error) {
+    console.error(error);
+  }
+}
 
+async function getMenteeDetailsAsync(id) {
+  const apiUrl = "https://localhost:7200/api/Accounts/";
+  console.log("hello")
+  try {
+    const response = await fetch(apiUrl + id);
+    if (!response.ok) {
+      throw new Error("Network response was not ok");
+    }
+    const data = await response.json();
+    const accountDetails = {
+      userId: data.userId,
+      forename: data.forename,
+      surname: data.surname,
+      userEmail: data.userEmail,
+    };
+    console.log(accountDetails);
+    return accountDetails;
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 
@@ -96,16 +109,68 @@ async function setContent(privLevel){
   else if(privLevel==2){
 
 
-        document.getElementById("card2Title").innerHTML = "Welcome Health Professional!";
-             console.error("Before getMyMentees");
-        var myMentees = getMyMentees(myID);
+        document.getElementById("card2Title").innerHTML = "Welcome Health Professional!";        
 
-        menteeDetails = [];
+        var myMentees = await getMyMentees(myID); //an array of integers for use in a get by id
 
-        myMentees.forEach(function(mentee) {
-          var details = getMenteeDetails(mentee);
-          menteeDetails.push(details);        
-        });
+        menteeDetails = []; //an empty array for storing mentee string variables 
+
+        console.log(myMentees);
+        console.log(myMentees.length);
+        console.log(Array.isArray(myMentees));        
+
+        // Loop through the length of the integer array , doing anything.
+        for (var i = 0; i < myMentees.length; i++) {
+           console.log("hello");
+           mentee=myMentees[i];
+           var details = await getMenteeDetails(mentee);
+             aMentee = [details['forename'], details['surname'], details['userEmail']];
+              console.log(mentee['forename']);
+              menteeDetails.push(aMentee); 
+              console.log("goodbye");
+        }
+        console.log(menteeDetails);
+
+        
+        
+
+        
+
+        // Promise.all(myMentees.map(getMenteeDetails))
+        //   .then((detailsArray) => {
+        //     var menteeDetails = detailsArray.map((details) => [details.forename, details.surname, details.userEmail]);
+        //     console.log(menteeDetails);
+        //   })
+        //   .catch((error) => console.error(error));
+
+
+
+
+        // menteeDetails = [];
+        // myMentees.forEach(async function(mentee) {
+        //   console.log("hello");
+        //   var details = await getMenteeDetails(mentee);
+        //   var aMentee = [details['forename'], details['surname'], details['userEmail']];
+        //   menteeDetails.push(aMentee);
+        // });
+        
+        // console.log("menteeDetails:");
+        // console.log(menteeDetails);
+
+
+
+           
+
+        // async function loopThroughMentees() {
+        //   for (const mentee of myMentees) {
+        //     const details = await getMenteeDetailsAsync(mentee);
+        //     const aMentee = [details.forename, details.surname, details.userEmail];
+        //     menteeDetails.push(aMentee);
+        //   }
+        //   console.log(menteeDetails);
+        // }
+        
+        // loopThroughMentees();
 
         //     console.error("Before clearing card2Body");
         // const card2Body = document.getElementById("card2Body");
@@ -149,8 +214,8 @@ async function setContent(privLevel){
     //option to create a user
   }
   else{
-    document.getElementById("card2Title").innerHTML = "ERROR";
-    document.getElementById("card2_Body").innerHTML = "Something with the Privilege Level went wrong."; 
+    document.getElementById("card2Title").innerHTML = "ERROR- NOT LOGGED IN!";
+    document.getElementById("card2_Body").innerHTML = "How did you get here? Navigate to Login and sign in!"; 
   }  
 
   
@@ -172,11 +237,14 @@ function getMenteeDetails(id) {
         surname: data.surname,
         userEmail: data.userEmail,
       };
+      console.log(accountDetails);
       return accountDetails;
     })
+    
     .catch((error) => console.error(error));
 }
 
 function test(){
   console.log("test successfully called from account.js");
 }
+

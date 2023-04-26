@@ -109,6 +109,7 @@ async function setContent(privLevel){
         const menteesList = document.createElement("ul");
         card2Body.appendChild(menteesList);
 
+        console.error("Before iterating through myMentees array");
         // Iterate through the myMentees array and create a list item for each mentee
         myMentees.forEach((mentee) => {
           const listItem = document.createElement("li");
@@ -116,7 +117,8 @@ async function setContent(privLevel){
           menteesList.appendChild(listItem);
           console.log("List item craeted and added.")
         });
-
+        
+        console.error("Before getting mentee details");
         // get the mentees' account details and display them in the card2Body element
         Promise.all(myMentees.map((mentee) => getMenteeDetails(mentee.id)))
           .then((menteeDetails) => {
@@ -164,14 +166,16 @@ function getMenteeDetails(id) {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
+      response.json().then((data) => console.log(data));
       return response.json();
     })
     .then((data) => {
       const accountDetails = {
         forename: data.forename,
         surname: data.surname,
-        userEmail: data.userEmail,
+        userEmail: data.userEmail,        
       };
+      console.log(accountDetails);
       return accountDetails;
     })
     .catch((error) => console.error(error));

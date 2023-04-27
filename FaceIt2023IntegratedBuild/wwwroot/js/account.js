@@ -166,26 +166,68 @@ async function setContent(privLevel){
     addButton.classList.add("button", "is-primary", "mt-6", "mx-auto");    
     // Add event listener to addButton
     addButton.addEventListener("click", function() {
+      if (document.getElementById("menteeInput") !== null && document.getElementById("menteeGoButton") !== null) {
+        return;
+      }
+      
       // Create new elements to add mentee
       const newDiv = document.createElement("div");
       const newLabel = document.createElement("label");
       const newInput = document.createElement("input");
-      const newButton = document.createElement("button");
+      const goAddBtn = document.createElement("button");
 
       // Set attributes and content of new elements
       newDiv.classList.add("field");
       newLabel.classList.add("label");
       newLabel.textContent = "Input the user's email address to become their assigned health professional: ";
       newInput.classList.add("input");
+      newInput.id="menteeInput";
       newInput.setAttribute("type", "text");
       newInput.setAttribute("placeholder", "Email address");
-      newButton.textContent = "Go";
-      newButton.classList.add("button", "is-primary", "mt-3","mx-auto");
+      goAddBtn.textContent = "Go";
+      goAddBtn.id="menteeGoButton";      
+      goAddBtn.classList.add("button", "is-primary", "mt-3","mx-auto");
+      goAddBtn.addEventListener("click", async () => {
+        //myID
+        const theirEmail = newInput.value;
+
+              // Make the POST request
+        //const url = "https://localhost:7200/api/healthProfIDandUserEmails/create";
+        const requestBody = {
+          prof_id: myID,
+          userEmail: theirEmail
+        };
+
+        const requestOptions = {
+          method: 'POST',
+          headers: {
+            
+            'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          body: Object.keys(requestBody).map(key => encodeURIComponent(key) + '=' + encodeURIComponent(requestBody[key])).join('&')
+        };
+        
+        
+
+        const response = await fetch('https://localhost:7200/api/healthProfIDandUserEmails/create', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(requestBody)
+});
+
+        
+
+      });
+    
+
+      
 
       // Append new elements to card body
       newDiv.appendChild(newLabel);
       newDiv.appendChild(newInput);
-      newDiv.appendChild(newButton);
+      newDiv.appendChild(goAddBtn);
       card2Body.appendChild(newDiv);
 
 

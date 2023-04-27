@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FaceItAPI.Models;
+using Microsoft.AspNetCore.Cors;
 
 namespace FaceItAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowAny")]
     public class JournalsController : ControllerBase
     {
         private readonly Comp2003ZContext _context;

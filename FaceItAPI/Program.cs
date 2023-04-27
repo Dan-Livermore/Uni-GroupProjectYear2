@@ -19,7 +19,11 @@ builder.Services.AddSwaggerGen(c =>
 var AllowAny = "allowAny";
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: AllowAny, policy => policy.AllowAnyOrigin());
+    options.AddPolicy("AllowAny",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader());
+
 });
 
 

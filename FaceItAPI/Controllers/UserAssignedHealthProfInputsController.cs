@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using FaceItAPI.Models;
 using Microsoft.Data.SqlClient;
+using Microsoft.AspNetCore.Cors;
 
 namespace FaceItAPI.Controllers
 {
@@ -15,6 +16,7 @@ namespace FaceItAPI.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowAny")]
     public class UserAssignedHealthProfInputsController : ControllerBase
     {
         private readonly Comp2003ZContext _context;

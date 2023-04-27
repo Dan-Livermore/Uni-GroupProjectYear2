@@ -187,9 +187,36 @@ async function setContent(privLevel){
       goAddBtn.textContent = "Go";
       goAddBtn.id="menteeGoButton";      
       goAddBtn.classList.add("button", "is-primary", "mt-3","mx-auto");
+
+      //The onClick that posts the create Pairing Stored Proc Call.
       goAddBtn.addEventListener("click", async () => {
         //myID
         const theirEmail = newInput.value;
+
+              // Make the POST request
+        const url = "https://localhost:7200/api/healthProfIDandUserEmails/create";
+        const requestBody = {
+          prof_id: 9,
+          userEmail: theirEmail
+        };
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(requestBody)
+        });
+
+        // Check if the request was successful
+        if (response.ok) {
+          // Display a success message
+          console.log("Mentee added successfully!");
+          location.reload();
+          
+        } else {
+          // Display an error message
+          console.error("Failed to add mentee.");
+        }
 
         
 

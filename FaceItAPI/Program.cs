@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 //cors
-var AllowAny = "allowAny";
+//var AllowAny = "allowAny";
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAny",
@@ -37,8 +37,7 @@ if (app.Environment.IsDevelopment())
 }
 
 //cors
-
-app.UseCors(AllowAny);
+app.UseCors("AllowAny");
 
 
 app.UseSwagger();

@@ -191,36 +191,10 @@ async function setContent(privLevel){
         //myID
         const theirEmail = newInput.value;
 
-              // Make the POST request
-        //const url = "https://localhost:7200/api/healthProfIDandUserEmails/create";
-        const requestBody = {
-          prof_id: myID,
-          userEmail: theirEmail
-        };
-
-        const requestOptions = {
-          method: 'POST',
-          headers: {
-            
-            'Content-Type': 'application/x-www-form-urlencoded'
-          },
-          body: Object.keys(requestBody).map(key => encodeURIComponent(key) + '=' + encodeURIComponent(requestBody[key])).join('&')
-        };
-        
         
 
-        const response = await fetch('https://localhost:7200/api/healthProfIDandUserEmails/create', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(requestBody)
-});
-
-        
 
       });
-    
 
       
 

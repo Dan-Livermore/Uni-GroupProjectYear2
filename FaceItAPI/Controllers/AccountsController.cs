@@ -12,7 +12,6 @@ namespace FaceItAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [EnableCors("AllowAny")]
     public class AccountsController : ControllerBase
     {
         private readonly Comp2003ZContext _context;

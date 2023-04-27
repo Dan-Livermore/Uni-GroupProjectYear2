@@ -13,7 +13,6 @@ namespace FaceItAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [EnableCors("AllowAny")]
     public class healthProfIDandUserEmailsController : ControllerBase
     {
         private readonly Comp2003ZContext _context;

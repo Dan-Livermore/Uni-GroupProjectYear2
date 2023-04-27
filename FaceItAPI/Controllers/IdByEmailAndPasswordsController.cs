@@ -14,7 +14,6 @@ namespace FaceItAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [EnableCors("AllowAny")]
     public class IdByEmailAndPasswordsController : ControllerBase
     {
         private readonly Comp2003ZContext _context;

@@ -22,13 +22,41 @@
                 <div class="columns is-centered">
                   <div class="column is-half">
                     <div class="card">
-                      <div class="card-content">
-                        <h1 class="title is-4 has-text-centered">Account Settings</h1>
-                        <div id="AccountSettingsContent"  class="buttons">
-                          <button id="chNameButton" class="button is-danger is-primary is-fullwidth my-2">Change My Name</button>
-                          <button id="chEmailButton" class="button is-danger is-primary is-fullwidth my-2">Change My Email Address</button>
-                          <button id="chPassButton" class="button is-danger is-primary is-fullwidth my-2">Change My Password</button>
+                      <div class="card-content is-5">
+                        <h1 class="title is-3 has-text-centered">Account Settings</h1>
+                        <div id="AccountSettingsContent">
+                          <div class="field" id="nameChanger">
+                            <label class="label">Change Name:</label>
+                            <div class="control">
+                              <input class="input" type="text" placeholder="Enter new name">
+                            </div>
+                          </div>
+                          <div class="field" id="emailChanger">
+                            <label class="label">Change Email:</label>
+                            <div class="control">
+                              <input class="input" type="email" placeholder="Enter new email">
+                            </div>
+                          </div>
+                          <div class="field" id="passwordChanger">
+                            <label class="label">Change Password:</label>
+                            <div class="control">
+                              <input class="input" type="password" placeholder="Enter new password">
+                            </div>
+                          </div>
+                          <div class="field is-grouped">
+                            <div class="control">
+                              <button class="button is-primary">Submit</button>
+                            </div>
+                          </div>
+
+
+                          
                         </div>
+                        <footer class="card-footer">
+                          <a href="#" class="card-footer-item">Change Name</a>
+                          <a href="#" class="card-footer-item">Change Password</a>
+                          <a href="#" class="card-footer-item">Change Email</a>
+                        </footer>
                       </div>
                     </div>
                   </div>

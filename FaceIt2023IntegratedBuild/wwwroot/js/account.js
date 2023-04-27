@@ -159,6 +159,60 @@ async function setContent(privLevel){
       listItem.innerHTML = formattedStr;
       menteesList.appendChild(listItem);
     }
+
+        // Create the "Add Mentee" button
+    const addButton = document.createElement("button");
+    addButton.textContent = "Add Mentee";
+    addButton.classList.add("button", "is-primary", "mt-6", "mx-auto");    
+    // Add event listener to addButton
+    addButton.addEventListener("click", function() {
+      // Create new elements to add mentee
+      const newDiv = document.createElement("div");
+      const newLabel = document.createElement("label");
+      const newInput = document.createElement("input");
+      const newButton = document.createElement("button");
+
+      // Set attributes and content of new elements
+      newDiv.classList.add("field");
+      newLabel.classList.add("label");
+      newLabel.textContent = "Input the user's email address to become their assigned health professional: ";
+      newInput.classList.add("input");
+      newInput.setAttribute("type", "text");
+      newInput.setAttribute("placeholder", "Email address");
+      newButton.textContent = "Go";
+      newButton.classList.add("button", "is-primary", "mt-3","mx-auto");
+
+      // Append new elements to card body
+      newDiv.appendChild(newLabel);
+      newDiv.appendChild(newInput);
+      newDiv.appendChild(newButton);
+      card2Body.appendChild(newDiv);
+
+
+    });
+
+    // Create a div to hold the buttons
+    const buttonsDiv = document.createElement("div");
+    buttonsDiv.classList.add("buttons", "is-centered");
+
+    // Create the "Remove Mentee" button
+    const removeButton = document.createElement("button");
+    removeButton.textContent = "Remove Mentee";
+    removeButton.classList.add("button", "is-danger", "mt-6", "mx-auto");
+    //removeButton.addEventListener("click", removeMentee);
+
+    // Append the buttons to the buttons div
+    buttonsDiv.appendChild(addButton);
+    buttonsDiv.appendChild(removeButton);
+
+    // Called when add mentee is pressed
+    card2Body.appendChild(buttonsDiv);
+
+  
+
+
+     
+
     
 
    

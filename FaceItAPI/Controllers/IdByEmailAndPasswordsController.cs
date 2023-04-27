@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using FaceItAPI.Models;
 using Microsoft.Data.SqlClient;
 using System.Data;
+using Microsoft.AspNetCore.Cors;
 
 namespace FaceItAPI.Controllers
 {

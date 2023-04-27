@@ -159,6 +159,175 @@ async function setContent(privLevel){
       listItem.innerHTML = formattedStr;
       menteesList.appendChild(listItem);
     }
+
+        // Create the "Add Mentee" button
+    const addButton = document.createElement("button");
+    addButton.textContent = "Add Mentee";
+    addButton.classList.add("button", "is-primary", "mt-6", "mx-auto");    
+    // Add event listener to addButton
+    addButton.addEventListener("click", function() {
+      if (document.getElementById("menteeInput") !== null && document.getElementById("menteeGoButton") !== null) {
+        return;
+      }
+      
+      // Create new elements to add mentee
+      const newDiv = document.createElement("div");
+      const newLabel = document.createElement("label");
+      const newInput = document.createElement("input");
+      const goAddBtn = document.createElement("button");
+
+      // Set attributes and content of new elements
+      newDiv.classList.add("field");
+      newLabel.classList.add("label");
+      newLabel.textContent = "Input the user's email address to become their assigned health professional: ";
+      newInput.classList.add("input");
+      newInput.id="menteeInput";
+      newInput.setAttribute("type", "text");
+      newInput.setAttribute("placeholder", "Email address");
+      goAddBtn.textContent = "Go";
+      goAddBtn.id="menteeGoButton";      
+      goAddBtn.classList.add("button", "is-primary", "mt-3","mx-auto");
+
+      //The onClick that posts the create Pairing Stored Proc Call.
+      goAddBtn.addEventListener("click", async () => {
+        //myID
+        const theirEmail = newInput.value;
+
+              // Make the POST request
+        const url = "https://localhost:7200/api/healthProfIDandUserEmails/create";
+        const requestBody = {
+          prof_id: 9,
+          userEmail: theirEmail
+        };
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(requestBody)
+        });
+
+        // Check if the request was successful
+        if (response.ok) {
+          // Display a success message
+          console.log("Mentee added successfully!");
+          location.reload();
+          
+        } else {
+          // Display an error message
+          console.error("Failed to add mentee.");
+        }
+
+        
+
+
+      });
+
+      
+
+      // Append new elements to card body
+      newDiv.appendChild(newLabel);
+      newDiv.appendChild(newInput);
+      newDiv.appendChild(goAddBtn);
+      card2Body.appendChild(newDiv);
+
+
+    });
+
+    // Create a div to hold the buttons
+    const buttonsDiv = document.createElement("div");
+    buttonsDiv.classList.add("buttons", "is-centered");
+
+    // Create the "Remove Mentee" button
+    const removeButton = document.createElement("button");
+    removeButton.textContent = "Remove Mentee";
+    removeButton.classList.add("button", "is-danger", "mt-6", "mx-auto");
+
+    //This handles the remove button:
+    removeButton.addEventListener("click", function() {
+
+      if (document.getElementById("menteeInput") !== null && document.getElementById("menteeGoButton") !== null) {
+        return;
+      }
+      // Create new elements to add mentee
+      const newDiv = document.createElement("div");
+      const newLabel = document.createElement("label");
+      const newInput = document.createElement("input");
+      const goAddBtn = document.createElement("button");
+
+      // Set attributes and content of new elements
+      newDiv.classList.add("field");
+      newLabel.classList.add("label");
+      newLabel.textContent = "Input the user's email address to Un-assign yourself from them: ";
+      newInput.classList.add("input");
+      newInput.id="menteeInput";
+      newInput.setAttribute("type", "text");
+      newInput.setAttribute("placeholder", "Email address");
+      goAddBtn.textContent = "Go";
+      goAddBtn.id="menteeGoButton";      
+      goAddBtn.classList.add("button", "is-primary", "mt-3","mx-auto");
+
+      //The onClick that posts the delete Pairing Stored Proc Call.
+      goAddBtn.addEventListener("click", async () => {
+        //myID
+        const theirEmail = newInput.value;
+
+              // Make the POST request
+        const url = 'https://localhost:7200/api/DeletehealthProfbyemails/delete';
+        const requestBody = {
+          prof_id: 9,
+          userEmail: theirEmail
+        };
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(requestBody)
+        });
+
+        // Check if the request was successful
+        if (response.ok) {
+          // Display a success message
+          console.log("Mentee deleted successfully!");
+          location.reload();
+          
+        } else {
+          // Display an error message
+          console.error("Failed to delete mentee.");
+          alert("Failed to delete mentee.");
+          //newLabel.textContent="Failed to delete mentee, try again?"
+        }       
+
+
+      });
+
+      
+
+      // Append new elements to card body
+      newDiv.appendChild(newLabel);
+      newDiv.appendChild(newInput);
+      newDiv.appendChild(goAddBtn);
+      card2Body.appendChild(newDiv);
+
+
+
+
+    });
+
+
+    // Append the buttons to the buttons div
+    buttonsDiv.appendChild(addButton);
+    buttonsDiv.appendChild(removeButton);
+
+    // Called when add mentee is pressed
+    card2Body.appendChild(buttonsDiv);
+
+  
+
+
+     
+
     
 
    

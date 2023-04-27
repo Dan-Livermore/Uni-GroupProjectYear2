@@ -109,98 +109,61 @@ async function setContent(privLevel){
   else if(privLevel==2){
 
 
-        document.getElementById("card2Title").innerHTML = "Welcome Health Professional!";        
+    document.getElementById("card2Title").innerHTML = "Welcome Health Professional!";        
 
-        var myMentees = await getMyMentees(myID); //an array of integers for use in a get by id
+    var myMentees = await getMyMentees(myID); //an array of integers for use in a get by id
 
-        menteeDetails = []; //an empty array for storing mentee string variables 
+    menteeDetails = []; //an empty array for storing mentee string variables 
 
-        console.log(myMentees);
-        console.log(myMentees.length);
-        console.log(Array.isArray(myMentees));        
+    console.log(myMentees);
+    console.log(myMentees.length);
+    console.log(Array.isArray(myMentees));        
 
-        // Loop through the length of the integer array , doing anything.
-        for (var i = 0; i < myMentees.length; i++) {
-           console.log("hello");
-           mentee=myMentees[i];
-           var details = await getMenteeDetails(mentee);
-             aMentee = [details['forename'], details['surname'], details['userEmail']];
-              console.log(mentee['forename']);
-              menteeDetails.push(aMentee); 
-              console.log("goodbye");
-        }
-        console.log(menteeDetails);
+    // Loop through the length of the integer array , collecting string about mentees .
+    for (var i = 0; i < myMentees.length; i++) {           
+      mentee=myMentees[i];
+      var details = await getMenteeDetails(mentee);
+      aMentee = [details['forename'], details['surname'], details['userEmail']];
+      str1 = details['forename'];
+      str2 = details['surname'];
+      str3 = details['userEmail'];
 
-        
-        
+      listEntry = "Your Mentee: "+str1+ " "+str2+"'s email address is :"+str3+ ". \n"+ " \n"; 
+      //listEntry = "Your Mentee: <b>" + str1 + "</b> <b>" + str2 + "</b>'s email address is: <b>" + str3 + "</b><br>";
+       
 
-        
+      menteeDetails.push(listEntry);          
+          
+    }
+    console.log("              !           !      "+menteeDetails);
+         
+    const card2Body = document.getElementById("card2Body");
+    card2Body.innerHTML = ""; // Clear any previous content
 
-        // Promise.all(myMentees.map(getMenteeDetails))
-        //   .then((detailsArray) => {
-        //     var menteeDetails = detailsArray.map((details) => [details.forename, details.surname, details.userEmail]);
-        //     console.log(menteeDetails);
-        //   })
-        //   .catch((error) => console.error(error));
+    //  Create a list element and append it to card2Body             
+    const menteesList = document.createElement("ul");
+    card2Body.appendChild(menteesList);
 
+    console.log("mdetails lenght is "+menteeDetails.length);
 
-
-
-        // menteeDetails = [];
-        // myMentees.forEach(async function(mentee) {
-        //   console.log("hello");
-        //   var details = await getMenteeDetails(mentee);
-        //   var aMentee = [details['forename'], details['surname'], details['userEmail']];
-        //   menteeDetails.push(aMentee);
-        // });
-        
-        // console.log("menteeDetails:");
-        // console.log(menteeDetails);
-
-
-
-           
-
-        // async function loopThroughMentees() {
-        //   for (const mentee of myMentees) {
-        //     const details = await getMenteeDetailsAsync(mentee);
-        //     const aMentee = [details.forename, details.surname, details.userEmail];
-        //     menteeDetails.push(aMentee);
-        //   }
-        //   console.log(menteeDetails);
-        // }
-        
-        // loopThroughMentees();
-
-        //     console.error("Before clearing card2Body");
-        // const card2Body = document.getElementById("card2Body");
-        // card2Body.innerHTML = ""; // Clear any previous content
-
-        // // Create a list element and append it to card2Body
-        //     console.error("Before creating and appending menteesList");
-        // const menteesList = document.createElement("ul");
-        // card2Body.appendChild(menteesList);
-
-
-        // console.error("Before iterating through myMentees array");
-        // // Iterate through the myMentees array and create a list item for each mentee
-        // myMentees.forEach((mentee) => {
-        //   const listItem = document.createElement("li");
-        //   listItem.textContent = mentee.name;
-        //   menteesList.appendChild(listItem);
-        //   console.log("List item craeted and added.")
-        // });
-
-        
-
-        
-
-
+    // for (var i = 0; i < menteeDetails.length; i++) {  
+    //   const listItem = document.createElement("li");
+    //   listItem.textContent = menteeDetails[i];
+    //   menteesList.appendChild(listItem);
+    //   console.log("List item craeted and added.")
+    // }
+    for (var i = 0; i < menteeDetails.length; i++) {  
+      const listItem = document.createElement("li");
+      const strArray = menteeDetails[i].split(":");
+      const formattedStr = "<b>" + strArray[0] + ":</b>" + strArray[1]+": "+strArray[2];
+      listItem.innerHTML = formattedStr;
+      menteesList.appendChild(listItem);
+    }
+    
 
    
     
-
-    //fetches the names of all people assigned to the user (healthProf)
+        //fetches the names of all people assigned to the user (healthProf)
     //test
     //gives option to add an existing user to your care
     //gives an option to create a user

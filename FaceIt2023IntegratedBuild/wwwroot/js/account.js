@@ -376,7 +376,57 @@ function getMenteeDetails(id) {
     .catch((error) => console.error(error));
 }
 
-function test(){
-  console.log("test successfully called from account.js");
+
+function clickNameFooter(){
+  console.log("pressed name footer");
+
+    // get the nameChanger div element
+  var nameChangerDiv = document.getElementById("nameChanger");
+  var emailChangerDiv = document.getElementById("emailChanger");
+  var passChangerDiv = document.getElementById("passwordChanger");
+  var forename = localStorage.getItem("forename");
+  var surname = localStorage.getItem("surname");
+
+  var textField1 = document.getElementById("forenameField");
+  textField1.value= forename;
+  var textField2 = document.getElementById("surnameField");
+  textField2.value = surname;
+
+  // set its display style property 
+  nameChangerDiv.style.display = "block";
+  emailChangerDiv.style.display = "none";
+  passChangerDiv.style.display = "none";
+  
 }
+
+function clickEmailFooter(){  
+  console.log("pressed email footer");
+   
+  // get the nameChanger div element
+   var nameChangerDiv = document.getElementById("nameChanger");
+   var emailChangerDiv = document.getElementById("emailChanger");
+   var passChangerDiv = document.getElementById("passwordChanger");
+ 
+   // set its display style property 
+   nameChangerDiv.style.display = "none";
+   emailChangerDiv.style.display = "block";
+   passChangerDiv.style.display = "none";
+}
+
+function clickPasswordFooter(){
+  console.log("pressed password footer");
+
+   // get the nameChanger div element
+   var nameChangerDiv = document.getElementById("nameChanger");
+   var emailChangerDiv = document.getElementById("emailChanger");
+   var passChangerDiv = document.getElementById("passwordChanger");
+ 
+   // set its display style property 
+   nameChangerDiv.style.display = "none";
+   emailChangerDiv.style.display = "none";
+   passChangerDiv.style.display = "block";
+}
+
+
+
 

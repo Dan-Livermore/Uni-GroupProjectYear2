@@ -386,6 +386,7 @@ function clickNameFooter(){
   var passChangerDiv = document.getElementById("passwordChanger");
   var forename = localStorage.getItem("forename");
   var surname = localStorage.getItem("surname");
+  var passwordField1 = document.getElementById("enterPass1");
 
   var textField1 = document.getElementById("forenameField");
   textField1.value= forename;
@@ -396,6 +397,13 @@ function clickNameFooter(){
   nameChangerDiv.style.display = "block";
   emailChangerDiv.style.display = "none";
   passChangerDiv.style.display = "none";
+
+  submitButton1.document.getElementById("sub1");
+  submitButton1.addEventListener("click", async () => {
+    const forenameStr = textField1.value;
+    const surnameStr = textField2.value;
+    const passInput = passwordField1.value;
+  });
   
 }
 

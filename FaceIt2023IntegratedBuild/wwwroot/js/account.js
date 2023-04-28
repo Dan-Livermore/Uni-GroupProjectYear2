@@ -480,6 +480,77 @@ function clickEmailFooter(){
    nameChangerDiv.style.display = "none";
    emailChangerDiv.style.display = "block";
    passChangerDiv.style.display = "none";
+
+   var textField3 = document.getElementById("newEmail");
+   var textField4 = document.getElementById("enterPass2");
+
+   submitButton1 = document.getElementById("sub2");
+  submitButton1.addEventListener("click", async () => {
+    //collect values for the body request
+    var newEmail = textField3.value;
+    var passChecker = textField4.value;
+    var passCompare = localStorage.getItem("pass");   
+    const thisPriv = localStorage.getItem("privilegeLevel");
+    const myID = localStorage.getItem("userId");
+    var forenameStr = localStorage.getItem("forename");
+    var surnameStr = localStorage.getItem("surname");
+    
+    if(passChecker==passCompare){
+      try {
+        const url = 'https://localhost:7200/api/Accounts/' + myID;
+    
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+              'accept': '*/*',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              userId: myID,
+              userEmail: newEmail,
+              userPassword: passCompare,
+              privilegeLevel: thisPriv,
+              forename: forenameStr,
+              surname: surnameStr
+            })
+          })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.text(); // use text() instead of json()
+          })
+          .then(data => {
+            if (data) {
+              try {
+                const jsonData = JSON.parse(data);
+                console.log(jsonData);
+              } catch (error) {
+                console.log('Response was not valid JSON:', error);
+              }
+            } else {
+              console.log('Response was empty');
+            }
+          })
+          .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+          });
+          alert("Success! You will need to log back in.");
+          window.location.href = "login.html";
+    
+      } catch {
+        console.log("something went wrong trying to PUT");
+      }
+
+    }
+    else{
+      alert("ERROR passwords incorrect! Try Again!");
+
+    }
+
+  })
+
+
 }
 
 function clickPasswordFooter(){

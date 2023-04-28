@@ -404,6 +404,12 @@ function clickNameFooter(){
     const surnameStr = textField2.value;
     const passInput = passwordField1.value;
     const emailAddress = localStorage.getItem("userEmail");
+    const thisPriv = localStorage.getItem("privilegeLevel");
+    console.log(forenameStr);
+    console.log(surnameStr);
+    console.log(passInput);
+    console.log(emailAddress);
+    console.log(thisPriv);
     
 
     try{
@@ -411,11 +417,10 @@ function clickNameFooter(){
           const data = {
             userEmail: emailAddress,
             userPassword: passInput,
-            privilegeLevel: privLevel,
+            privilegeLevel: thisPriv,
             forename: forenameStr,
             surname: surnameStr
-          };
-          console.log(data);
+          };          
           const options = {
             method: 'POST',
             headers: {

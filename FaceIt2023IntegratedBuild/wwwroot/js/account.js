@@ -398,11 +398,48 @@ function clickNameFooter(){
   emailChangerDiv.style.display = "none";
   passChangerDiv.style.display = "none";
 
-  submitButton1.document.getElementById("sub1");
+  submitButton1 = document.getElementById("sub1");
   submitButton1.addEventListener("click", async () => {
     const forenameStr = textField1.value;
     const surnameStr = textField2.value;
     const passInput = passwordField1.value;
+    const emailAddress = localStorage.getItem("userEmail");
+    
+
+    try{
+          const url = 'https://localhost:7200/api/Accounts';
+          const data = {
+            userEmail: emailAddress,
+            userPassword: passInput,
+            privilegeLevel: privLevel,
+            forename: forenameStr,
+            surname: surnameStr
+          };
+          console.log(data);
+          const options = {
+            method: 'POST',
+            headers: {
+              'Accept': 'text/plain',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          };
+
+          fetch(url, options)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.text();
+            })
+            .then(data => {
+              console.log(data);
+            })
+            .catch(error => {
+              console.error('There was a problem with the fetch operation:', error);
+            });
+    }
+    catch{console.log("email probs didnt match")}
   });
   
 }

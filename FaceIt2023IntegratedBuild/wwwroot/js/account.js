@@ -649,6 +649,7 @@ function clickPasswordFooter(){
               });
               alert("Success! You will need to log back in to use the changes.");
               //signOut();
+              //SignOut sometimes work sometimes doesnt so i will hardcode it in
               localStorage.setItem('userEmail', null);
               localStorage.setItem('privilegeLevel', null);
               localStorage.setItem('forename', null);
@@ -658,6 +659,7 @@ function clickPasswordFooter(){
               localStorage.setItem('user_id',null);
               localStorage.setItem('pass',null);
               window.location.href = "login.html";
+
              
         
           } catch {

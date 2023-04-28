@@ -12,7 +12,6 @@ public partial class Account
 {
     [Key]
     [Column("user_id")]
-    [JsonIgnore]
     public int UserId { get; set; }
 
     [Column("user_email")]

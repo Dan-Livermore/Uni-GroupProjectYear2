@@ -376,7 +376,107 @@ function getMenteeDetails(id) {
     .catch((error) => console.error(error));
 }
 
-function test(){
-  console.log("test successfully called from account.js");
+
+function clickNameFooter(){
+  console.log("pressed name footer");
+
+    // get the nameChanger div element
+  var nameChangerDiv = document.getElementById("nameChanger");
+  var emailChangerDiv = document.getElementById("emailChanger");
+  var passChangerDiv = document.getElementById("passwordChanger");
+  var forename = localStorage.getItem("forename");
+  var surname = localStorage.getItem("surname");
+  var passwordField1 = document.getElementById("enterPass1");
+
+  var textField1 = document.getElementById("forenameField");
+  textField1.value= forename;
+  var textField2 = document.getElementById("surnameField");
+  textField2.value = surname;
+
+  // set its display style property 
+  nameChangerDiv.style.display = "block";
+  emailChangerDiv.style.display = "none";
+  passChangerDiv.style.display = "none";
+
+  submitButton1 = document.getElementById("sub1");
+  submitButton1.addEventListener("click", async () => {
+    const forenameStr = textField1.value;
+    const surnameStr = textField2.value;
+    const passInput = passwordField1.value;
+    const emailAddress = localStorage.getItem("userEmail");
+    const thisPriv = localStorage.getItem("privilegeLevel");
+    console.log(forenameStr);
+    console.log(surnameStr);
+    console.log(passInput);
+    console.log(emailAddress);
+    console.log(thisPriv);
+    
+
+    try{
+          const url = 'https://localhost:7200/api/Accounts';
+          const data = {
+            userEmail: emailAddress,
+            userPassword: passInput,
+            privilegeLevel: thisPriv,
+            forename: forenameStr,
+            surname: surnameStr
+          };          
+          const options = {
+            method: 'PUT',
+            headers: {
+              'Accept': 'text/plain',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          };
+
+          fetch(url, options)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error('Network response was not ok');
+              }
+              return response.text();
+            })
+            .then(data => {
+              console.log(data);
+            })
+            .catch(error => {
+              console.error('There was a problem with the fetch operation:', error);
+            });
+    }
+    catch{console.log("email probs didnt match")}
+  });
+  
 }
+
+function clickEmailFooter(){  
+  console.log("pressed email footer");
+   
+  // get the nameChanger div element
+   var nameChangerDiv = document.getElementById("nameChanger");
+   var emailChangerDiv = document.getElementById("emailChanger");
+   var passChangerDiv = document.getElementById("passwordChanger");
+ 
+   // set its display style property 
+   nameChangerDiv.style.display = "none";
+   emailChangerDiv.style.display = "block";
+   passChangerDiv.style.display = "none";
+}
+
+function clickPasswordFooter(){
+  console.log("pressed password footer");
+
+   // get the nameChanger div element
+   var nameChangerDiv = document.getElementById("nameChanger");
+   var emailChangerDiv = document.getElementById("emailChanger");
+   var passChangerDiv = document.getElementById("passwordChanger");
+ 
+   // set its display style property 
+   nameChangerDiv.style.display = "none";
+   emailChangerDiv.style.display = "none";
+   passChangerDiv.style.display = "block";
+}
+
+
+
 

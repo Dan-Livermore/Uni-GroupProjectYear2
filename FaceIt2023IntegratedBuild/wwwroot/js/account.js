@@ -422,7 +422,7 @@ function clickNameFooter(){
             surname: surnameStr
           };          
           const options = {
-            method: 'POST',
+            method: 'PUT',
             headers: {
               'Accept': 'text/plain',
               'Content-Type': 'application/json'

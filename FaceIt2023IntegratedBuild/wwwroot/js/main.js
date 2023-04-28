@@ -7,6 +7,8 @@
        // Set the link for the account page based on login status
        const accountLink = isLoggedIn ? "/wwwroot/lib/account.html" : "/wwwroot/lib/login.html";
        const accountImage = isLoggedIn ?  "../images/userIcon1.png": "../images/login.png" 
+       const forename = localStorage.getItem("forename");
+       const nameString = forename+" 's Account";
 
 
 
@@ -35,7 +37,7 @@
               <a href="/wwwroot/lib/journal.html" class="navbar-item">Journals</a>
           </div>  
           <div class="navbar-end">
-          <a href="${accountLink}" class="navbar-item">${isLoggedIn ? "Account" : "Log In"}</a>          
+          <a href="${accountLink}" class="navbar-item">${isLoggedIn ? nameString : "Log In"}</a>          
           <img src="${accountImage}"alt="Profile Picture" class="profile-picture">
           </div>
         </div>

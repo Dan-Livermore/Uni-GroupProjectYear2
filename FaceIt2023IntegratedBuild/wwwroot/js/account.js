@@ -456,7 +456,7 @@ function clickNameFooter(){
             console.error('There was a problem with the fetch operation:', error);
           });
           alert("Success! You will need to log back in.");
-          window.location.href = "login.html";
+          signOut();
     
       } catch {
         console.log("something went wrong trying to PUT");
@@ -536,7 +536,7 @@ function clickEmailFooter(){
             console.error('There was a problem with the fetch operation:', error);
           });
           alert("Success! You will need to log back in.");
-          window.location.href = "login.html";
+          signOut();
     
       } catch {
         console.log("something went wrong trying to PUT");
@@ -565,6 +565,101 @@ function clickPasswordFooter(){
    nameChangerDiv.style.display = "none";
    emailChangerDiv.style.display = "none";
    passChangerDiv.style.display = "block";
+
+   var textField5 = document.getElementById("enterOld");
+   var textField6 = document.getElementById("enterNew");
+   var textField7 = document.getElementById("enterNew2");
+   var submitButt = document.getElementById("subPassChange");    
+
+    submitButt.addEventListener("click", async () => {
+
+      var email = localStorage.getItem("userEmail");
+      var passChecker = textField5.value;
+      var passCompare = localStorage.getItem("pass");   
+      const thisPriv = localStorage.getItem("privilegeLevel");
+      const myID = localStorage.getItem("userId");
+      var forenameStr = localStorage.getItem("forename");
+      var surnameStr = localStorage.getItem("surname");
+
+      var passChecker = textField5.value;
+      var passCompare = localStorage.getItem("pass");
+
+      var newPass1 = textField6.value;
+      var newPass2 = textField7.value;
+
+      if(newPass1 == newPass2){
+        if(passChecker==passCompare ){
+          try {
+            const url = 'https://localhost:7200/api/Accounts/' + myID;
+        
+            fetch(url, {
+                method: 'PUT',
+                headers: {
+                  'accept': '*/*',
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                  userId: myID,
+                  userEmail: email,
+                  userPassword: newPass2,
+                  privilegeLevel: thisPriv,
+                  forename: forenameStr,
+                  surname: surnameStr
+                })
+              })
+              .then(response => {
+                if (!response.ok) {
+                  throw new Error('Network response was not ok');
+                }
+                return response.text(); // use text() instead of json()
+              })
+              .then(data => {
+                if (data) {
+                  try {
+                    const jsonData = JSON.parse(data);
+                    console.log(jsonData);
+                  } catch (error) {
+                    console.log('Response was not valid JSON:', error);
+                  }
+                } else {
+                  console.log('Response was empty');
+                }
+              })
+              .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+              });
+              alert("Success! You will need to log back in to use the changes.");
+              signOut();
+             
+        
+          } catch {
+            console.log("something went wrong trying to PUT");
+          }
+    
+        }
+        else{alert("ERROR Your current password was incorrect! Try Again!");}
+      }else{alert("ERROR Your new passwords must match!");}
+
+    });
+
+    function signOut(){
+      console.log('sign out Button clicked');
+        localStorage.setItem('userEmail', null);
+        localStorage.setItem('privilegeLevel', null);
+        localStorage.setItem('forename', null);
+        localStorage.setItem('surname', null);
+        localStorage.setItem('loggedIn',false);
+        localStorage.setItem('userId',null);
+        localStorage.setItem('user_id',null);
+        localStorage.setItem('pass',null);
+        window.location.href = "login.html";
+    }
+
+
+
+
+
+
 }
 
 

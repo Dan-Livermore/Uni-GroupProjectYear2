@@ -35,7 +35,7 @@
                   <div class="control">
                     <button class="button is-primary is-fullwidth">Login</button>
                   </div>
-                  <div id="error"></div>
+                  <div id="error" style="display: none;"></div>
                 </div>
               </form>
             </div>
@@ -63,6 +63,7 @@ form.addEventListener('submit', (event) => {
   //API urls (The first returns ID if the password and username match (returns '-1' if dont match), the second gets all the information of the account into local storage)
   const apiUrl = `https://localhost:7200/api/idbyemailandpasswords?email=${email}&pass=${password}`;
   const apiGetAccountUrl = `https://localhost:7200/api/Accounts/`;
+  const errorDiv = document.querySelector('#error');
 
   fetch(apiUrl)
   .then(response => {
@@ -83,11 +84,13 @@ form.addEventListener('submit', (event) => {
       //Throws if response says account doesnt exist
       console.log("-1 response means that the account does not exist");
       errorDiv.textContent = 'Incorrect Login username or password! ';
+      errorDiv.style.display ="block";
       
     }
     else if (id == null){
       console.log("Id is null.");
       errorDiv.textContent = 'Something went wrong, please contact an administrator.';
+      errorDiv.style.display ="block";
     }
     else{
       getAccountDetails(id,true);      
@@ -100,6 +103,7 @@ form.addEventListener('submit', (event) => {
   .catch(error => {
     console.error(error);    
     errorDiv.textContent = 'Incorrect Login username or password! ';
+    errorDiv.style.display ="block";
   }) 
 
 });

@@ -456,7 +456,17 @@ function clickNameFooter(){
             console.error('There was a problem with the fetch operation:', error);
           });
           alert("Success! You will need to log back in.");
-          signOut();
+          //signOut();
+          //signout() doesnt work
+          localStorage.setItem('userEmail', null);
+          localStorage.setItem('privilegeLevel', null);
+          localStorage.setItem('forename', null);
+          localStorage.setItem('surname', null);
+          localStorage.setItem('loggedIn',false);
+          localStorage.setItem('userId',null);
+          localStorage.setItem('user_id',null);
+          localStorage.setItem('pass',null);
+          window.location.href = "login.html";
     
       } catch {
         console.log("something went wrong trying to PUT");
@@ -536,7 +546,16 @@ function clickEmailFooter(){
             console.error('There was a problem with the fetch operation:', error);
           });
           alert("Success! You will need to log back in.");
-          signOut();
+          //signOut();
+          localStorage.setItem('userEmail', null);
+          localStorage.setItem('privilegeLevel', null);
+          localStorage.setItem('forename', null);
+          localStorage.setItem('surname', null);
+          localStorage.setItem('loggedIn',false);
+          localStorage.setItem('userId',null);
+          localStorage.setItem('user_id',null);
+          localStorage.setItem('pass',null);
+          window.location.href = "login.html";
     
       } catch {
         console.log("something went wrong trying to PUT");
@@ -629,7 +648,18 @@ function clickPasswordFooter(){
                 console.error('There was a problem with the fetch operation:', error);
               });
               alert("Success! You will need to log back in to use the changes.");
-              signOut();
+              //signOut();
+              //SignOut sometimes work sometimes doesnt so i will hardcode it in
+              localStorage.setItem('userEmail', null);
+              localStorage.setItem('privilegeLevel', null);
+              localStorage.setItem('forename', null);
+              localStorage.setItem('surname', null);
+              localStorage.setItem('loggedIn',false);
+              localStorage.setItem('userId',null);
+              localStorage.setItem('user_id',null);
+              localStorage.setItem('pass',null);
+              window.location.href = "login.html";
+
              
         
           } catch {

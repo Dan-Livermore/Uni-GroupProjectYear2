@@ -402,51 +402,70 @@ function clickNameFooter(){
   submitButton1.addEventListener("click", async () => {
     const forenameStr = textField1.value;
     const surnameStr = textField2.value;
+    const actualPassword = localStorage.getItem("pass");    
     const passInput = passwordField1.value;
     const emailAddress = localStorage.getItem("userEmail");
     const thisPriv = localStorage.getItem("privilegeLevel");
+    const myID = localStorage.getItem("userId")
     console.log(forenameStr);
     console.log(surnameStr);
     console.log(passInput);
     console.log(emailAddress);
     console.log(thisPriv);
-    
+    console.log(myID);
+    console.log(actualPassword);
 
-    try{
-          const url = 'https://localhost:7200/api/Accounts';
-          const data = {
-            userEmail: emailAddress,
-            userPassword: passInput,
-            privilegeLevel: thisPriv,
-            forename: forenameStr,
-            surname: surnameStr
-          };          
-          const options = {
+    if (actualPassword == passInput) {
+      try {
+        const url = 'https://localhost:7200/api/Accounts/' + myID;
+    
+        fetch(url, {
             method: 'PUT',
             headers: {
-              'Accept': 'text/plain',
+              'accept': '*/*',
               'Content-Type': 'application/json'
             },
-            body: JSON.stringify(data)
-          };
-
-          fetch(url, options)
-            .then(response => {
-              if (!response.ok) {
-                throw new Error('Network response was not ok');
+            body: JSON.stringify({
+              userId: myID,
+              userEmail: emailAddress,
+              userPassword: actualPassword,
+              privilegeLevel: thisPriv,
+              forename: forenameStr,
+              surname: surnameStr
+            })
+          })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Network response was not ok');
+            }
+            return response.text(); // use text() instead of json()
+          })
+          .then(data => {
+            if (data) {
+              try {
+                const jsonData = JSON.parse(data);
+                console.log(jsonData);
+              } catch (error) {
+                console.log('Response was not valid JSON:', error);
               }
-              return response.text();
-            })
-            .then(data => {
-              console.log(data);
-            })
-            .catch(error => {
-              console.error('There was a problem with the fetch operation:', error);
-            });
-    }
-    catch{console.log("email probs didnt match")}
-  });
-  
+            } else {
+              console.log('Response was empty');
+            }
+          })
+          .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+          });
+          alert("Success! You will need to log back in.");
+          window.location.href = "login.html";
+    
+      } catch {
+        console.log("something went wrong trying to PUT");
+      }
+    } else {
+      alert("ERROR passwords incorrect! Try Again!");    }
+    
+
+  });  
 }
 
 function clickEmailFooter(){  

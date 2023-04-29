@@ -5,10 +5,13 @@ AS
 BEGIN
     SET NOCOUNT ON;
 
-    DECLARE @deletedUserID int;
-    SELECT @deletedUserID = deleted.user_id FROM deleted;
+    DECLARE @DeletedRows TABLE (user_id INT);
 
-    -- delete any matching entries in HealthProfUsers where user_id or prof_id is @deletedUserID
     DELETE FROM FaceIt.HealthProfUsers
-    WHERE user_id = @deletedUserID OR prof_id = @deletedUserID;
+    OUTPUT deleted.user_id INTO @DeletedRows
+    WHERE user_id IN (SELECT user_id FROM deleted) OR prof_id IN (SELECT user_id FROM deleted);
+
+    DELETE FROM FaceIt.Users
+    WHERE user_id IN (SELECT user_id FROM @DeletedRows);
 END
+

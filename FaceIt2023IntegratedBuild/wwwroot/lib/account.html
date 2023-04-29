@@ -41,7 +41,7 @@
                           <div class="field" id="emailChanger" style="display: none;">
                             <label class="label">Change Email:</label>
                             <div class="control">
-                              <input class="input" type="email" placeholder="Enter new email">
+                              <input id="newEmail" class="input my-2" type="email" placeholder="Enter new email">
                               <input id="enterPass2" class="input my-2" type="password" placeholder="Enter Password Save Changes">
                               <div class="control">
                                 <button id="sub2"class="button is-primary my-2">Submit Changes</button>
@@ -56,7 +56,7 @@
                               <input id="enterNew2" class="input my-2" type="password" placeholder="Enter New password">
                             </div>
                             <div class="control">
-                              <button class="button is-primary my-2">Submit Changes</button>
+                              <button id="subPassChange"class="button is-primary my-2">Submit Changes</button>
                             </div>
                           </div>
                           <div class="field is-grouped" style="display: none;">
@@ -87,23 +87,17 @@
             </article>
           </div>
         </div>
-      </div>      
+      </div>    
+        
       
     </section>
     <section class="section">
-      <div class="tile is-parent is-4">
-        <div class="tile is-child box">
-          <div class="content has-text-centered">
+       <div class="tile is-half is-offset-one-quater">
+          <div class="tile is-child box has-text-centered is-6">
             <button id="signoutButton" class="button is-danger is-medium">Sign Out</button>
           </div>
-        </div>
-      </div>
-
-
-
-    </section>
-  
-      
+        </div>              
+    </section>     
       
       <my-footer></my-footer>
   
@@ -132,8 +126,9 @@
         localStorage.setItem('surname', null);
         localStorage.setItem('loggedIn',false);
         localStorage.setItem('userId',null);
+        localStorage.setItem('user_id',null);
+        localStorage.setItem('pass',null);
         window.location.href = "login.html";
-
       });
 
     </script>

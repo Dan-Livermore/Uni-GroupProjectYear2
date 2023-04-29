@@ -22,6 +22,8 @@ function getAccountDetails (id,forLogin){
       localStorage.setItem('privilegeLevel', data.privilegeLevel);
       localStorage.setItem('forename', data.forename);
       localStorage.setItem('surname', data.surname);
+      localStorage.setItem('user_id',data.userId);
+      localStorage.setItem('pass',data.userPassword);
       //console.log(`Account with ID ${id} is now in local storage.`);
       localStorage.setItem('loggedIn',true);
 

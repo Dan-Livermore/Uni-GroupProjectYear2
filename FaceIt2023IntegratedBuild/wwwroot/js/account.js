@@ -8,10 +8,12 @@ burgerIcon.addEventListener("click", (event) => {
 const privLevel =parseInt(localStorage.getItem('privilegeLevel'));
 var my_forename = localStorage.getItem('forename');
 
-// var my_Health_prof_name = " <Name not Found> ";
-// var my_Health_prof_email = " <No email address found> ";
-
 async function getMyHealthProf2(myID) {
+
+  /* This Function Is for a user to generate text info about their Assigend
+  * health prof
+  */
+
   const apiUrl = "https://localhost:7200/api/UserAssignedHealthProfInputs?ID=";
   const apiUrl2 = "https://localhost:7200/api/Accounts/"
   var my_Health_prof_id = 999;
@@ -45,6 +47,11 @@ async function getMyHealthProf2(myID) {
 }
 
 async function getMyMentees(hpID) {
+
+  /* This Function Is for a getting mentees for the health prof, (priv 2) 
+  * 
+  */
+
   const ListMyMentees = [];
   const apiUrl = "https://localhost:7200/api/HealthProfAllocatedInputs?hpID=";
 
@@ -85,6 +92,75 @@ async function getMenteeDetailsAsync(id) {
     console.error(error);
   }
 }
+
+async function adminGetAccounts(){
+  /*  This function generates a html table from the database of all accounts with funcitionality of 
+  * deleting and editing accounts. 
+  */
+const tableColumns = ["User ID", "Email", "Password", "Privilege Level", "Forename", "Surname","Edit","Delete"];
+const apiUrl = "https://localhost:7200/api/Accounts";
+
+fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    const table = document.createElement("table");
+    const thead = document.createElement("thead");
+    const tbody = document.createElement("tbody");
+    const headerRow = document.createElement("tr");
+
+    // Add table header columns
+    tableColumns.forEach(column => {
+      const th = document.createElement("th");
+      th.textContent = column;
+      headerRow.appendChild(th);
+    });
+
+    // Add header row to table header
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+
+    // Add table rows with data
+    data.forEach(rowData => {
+      const tr = document.createElement("tr");
+
+      // Add columns for each value in rowData
+      Object.values(rowData).forEach(value => {
+        const td = document.createElement("td");
+        td.textContent = value;
+        tr.appendChild(td);
+      });
+
+      // Add "Edit" and "Delete" buttons
+      const editButton = document.createElement("button");
+      editButton.textContent = "Edit";
+      editButton.classList.add("button", "is-small", "is-primary");
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "Delete";
+      deleteButton.classList.add("button", "is-small", "is-danger");
+
+      // Add Edit and Delete columns
+      const editTd = document.createElement("td");
+      const deleteTd = document.createElement("td");
+      editTd.appendChild(editButton);
+      deleteTd.appendChild(deleteButton);
+      tr.appendChild(editTd);
+      tr.appendChild(deleteTd);
+
+      // Add row to table body
+      tbody.appendChild(tr);
+    });
+
+    // Add table body to table
+    table.appendChild(tbody);
+
+    // Add table to page
+    const card2Body = document.getElementById("card2Body");
+    card2Body.appendChild(table);
+  })
+  .catch(error => console.error(error));
+
+      
+} 
 
 
 
@@ -146,12 +222,6 @@ async function setContent(privLevel){
 
     console.log("mdetails lenght is "+menteeDetails.length);
 
-    // for (var i = 0; i < menteeDetails.length; i++) {  
-    //   const listItem = document.createElement("li");
-    //   listItem.textContent = menteeDetails[i];
-    //   menteesList.appendChild(listItem);
-    //   console.log("List item craeted and added.")
-    // }
     for (var i = 0; i < menteeDetails.length; i++) {  
       const listItem = document.createElement("li");
       const strArray = menteeDetails[i].split(":");
@@ -321,29 +391,23 @@ async function setContent(privLevel){
     buttonsDiv.appendChild(removeButton);
 
     // Called when add mentee is pressed
-    card2Body.appendChild(buttonsDiv);
+    card2Body.appendChild(buttonsDiv);    
 
-  
-
-
-     
-
-    
-
-   
-    
-        //fetches the names of all people assigned to the user (healthProf)
-    //test
-    //gives option to add an existing user to your care
-    //gives an option to create a user
   }
   else if(privLevel==1){
+    // THis is the ADMIN Account type.
+    //
     document.getElementById("card2Title").innerHTML = "Welcome Admin";
-    document.getElementById("card2Body").innerHTML = "Manage Accounts... TODO";  
+    document.getElementById("card2Body").innerHTML = "";  
     //show all health profs
     //option to CRUD a health prof
     //option to CRUD an admin
     //option to create a user
+
+    await adminGetAccounts();
+
+    
+
   }
   else{
     document.getElementById("card2Title").innerHTML = "ERROR- NOT LOGGED IN!";

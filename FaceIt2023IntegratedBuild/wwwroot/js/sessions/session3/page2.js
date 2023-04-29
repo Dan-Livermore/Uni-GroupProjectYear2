@@ -1,15 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() { 
-
     let cardToggles = document.getElementsByClassName('card-toggle'); 
-
-    for (let i = 0; i < cardToggles.length; i++) { 
-
-        cardToggles[i].addEventListener('click', e => { 
-
-            e.currentTarget.parentElement.parentElement.childNodes[3].classList.toggle('is-hidden'); 
-
-        }); 
-
+    for (let i = 0; i < cardToggles.length; i++) {
+      cardToggles[i].addEventListener('click', e => {
+        e.currentTarget.parentElement.parentElement.childNodes[3].classList.toggle('is-hidden');
+      }); 
     } 
     const burgerIcon = document.querySelector('#burger-icon')
 		const navbarMenu = document.querySelector('#nav-links')

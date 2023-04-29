@@ -124,4 +124,8 @@ public partial class Comp2003ZContext : DbContext
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 
     public DbSet<FaceItAPI.Models.HealthProfAllocatedInput> HealthProfAllocatedInput { get; set; } = default!;
+
+    public DbSet<FaceItAPI.Models.healthProfIDandUserEmail> healthProfIDandUserEmail { get; set; } = default!;
+
+    public DbSet<FaceItAPI.Models.DeletehealthProfbyemail> DeletehealthProfbyemail { get; set; } = default!;
 }

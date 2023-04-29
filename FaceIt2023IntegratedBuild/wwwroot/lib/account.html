@@ -22,33 +22,57 @@
                 <div class="columns is-centered">
                   <div class="column is-half">
                     <div class="card">
-                      <div class="card-content">
-                        <h1 class="title is-4 has-text-centered">Edit Account Details</h1>
-                        <form>
-                            <div class="field">
-                                <label class="label">Forename</label>
+                      <div class="card-content is-5">
+                        <h1 class="title is-3 has-text-centered">Account Settings</h1>
+                        <div id="AccountSettingsContent">
+                          <div class="field" id="nameChanger" style="display: none;">
+                            <label class="label">Change Name:</label>
+                            <div class="control">
+                              <input id="forenameField"class="input my-2" type="text" placeholder="Old Name loads here">
                                 <div class="control">
-                                  <input class="input" type="email" placeholder="Email">
-                                </div>  
-                          <div class="field">
-                            <label class="label">Email</label>
-                            <div class="control">
-                              <input class="input" type="email" placeholder="Email">
+                                  <input id="surnameField" class="input my-2" type="text" placeholder="Old Name loads here">
+                                  <input id="enterPass1" class="input my-2" type="password" placeholder="Enter Password Save Changes">
+                                </div>
+                                  <div class="control">
+                                    <button id="sub1" class="button is-primary my-2">Submit Changes</button>
+                                  </div>
                             </div>
                           </div>
-                          <div class="field">
-                            <label class="label">Password</label>
+                          <div class="field" id="emailChanger" style="display: none;">
+                            <label class="label">Change Email:</label>
                             <div class="control">
-                              <input class="input" type="password" placeholder="Password">
+                              <input id="newEmail" class="input my-2" type="email" placeholder="Enter new email">
+                              <input id="enterPass2" class="input my-2" type="password" placeholder="Enter Password Save Changes">
+                              <div class="control">
+                                <button id="sub2"class="button is-primary my-2">Submit Changes</button>
+                              </div>
                             </div>
                           </div>
-                          <div class="field">
+                          <div class="field" id="passwordChanger" style="display: none;">
+                            <label class="label">Change Password:</label>
                             <div class="control">
-                              <button class="button is-primary is-fullwidth is-link">Submit Changes</button>
+                              <input id="enterOld" class="input my-2" type="password" placeholder="Enter Old password">
+                              <input id="enterNew" class="input my-2" type="password" placeholder="Enter New password">
+                              <input id="enterNew2" class="input my-2" type="password" placeholder="Enter New password">
                             </div>
-                            <div id="error"></div>
+                            <div class="control">
+                              <button id="subPassChange"class="button is-primary my-2">Submit Changes</button>
+                            </div>
                           </div>
-                        </form>
+                          <div class="field is-grouped" style="display: none;">
+                            <div class="control">
+                              <button class="button is-primary my-2">Submit</button>
+                            </div>
+                          </div>
+
+
+                          
+                        </div>
+                        <footer class="card-footer">
+                          <a  id="chName_Footer" onclick="clickNameFooter()" class="card-footer-item">Change Name</a>
+                          <a  id="chPass_Footer" onclick="clickPasswordFooter()" class="card-footer-item">Change Password</a>
+                          <a  id="chemail_Footer" onclick="clickEmailFooter()" class="card-footer-item">Change email</a>
+                        </footer>
                       </div>
                     </div>
                   </div>
@@ -63,23 +87,17 @@
             </article>
           </div>
         </div>
-      </div>      
+      </div>    
+        
       
     </section>
     <section class="section">
-      <div class="tile is-parent is-4">
-        <div class="tile is-child box">
-          <div class="content has-text-centered">
+       <div class="tile is-half is-offset-one-quater">
+          <div class="tile is-child box has-text-centered is-6">
             <button id="signoutButton" class="button is-danger is-medium">Sign Out</button>
           </div>
-        </div>
-      </div>
-
-
-
-    </section>
-  
-      
+        </div>              
+    </section>     
       
       <my-footer></my-footer>
   
@@ -108,8 +126,9 @@
         localStorage.setItem('surname', null);
         localStorage.setItem('loggedIn',false);
         localStorage.setItem('userId',null);
+        localStorage.setItem('user_id',null);
+        localStorage.setItem('pass',null);
         window.location.href = "login.html";
-
       });
 
     </script>

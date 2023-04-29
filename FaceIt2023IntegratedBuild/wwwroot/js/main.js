@@ -1,6 +1,17 @@
 
   class MyHeader extends HTMLElement {
     connectedCallback() {
+       // Check if user is logged in
+       const isLoggedIn = localStorage.getItem("loggedIn") === "true";
+
+       // Set the link for the account page based on login status
+       const accountLink = isLoggedIn ? "/wwwroot/lib/account.html" : "/wwwroot/lib/login.html";
+       const accountImage = isLoggedIn ?  "../images/userIcon1.png": "../images/login.png" 
+       const forename = localStorage.getItem("forename");
+       const nameString = forename+" 's Account";
+
+
+
       this.innerHTML = ` 
       <nav class="navbar has-shadow is-info">
         <div class="navbar-brand">
@@ -26,7 +37,8 @@
               <a href="/wwwroot/lib/journal.html" class="navbar-item">Journals</a>
           </div>  
           <div class="navbar-end">
-            <a href="/wwwroot/lib/login.html" class="navbar-item">Log In</a>
+          <a href="${accountLink}" class="navbar-item">${isLoggedIn ? nameString : "Log In"}</a>          
+          <img src="${accountImage}"alt="Profile Picture" class="profile-picture">
           </div>
         </div>
       </nav>

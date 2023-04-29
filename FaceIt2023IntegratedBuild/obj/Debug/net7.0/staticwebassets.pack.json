@@ -1,1119 +1,1119 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\FaceIt2023IntegratedBuild.bundle.scp.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\FaceIt2023IntegratedBuild.bundle.scp.css",
       "PackagePath": "staticwebassets\\FaceIt2023IntegratedBuild.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\css\\mystyles.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\css\\mystyles.css",
       "PackagePath": "staticwebassets\\css\\mystyles.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\css\\mystyles.scss",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\css\\mystyles.scss",
       "PackagePath": "staticwebassets\\css\\mystyles.scss"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\CAR_FrameWork.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\CAR_FrameWork.webp",
       "PackagePath": "staticwebassets\\images\\CAR_FrameWork.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Face_IT_further_reading.pdf",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Face_IT_further_reading.pdf",
       "PackagePath": "staticwebassets\\images\\Face_IT_further_reading.pdf"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Logo.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Logo.png",
       "PackagePath": "staticwebassets\\images\\Logo.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Team\\alex_c.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Team\\alex_c.webp",
       "PackagePath": "staticwebassets\\images\\Team\\alex_c.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Team\\alyson_b.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Team\\alyson_b.webp",
       "PackagePath": "staticwebassets\\images\\Team\\alyson_b.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Team\\diana_h.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Team\\diana_h.webp",
       "PackagePath": "staticwebassets\\images\\Team\\diana_h.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Team\\heidi_w.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Team\\heidi_w.webp",
       "PackagePath": "staticwebassets\\images\\Team\\heidi_w.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Team\\nicky_r.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Team\\nicky_r.webp",
       "PackagePath": "staticwebassets\\images\\Team\\nicky_r.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Team\\tim_m.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\Team\\tim_m.webp",
       "PackagePath": "staticwebassets\\images\\Team\\tim_m.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\aaron.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\aaron.webp",
       "PackagePath": "staticwebassets\\images\\characters\\aaron.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\alice.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\alice.webp",
       "PackagePath": "staticwebassets\\images\\characters\\alice.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\jacob.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\jacob.webp",
       "PackagePath": "staticwebassets\\images\\characters\\jacob.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\jake.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\jake.webp",
       "PackagePath": "staticwebassets\\images\\characters\\jake.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\lucy.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\lucy.webp",
       "PackagePath": "staticwebassets\\images\\characters\\lucy.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\luke.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\luke.webp",
       "PackagePath": "staticwebassets\\images\\characters\\luke.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\miranda.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\miranda.webp",
       "PackagePath": "staticwebassets\\images\\characters\\miranda.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\peter.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\peter.webp",
       "PackagePath": "staticwebassets\\images\\characters\\peter.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\rebecca.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\rebecca.webp",
       "PackagePath": "staticwebassets\\images\\characters\\rebecca.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\ruby.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\characters\\ruby.webp",
       "PackagePath": "staticwebassets\\images\\characters\\ruby.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\footer.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\footer.webp",
       "PackagePath": "staticwebassets\\images\\footer.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\index\\home_header_image.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\index\\home_header_image.webp",
       "PackagePath": "staticwebassets\\images\\index\\home_header_image.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part1\\1-1-1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part1\\1-1-1.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part1\\1-1-1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part1\\1-1-2.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part1\\1-1-2.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part1\\1-1-2.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part1\\1-1-3.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part1\\1-1-3.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part1\\1-1-3.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part1\\1-1-4.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part1\\1-1-4.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part1\\1-1-4.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part1\\session.1.1.3_diagram.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part1\\session.1.1.3_diagram.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part1\\session.1.1.3_diagram.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part2\\1-2-1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part2\\1-2-1.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part2\\1-2-1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part2\\1-2-2.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part2\\1-2-2.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part2\\1-2-2.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part2\\1-2-3.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part2\\1-2-3.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part2\\1-2-3.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part2\\Evolution.mp4",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part2\\Evolution.mp4",
       "PackagePath": "staticwebassets\\images\\session1\\part2\\Evolution.mp4"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part3\\1-3-1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part3\\1-3-1.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part3\\1-3-1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part3\\1-3-2.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part3\\1-3-2.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part3\\1-3-2.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part3\\Gestures.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part3\\Gestures.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part3\\Gestures.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part3\\Posture.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part3\\Posture.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part3\\Posture.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part3\\facial expressions.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part3\\facial expressions.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part3\\facial expressions.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part4\\1-4-1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part4\\1-4-1.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part4\\1-4-1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part4\\1-4-2.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part4\\1-4-2.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part4\\1-4-2.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part4\\1-4-3.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part4\\1-4-3.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part4\\1-4-3.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part4\\session.1.4.bubbles1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part4\\session.1.4.bubbles1.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part4\\session.1.4.bubbles1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part4\\session.1.4.bubbles2.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part4\\session.1.4.bubbles2.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part4\\session.1.4.bubbles2.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part5\\1-5-1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part5\\1-5-1.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part5\\1-5-1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part5\\1-5-2.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part5\\1-5-2.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part5\\1-5-2.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part5\\1-5-3.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part5\\1-5-3.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part5\\1-5-3.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part5\\1-5-4.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part5\\1-5-4.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part5\\1-5-4.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part5\\1-5-5.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part5\\1-5-5.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part5\\1-5-5.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part5\\session.1.5.1_image01.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session1\\part5\\session.1.5.1_image01.webp",
       "PackagePath": "staticwebassets\\images\\session1\\part5\\session.1.5.1_image01.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 1\\2 1 1 1.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 1\\2 1 1 1.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 1\\2 1 1 1.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 1\\2-1-1-1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 1\\2-1-1-1.webp",
       "PackagePath": "staticwebassets\\images\\session2\\Part 1\\2-1-1-1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 1\\image2.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 1\\image2.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 1\\image2.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 1\\image3.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 1\\image3.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 1\\image3.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 1\\image4.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 1\\image4.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 1\\image4.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 2\\image1Part2.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 2\\image1Part2.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 2\\image1Part2.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 2\\image2Part2.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 2\\image2Part2.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 2\\image2Part2.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 2\\image3Part2.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 2\\image3Part2.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 2\\image3Part2.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\eye contact\\image1.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\eye contact\\image1.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\eye contact\\image1.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\eye contact\\image2.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\eye contact\\image2.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\eye contact\\image2.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\eye contact\\image3.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\eye contact\\image3.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\eye contact\\image3.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\eye contact\\image4.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\eye contact\\image4.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\eye contact\\image4.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\eye contact\\image5.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\eye contact\\image5.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\eye contact\\image5.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\gestures\\image1.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\gestures\\image1.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\gestures\\image1.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\gestures\\image2.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\gestures\\image2.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\gestures\\image2.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\gestures\\image3.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\gestures\\image3.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\gestures\\image3.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image1part3.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image1part3.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\image1part3.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image2part3.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image2part3.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\image2part3.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image3.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image3.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\image3.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image4.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image4.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\image4.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image5.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image5.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\image5.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image6.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image6.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\image6.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image7.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image7.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\image7.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image8.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\image8.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\image8.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\posture\\image1.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\posture\\image1.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\posture\\image1.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\posture\\image2.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\posture\\image2.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\posture\\image2.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\posture\\image3.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\posture\\image3.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\posture\\image3.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\posture\\image4.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 3\\posture\\image4.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 3\\posture\\image4.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Activing listening\\image1.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Activing listening\\image1.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 4\\Activing listening\\image1.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image1.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image1.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 4\\Starting a conversation\\image1.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image2.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image2.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 4\\Starting a conversation\\image2.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image3.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image3.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 4\\Starting a conversation\\image3.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image4.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image4.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 4\\Starting a conversation\\image4.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image5.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image5.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 4\\Starting a conversation\\image5.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image6.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image6.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 4\\Starting a conversation\\image6.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image7.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image7.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 4\\Starting a conversation\\image7.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image8.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image8.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 4\\Starting a conversation\\image8.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image9.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Starting a conversation\\image9.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 4\\Starting a conversation\\image9.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Tone of voice\\image1.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Tone of voice\\image1.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 4\\Tone of voice\\image1.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Tone of voice\\image2.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\Tone of voice\\image2.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 4\\Tone of voice\\image2.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\image1.png",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session2\\Part 4\\image1.png",
       "PackagePath": "staticwebassets\\images\\session2\\Part 4\\image1.png"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page1\\3-1-1.JPG",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page1\\3-1-1.JPG",
       "PackagePath": "staticwebassets\\images\\session3\\page1\\3-1-1.JPG"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-1.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-10.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-10.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-10.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-11.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-11.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-11.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-12.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-12.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-12.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-13.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-13.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-13.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-14.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-14.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-14.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-2.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-2.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-2.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-3.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-3.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-3.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-4.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-4.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-4.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-5.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-5.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-5.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-6.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-6.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-6.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-7.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-7.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-7.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-8.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-8.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-8.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-9.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\3-2-9.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\3-2-9.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\scared-model-on-a.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\scared-model-on-a.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\scared-model-on-a.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\scared-model-on-c.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\scared-model-on-c.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\scared-model-on-c.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\scared-model-on-d.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\scared-model-on-d.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\scared-model-on-d.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\scared-model-on-e.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\scared-model-on-e.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\scared-model-on-e.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\scared-model-on-r.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\scared-model-on-r.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\scared-model-on-r.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\scared-model-on-s.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session3\\page2\\scared-model-on-s.webp",
       "PackagePath": "staticwebassets\\images\\session3\\page2\\scared-model-on-s.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part1\\1-1-1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part1\\1-1-1.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part1\\1-1-1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part1\\1-1-2.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part1\\1-1-2.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part1\\1-1-2.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part1\\1-1-3.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part1\\1-1-3.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part1\\1-1-3.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part1\\1-1-4.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part1\\1-1-4.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part1\\1-1-4.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part1\\session.1.1.3_diagram.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part1\\session.1.1.3_diagram.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part1\\session.1.1.3_diagram.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part2\\1-2-1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part2\\1-2-1.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part2\\1-2-1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part2\\1-2-2.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part2\\1-2-2.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part2\\1-2-2.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part2\\1-2-3.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part2\\1-2-3.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part2\\1-2-3.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part2\\Evolution.mp4",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part2\\Evolution.mp4",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part2\\Evolution.mp4"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part3\\1-3-1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part3\\1-3-1.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part3\\1-3-1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part3\\1-3-2.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part3\\1-3-2.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part3\\1-3-2.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part3\\Gestures.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part3\\Gestures.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part3\\Gestures.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part3\\Posture.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part3\\Posture.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part3\\Posture.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part3\\facial expressions.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part3\\facial expressions.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part3\\facial expressions.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part4\\1-4-1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part4\\1-4-1.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part4\\1-4-1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part4\\1-4-2.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part4\\1-4-2.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part4\\1-4-2.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part4\\1-4-3.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part4\\1-4-3.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part4\\1-4-3.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part4\\session.1.4.bubbles1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part4\\session.1.4.bubbles1.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part4\\session.1.4.bubbles1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part4\\session.1.4.bubbles2.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part4\\session.1.4.bubbles2.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part4\\session.1.4.bubbles2.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part5\\1-5-1.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part5\\1-5-1.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part5\\1-5-1.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part5\\1-5-2.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part5\\1-5-2.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part5\\1-5-2.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part5\\1-5-3.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part5\\1-5-3.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part5\\1-5-3.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part5\\1-5-4.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part5\\1-5-4.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part5\\1-5-4.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part5\\1-5-5.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part5\\1-5-5.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part5\\1-5-5.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part5\\session.1.5.1_image01.webp",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\images\\session\\session1\\part5\\session.1.5.1_image01.webp",
       "PackagePath": "staticwebassets\\images\\session\\session1\\part5\\session.1.5.1_image01.webp"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\about.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\about.js",
       "PackagePath": "staticwebassets\\js\\about.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\account.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\account.js",
       "PackagePath": "staticwebassets\\js\\account.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\contact.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\contact.js",
       "PackagePath": "staticwebassets\\js\\contact.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\forum.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\forum.js",
       "PackagePath": "staticwebassets\\js\\forum.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\furthersupport.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\furthersupport.js",
       "PackagePath": "staticwebassets\\js\\furthersupport.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\healthprofs.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\healthprofs.js",
       "PackagePath": "staticwebassets\\js\\healthprofs.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\index.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\index.js",
       "PackagePath": "staticwebassets\\js\\index.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\journal.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\journal.js",
       "PackagePath": "staticwebassets\\js\\journal.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\login.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\login.js",
       "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\main.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\news.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\news.js",
       "PackagePath": "staticwebassets\\js\\news.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions.js",
       "PackagePath": "staticwebassets\\js\\sessions.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\menu.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\menu.js",
       "PackagePath": "staticwebassets\\js\\sessions\\menu.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\contents.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\contents.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session1\\contents.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page1.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page1.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session1\\page1.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page2.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page2.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session1\\page2.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page3.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page3.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session1\\page3.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page4.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page4.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session1\\page4.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page5.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page5.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session1\\page5.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page6quiz.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page6quiz.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session1\\page6quiz.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page7feedback.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page7feedback.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session1\\page7feedback.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page8activity.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session1\\page8activity.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session1\\page8activity.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page1.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page1.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session2\\page1.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page2.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page2.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session2\\page2.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page3.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page3.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session2\\page3.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page4.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page4.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session2\\page4.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page5.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page5.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session2\\page5.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page6.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page6.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session2\\page6.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page7.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page7.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session2\\page7.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page8.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session2\\page8.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session2\\page8.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page1.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page1.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session3\\page1.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page2.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page2.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session3\\page2.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page3.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page3.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session3\\page3.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page4.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page4.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session3\\page4.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page5.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page5.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session3\\page5.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page6.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page6.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session3\\page6.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page7.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page7.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session3\\page7.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page8.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\sessions\\session3\\page8.js",
       "PackagePath": "staticwebassets\\js\\sessions\\session3\\page8.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\team.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\team.js",
       "PackagePath": "staticwebassets\\js\\team.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\terms.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\js\\terms.js",
       "PackagePath": "staticwebassets\\js\\terms.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\About copy.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\About copy.html",
       "PackagePath": "staticwebassets\\lib\\About copy.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\About.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\About.html",
       "PackagePath": "staticwebassets\\lib\\About.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\Index.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\Index.html",
       "PackagePath": "staticwebassets\\lib\\Index.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\Journal.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\Journal.html",
       "PackagePath": "staticwebassets\\lib\\Journal.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\TestingAPI.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\TestingAPI.html",
       "PackagePath": "staticwebassets\\lib\\TestingAPI.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\account.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\account.html",
       "PackagePath": "staticwebassets\\lib\\account.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\contact.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\contact.html",
       "PackagePath": "staticwebassets\\lib\\contact.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\forum.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\forum.html",
       "PackagePath": "staticwebassets\\lib\\forum.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\furthersupport.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\furthersupport.html",
       "PackagePath": "staticwebassets\\lib\\furthersupport.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\heallthprofs.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\heallthprofs.html",
       "PackagePath": "staticwebassets\\lib\\heallthprofs.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\login.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\login.html",
       "PackagePath": "staticwebassets\\lib\\login.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\news.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\news.html",
       "PackagePath": "staticwebassets\\lib\\news.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions.html",
       "PackagePath": "staticwebassets\\lib\\sessions.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\menu.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\menu.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\menu.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\contents.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\contents.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session1\\contents.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page1.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page1.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session1\\page1.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page2.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page2.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session1\\page2.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page3.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page3.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session1\\page3.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page4.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page4.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session1\\page4.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page5.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page5.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session1\\page5.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page6quiz.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page6quiz.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session1\\page6quiz.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page7feedback.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page7feedback.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session1\\page7feedback.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page8activity.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session1\\page8activity.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session1\\page8activity.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\contents.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\contents.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session2\\contents.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page1.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page1.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session2\\page1.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page2.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page2.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session2\\page2.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page3.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page3.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session2\\page3.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page4.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page4.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session2\\page4.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page5quiz.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page5quiz.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session2\\page5quiz.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page6.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page6.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session2\\page6.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page7feedback.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page7feedback.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session2\\page7feedback.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page8activity.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session2\\page8activity.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session2\\page8activity.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\contents.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\contents.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session3\\contents.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page1.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page1.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session3\\page1.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page2.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page2.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session3\\page2.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page3.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page3.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session3\\page3.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page4.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page4.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session3\\page4.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page5quiz.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page5quiz.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session3\\page5quiz.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page6.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page6.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session3\\page6.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page7feedback.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page7feedback.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session3\\page7feedback.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page8activity.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\sessions\\session3\\page8activity.html",
       "PackagePath": "staticwebassets\\lib\\sessions\\session3\\page8activity.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\team.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\team.html",
       "PackagePath": "staticwebassets\\lib\\team.html"
     },
     {
-      "Id": "C:\\Users\\Lucas Pawley\\OneDrive\\Documents\\COMP2003 - Computing Group Project\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\terms.html",
+      "Id": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceIt2023IntegratedBuild\\wwwroot\\lib\\terms.html",
       "PackagePath": "staticwebassets\\lib\\terms.html"
     },
     {

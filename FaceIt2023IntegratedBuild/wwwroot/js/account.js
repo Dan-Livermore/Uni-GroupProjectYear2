@@ -120,7 +120,7 @@ fetch(apiUrl)
     table.appendChild(thead);
 
     // Add table rows with data
-    data.forEach(rowData => {
+    data.forEach((rowData, rowIndex) => {
       const tr = document.createElement("tr");
 
       // Add columns for each value in rowData
@@ -134,11 +134,37 @@ fetch(apiUrl)
       const editButton = document.createElement("button");
       editButton.textContent = "Edit";
       editButton.classList.add("button", "is-small", "is-primary");
+
+      // Add click event listener for edit button
+      editButton.addEventListener("click", () => {
+        // Set variables based on the row data and index
+        const userId = rowData.userId;
+        const email = rowData.userEmail;
+        const password = rowData.userPassword;
+        const privilegeLevel = rowData.privilegeLevel;
+        const forename = rowData.forename;
+        const surname = rowData.surname;
+        const rowId = rowIndex + 1;
+
+        console.log(`Edit button clicked for row ${rowId}`);
+        console.log(`User ID: ${userId}, Email: ${email}, Password: ${password}, Privilege Level: ${privilegeLevel}, Forename: ${forename}, Surname: ${surname}`);
+      });
+
       const deleteButton = document.createElement("button");
       deleteButton.textContent = "Delete";
       deleteButton.classList.add("button", "is-small", "is-danger");
 
-      // Add Edit and Delete columns
+      // Add click event listener for delete button
+      deleteButton.addEventListener("click", () => {
+        // Set variables based on the row data and index
+        const userId = rowData.userId;
+        const email = rowData.userEmail;
+        const rowId = rowIndex + 1;
+
+        console.log(`Delete button clicked for row ${rowId}`);
+        console.log(`User ID: ${userId}, Email: ${email}`);
+      });
+
       const editTd = document.createElement("td");
       const deleteTd = document.createElement("td");
       editTd.appendChild(editButton);

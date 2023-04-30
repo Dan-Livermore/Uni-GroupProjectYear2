@@ -97,95 +97,173 @@ async function adminGetAccounts(){
 /*  This function generates a html table from the database of all accounts with funcitionality of 
 * deleting and editing accounts. 
 */
-const tableColumns = ["User ID", "Email", "Password", "Privilege Level", "Forename", "Surname","Edit","Delete"];
+const tableColumns = ["User ID", "Email", "Privilege Level", "Forename", "Surname", "Edit", "Delete"];
 const apiUrl = "https://localhost:7200/api/Accounts";
 
 fetch(apiUrl)
-.then(response => response.json())
-.then(data => {
-  const table = document.createElement("table");
-  const thead = document.createElement("thead");
-  const tbody = document.createElement("tbody");
-  const headerRow = document.createElement("tr");
+  .then(response => response.json())
+  .then(data => {
+    const table = document.createElement("table");
+    const thead = document.createElement("thead");
+    const tbody = document.createElement("tbody");
+    const headerRow = document.createElement("tr");
 
-  // Add table header columns
-  tableColumns.forEach(column => {
-    const th = document.createElement("th");
-    th.textContent = column;
-    headerRow.appendChild(th);
-  });
-
-  // Add header row to table header
-  thead.appendChild(headerRow);
-  table.appendChild(thead);
-
-  // Add table rows with data
-  data.forEach((rowData, rowIndex) => {
-    const tr = document.createElement("tr");
-
-    // Add columns for each value in rowData
-    Object.values(rowData).forEach(value => {
-      const td = document.createElement("td");
-      td.textContent = value;
-      tr.appendChild(td);
+    // Add table header columns
+    tableColumns.forEach(column => {
+      const th = document.createElement("th");
+      th.textContent = column;
+      headerRow.appendChild(th);
     });
 
-    // Add "Edit" and "Delete" buttons
-    const editButton = document.createElement("button");
-    editButton.textContent = "Edit";
-    editButton.classList.add("button", "is-small", "is-primary");
+    // Add header row to table header
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
 
-    // Add click event listener for edit button
-    editButton.addEventListener("click", () => {
-      // Set variables based on the row data and index
-      const userId = rowData.userId;
-      const email = rowData.userEmail;
-      const password = rowData.userPassword;
-      const privilegeLevel = rowData.privilegeLevel;
-      const forename = rowData.forename;
-      const surname = rowData.surname;
-      const rowId = rowIndex + 1;
+    // Add table rows with data
+    data.forEach((rowData, rowIndex) => {
+      const tr = document.createElement("tr");
 
-      console.log(`Edit button clicked for row ${rowId}`);
-      console.log(`User ID: ${userId}, Email: ${email}, Password: ${password}, Privilege Level: ${privilegeLevel}, Forename: ${forename}, Surname: ${surname}`);
+      // Add columns for each value in rowData, except for the "Password" column
+      Object.entries(rowData).forEach(([key, value]) => {
+        if (key !== "userPassword") {
+          const td = document.createElement("td");
+          td.textContent = value;
+          tr.appendChild(td);
+        }
+      });
+
+      // Add "Edit" and "Delete" buttons
+      const editButton = document.createElement("button");
+      editButton.textContent = "Edit";
+      editButton.classList.add("button", "is-small", "is-primary");
+
+      // Add click event listener for edit button
+      editButton.addEventListener("click", () => {
+        // Set variables based on the row data and index
+        const userId = rowData.userId;
+        const email = rowData.userEmail;
+        const password = rowData.userPassword;
+        const privilegeLevel = rowData.privilegeLevel;
+        const forename = rowData.forename;
+        const surname = rowData.surname;
+        const rowId = rowIndex + 1;
+
+        console.log(`Edit button clicked for row ${rowId}`);
+        console.log(`User ID: ${userId}, Email: ${email}, Password: ${password}, Privilege Level: ${privilegeLevel}, Forename: ${forename}, Surname: ${surname}`);
+
+        // Display modal with input fields for editing the user data
+        const modal = document.getElementById("modal");
+        modal.classList.add("is-active");
+
+        // Set modal header
+        const modalHeader = document.getElementById("modalHeader");
+        modalHeader.textContent = "Edit Profile";
+
+        // Create input fields for editing user data
+        const emailInput = document.createElement("input");
+        emailInput.type = "text";
+        emailInput.placeholder = "Email";
+        emailInput.value = email;
+
+        const privilegeLevelInput = document.createElement("input");
+        privilegeLevelInput.type = "text";
+        privilegeLevelInput.placeholder = "Privilege Level";
+        privilegeLevelInput.value = privilegeLevel;
+
+        const forenameInput = document.createElement("input");
+        forenameInput.type = "text";
+        forenameInput.placeholder = "Forename";
+        forenameInput.value = forename;
+
+        const surnameInput = document.createElement("input");
+        surnameInput.type = "text";
+        surnameInput.placeholder = "Surname";
+        surnameInput.value = surname;
+
+        // Add input fields to modal body
+        const modalBody = document.getElementById("modalBody");
+        modalBody.innerHTML = "";
+        modalBody.appendChild(emailInput);
+        modalBody.appendChild(privilegeLevelInput);
+        modalBody.appendChild(forenameInput);
+        modalBody.appendChild(surnameInput);
+
+        // Add submit and cancel buttons to modal footer
+        const modalFooter = document.getElementById("modalFooter");
+        modalFooter.innerHTML = "";
+
+        const submitButton = document.createElement("button");
+        submitButton.textContent = "Submit";
+        submitButton.classList.add("button", "is-primary");
+        submitButton.addEventListener("click", () => {
+          console.log("Submit button clicked");
+
+          // Get updated values from input fields
+          const updatedEmail = emailInput.value;
+          const updatedPrivilegeLevel = privilegeLevelInput.value;
+          const updatedForename = forenameInput.value;
+          const updatedSurname = surnameInput.value;
+
+          // Log updated values to console
+          console.log(`Updated Email: ${updatedEmail}`);
+          console.log(`Updated Privilege Level: ${updatedPrivilegeLevel}`);
+          console.log(`Updated Forename: ${updatedForename}`);
+          console.log(`Updated Surname: ${updatedSurname}`);
+
+           // Close modal
+          modal.classList.remove("is-active");
+        });
+
+        const cancelButton = document.createElement("button");
+        cancelButton.textContent = "Cancel";
+        cancelButton.classList.add("button");
+        cancelButton.addEventListener("click", () => {
+          console.log("Cancel button clicked");
+
+          // Close modal
+          modal.classList.remove("is-active");
+        });
+
+        modalFooter.appendChild(submitButton);
+        modalFooter.appendChild(cancelButton);
+      });
+
+
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent = "Delete";
+      deleteButton.classList.add("button", "is-small", "is-danger");
+
+      // Add click event listener for delete button
+      deleteButton.addEventListener("click", () => {
+        // Set variables based on the row data and index
+        const userId = rowData.userId;
+        const email = rowData.userEmail;
+        const rowId = rowIndex + 1;
+
+        console.log(`Delete button clicked for row ${rowId}`);
+        console.log(`User ID: ${userId}, Email: ${email}`);
+      });
+
+      const editTd = document.createElement("td");
+      const deleteTd = document.createElement("td");
+      editTd.appendChild(editButton);
+      deleteTd.appendChild(deleteButton);
+      tr.appendChild(editTd);
+      tr.appendChild(deleteTd);
+
+      // Add row to table body
+      tbody.appendChild(tr);
     });
 
-    const deleteButton = document.createElement("button");
-    deleteButton.textContent = "Delete";
-    deleteButton.classList.add("button", "is-small", "is-danger");
+    // Add table body to table
+    table.appendChild(tbody);
 
-    // Add click event listener for delete button
-    deleteButton.addEventListener("click", () => {
-      // Set variables based on the row data and index
-      const userId = rowData.userId;
-      const email = rowData.userEmail;
-      const rowId = rowIndex + 1;
+    // Add table to page
+    const card2Body = document.getElementById("card2Body");
+    card2Body.appendChild(table);
+  })
+  .catch(error => console.error(error));
 
-      console.log(`Delete button clicked for row ${rowId}`);
-      console.log(`User ID: ${userId}, Email: ${email}`);
-    });
-
-    const editTd = document.createElement("td");
-    const deleteTd = document.createElement("td");
-    editTd.appendChild(editButton);
-    deleteTd.appendChild(deleteButton);
-    tr.appendChild(editTd);
-    tr.appendChild(deleteTd);
-
-    // Add row to table body
-    tbody.appendChild(tr);
-  });
-
-  // Add table body to table
-  table.appendChild(tbody);
-
-  // Add table to page
-  const card2Body = document.getElementById("card2Body");
-  card2Body.appendChild(table);
-})
-.catch(error => console.error(error));
-
-    
 } 
 
 

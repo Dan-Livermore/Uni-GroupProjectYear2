@@ -25,6 +25,12 @@
                       <div class="card-content is-5">
                         <h1 class="title is-3 has-text-centered">Account Settings</h1>
                         <div id="AccountSettingsContent">
+                          <div class="columns is-centered">                            
+                            <div class="column is-half">
+                              <img src="../images/cogstill.png" alt="Account Settings" class="AccountSettingsGif">
+                            </div>
+                          </div>           
+
                           <div class="field" id="nameChanger" style="display: none;">
                             <label class="label">Change Name:</label>
                             <div class="control">
@@ -91,13 +97,41 @@
         
       
     </section>
-    <section class="section">
-       <div class="tile is-half is-offset-one-quater">
-          <div class="tile is-child box has-text-centered is-6">
-            <button id="signoutButton" class="button is-danger is-medium">Sign Out</button>
+    <div class="column is-centered">
+      <section class="section">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <div class="tile is-ancestor">
+              <div class="tile is-parent">
+                <div class="tile is-child box has-text-centered">
+                  <button id="signoutButton" class="button is-danger is-medium">SIGN OUT</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>              
-    </section>     
+        </div>
+      </section>
+    </div>
+    
+    
+    <div class="modal" id="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title" id="modalHeader">Edit Profile</p>
+          <button class="delete" aria-label="close"></button>
+        </header>
+        <section class="modal-card-body" id="modalBody">
+          <!-- Input fields will be added dynamically via Account.JS -->
+        </section>
+        <footer class="modal-card-foot" id="modalFooter">
+          <button class="button is-primary" id="submitEdit">Submit</button>
+          <button class="button" id="cancelEdit">Cancel</button>
+        </footer>
+      </div>      
+    </div>
+    
+    
       
       <my-footer></my-footer>
   

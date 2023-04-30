@@ -94,177 +94,221 @@ try {
 }
 
 async function adminGetAccounts(){
-/*  This function generates a html table from the database of all accounts with funcitionality of 
-* deleting and editing accounts. 
-*/
-const tableColumns = ["User ID", "Email", "Privilege Level", "Forename", "Surname", "Edit", "Delete"];
-const apiUrl = "https://localhost:7200/api/Accounts";
-
-fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
-    const table = document.createElement("table");
-    const thead = document.createElement("thead");
-    const tbody = document.createElement("tbody");
-    const headerRow = document.createElement("tr");
-
-    // Add table header columns
-    tableColumns.forEach(column => {
-      const th = document.createElement("th");
-      th.textContent = column;
-      headerRow.appendChild(th);
-    });
-
-    // Add header row to table header
-    thead.appendChild(headerRow);
-    table.appendChild(thead);
-
-    // Add table rows with data
-    data.forEach((rowData, rowIndex) => {
-      const tr = document.createElement("tr");
-
-      // Add columns for each value in rowData, except for the "Password" column
-      Object.entries(rowData).forEach(([key, value]) => {
-        if (key !== "userPassword") {
-          const td = document.createElement("td");
-          td.textContent = value;
-          tr.appendChild(td);
-        }
+  /*  This function generates a html table from the database of all accounts with funcitionality of 
+  * deleting and editing accounts. 
+  */
+  const tableColumns = ["User ID", "Email", "Privilege Level", "Forename", "Surname", "Edit", "Delete"];
+  const apiUrl = "https://localhost:7200/api/Accounts";
+  
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      const table = document.createElement("table");
+      const thead = document.createElement("thead");
+      const tbody = document.createElement("tbody");
+      const headerRow = document.createElement("tr");
+  
+      // Add table header columns
+      tableColumns.forEach(column => {
+        const th = document.createElement("th");
+        th.textContent = column;
+        headerRow.appendChild(th);
       });
-
-      // Add "Edit" and "Delete" buttons
-      const editButton = document.createElement("button");
-      editButton.textContent = "Edit";
-      editButton.classList.add("button", "is-small", "is-primary");
-
-      // Add click event listener for edit button
-      editButton.addEventListener("click", () => {
-        // Set variables based on the row data and index
-        const userId = rowData.userId;
-        const email = rowData.userEmail;
-        const password = rowData.userPassword;
-        const privilegeLevel = rowData.privilegeLevel;
-        const forename = rowData.forename;
-        const surname = rowData.surname;
-        const rowId = rowIndex + 1;
-
-        console.log(`Edit button clicked for row ${rowId}`);
-        console.log(`User ID: ${userId}, Email: ${email}, Password: ${password}, Privilege Level: ${privilegeLevel}, Forename: ${forename}, Surname: ${surname}`);
-
-        // Display modal with input fields for editing the user data
-        const modal = document.getElementById("modal");
-        modal.classList.add("is-active");
-
-        // Set modal header
-        const modalHeader = document.getElementById("modalHeader");
-        modalHeader.textContent = "Edit Profile";
-
-        // Create input fields for editing user data
-        const emailInput = document.createElement("input");
-        emailInput.type = "text";
-        emailInput.placeholder = "Email";
-        emailInput.value = email;
-
-        const privilegeLevelInput = document.createElement("input");
-        privilegeLevelInput.type = "text";
-        privilegeLevelInput.placeholder = "Privilege Level";
-        privilegeLevelInput.value = privilegeLevel;
-
-        const forenameInput = document.createElement("input");
-        forenameInput.type = "text";
-        forenameInput.placeholder = "Forename";
-        forenameInput.value = forename;
-
-        const surnameInput = document.createElement("input");
-        surnameInput.type = "text";
-        surnameInput.placeholder = "Surname";
-        surnameInput.value = surname;
-
-        // Add input fields to modal body
-        const modalBody = document.getElementById("modalBody");
-        modalBody.innerHTML = "";
-        modalBody.appendChild(emailInput);
-        modalBody.appendChild(privilegeLevelInput);
-        modalBody.appendChild(forenameInput);
-        modalBody.appendChild(surnameInput);
-
-        // Add submit and cancel buttons to modal footer
-        const modalFooter = document.getElementById("modalFooter");
-        modalFooter.innerHTML = "";
-
-        const submitButton = document.createElement("button");
-        submitButton.textContent = "Submit";
-        submitButton.classList.add("button", "is-primary");
-        submitButton.addEventListener("click", () => {
-          console.log("Submit button clicked");
-
-          // Get updated values from input fields
-          const updatedEmail = emailInput.value;
-          const updatedPrivilegeLevel = privilegeLevelInput.value;
-          const updatedForename = forenameInput.value;
-          const updatedSurname = surnameInput.value;
-
-          // Log updated values to console
-          console.log(`Updated Email: ${updatedEmail}`);
-          console.log(`Updated Privilege Level: ${updatedPrivilegeLevel}`);
-          console.log(`Updated Forename: ${updatedForename}`);
-          console.log(`Updated Surname: ${updatedSurname}`);
-
-           // Close modal
-          modal.classList.remove("is-active");
+  
+      // Add header row to table header
+      thead.appendChild(headerRow);
+      table.appendChild(thead);
+  
+      // Add table rows with data
+      data.forEach((rowData, rowIndex) => {
+        const tr = document.createElement("tr");
+  
+        // Add columns for each value in rowData, except for the "Password" column
+        Object.entries(rowData).forEach(([key, value]) => {
+          if (key !== "userPassword") {
+            const td = document.createElement("td");
+            td.textContent = value;
+            tr.appendChild(td);
+          }
         });
-
-        const cancelButton = document.createElement("button");
-        cancelButton.textContent = "Cancel";
-        cancelButton.classList.add("button");
-        cancelButton.addEventListener("click", () => {
-          console.log("Cancel button clicked");
-
-          // Close modal
-          modal.classList.remove("is-active");
+  
+        // Add "Edit" and "Delete" buttons
+        const editButton = document.createElement("button");
+        editButton.textContent = "Edit";
+        editButton.classList.add("button", "is-small", "is-primary");
+  
+        
+        /* ---------------------------------------------------The edit button's onlcik starts here!
+        *
+        *
+        * 
+        */
+        editButton.addEventListener("click", () => {
+          // Set variables based on the row data and index
+          const userId = rowData.userId;
+          const email = rowData.userEmail;
+          const password = rowData.userPassword;
+          const privilegeLevel = rowData.privilegeLevel;
+          const forename = rowData.forename;
+          const surname = rowData.surname;
+          const rowId = rowIndex + 1;
+  
+          console.log(`Edit button clicked for row ${rowId}`);
+          console.log(`User ID: ${userId}, Email: ${email}, Password: ${password}, Privilege Level: ${privilegeLevel}, Forename: ${forename}, Surname: ${surname}`);
+  
+          // Display modal with input fields for editing the user data
+          const modal = document.getElementById("modal");
+          modal.classList.add("is-active");
+  
+          // Set modal header
+          const modalHeader = document.getElementById("modalHeader");
+          modalHeader.textContent = "Edit Profile";
+          
+          //Creates input fields
+          const emailInput = document.createElement("input");
+          emailInput.classList.add("input", "is-medium");
+          emailInput.type = "email";
+          emailInput.placeholder = "Email";
+          emailInput.value = email;        
+  
+          //Creates a password input
+          const passInput = document.createElement("input");
+          passInput.classList.add("input", "is-medium");
+          passInput.type = "password";
+          passInput.placeholder = "Password";
+          passInput.value = password;
+  
+          const forenameInput = document.createElement("input");
+          forenameInput.classList.add("input", "is-medium");
+          forenameInput.type = "text";
+          forenameInput.placeholder = "Forename";
+          forenameInput.value = forename;
+  
+          const surnameInput = document.createElement("input");
+          surnameInput.classList.add("input", "is-medium");
+          surnameInput.type = "text";
+          surnameInput.placeholder = "Surname";
+          surnameInput.value = surname;
+  
+          // const privilegeLevelInput = document.createElement("select");
+          // privilegeLevelInput.classList.add("select", "is-medium");
+          // privilegeLevelInput.type = "text";
+          // privilegeLevelInput.placeholder = "Privilege Level";
+          // privilegeLevelInput.value = privilegeLevel;
+          
+          //Creates a drio downSelect ----------------------------------
+          const privilegeLevelInput = document.createElement("select");
+          privilegeLevelInput.classList.add("select", "is-medium");
+          privilegeLevelInput.name = "privilege-level";
+  
+          const optionElement1 = document.createElement("option");
+          optionElement1.value = 1;
+          optionElement1.textContent = "Admin";
+  
+          const optionElement2 = document.createElement("option");
+          optionElement2.value = 2;
+          optionElement2.textContent = "Health Prof";
+  
+          const optionElement3 = document.createElement("option");
+          optionElement3.value = 3;
+          optionElement3.textContent = "User";
+  
+          privilegeLevelInput.appendChild(optionElement1);
+          privilegeLevelInput.appendChild(optionElement2);
+          privilegeLevelInput.appendChild(optionElement3);
+  
+          const iconElement = document.createElement("span");
+          iconElement.classList.add("icon", "is-small");
+          iconElement.innerHTML = '<i class="fas fa-angle-down"></i>';
+  
+          const modalBody = document.getElementById("modalBody");
+          modalBody.innerHTML = "";
+          modalBody.appendChild(forenameInput);
+          modalBody.appendChild(surnameInput);
+          modalBody.appendChild(emailInput);
+          modalBody.appendChild(passInput);        
+          modalBody.appendChild(privilegeLevelInput);
+          modalBody.appendChild(iconElement);
+  
+          
+  
+  
+          // Add submit and cancel buttons to modal footer
+          const modalFooter = document.getElementById("modalFooter");
+          modalFooter.innerHTML = "";
+  
+          const submitButton = document.createElement("button");
+          submitButton.textContent = "Submit";
+          submitButton.classList.add("button", "is-primary");
+          submitButton.addEventListener("click", () => {
+            console.log("Submit button clicked");
+  
+            // Get updated values from input fields
+            const updatedEmail = emailInput.value;
+            const updatedPrivilegeLevel = privilegeLevelInput.value;
+            const updatedForename = forenameInput.value;
+            const updatedSurname = surnameInput.value;
+  
+             // Close modal
+            modal.classList.remove("is-active");
+          });
+  
+          const cancelButton = document.createElement("button");
+          cancelButton.textContent = "Cancel";
+          cancelButton.classList.add("button");
+          cancelButton.addEventListener("click", () => {
+            console.log("Cancel button clicked");
+  
+            // Close modal
+            modal.classList.remove("is-active");
+          });
+  
+          modalFooter.appendChild(submitButton);
+          modalFooter.appendChild(cancelButton);
         });
-
-        modalFooter.appendChild(submitButton);
-        modalFooter.appendChild(cancelButton);
+  
+  
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.classList.add("button", "is-small", "is-danger");
+  
+        // Add click event listener for delete button
+        deleteButton.addEventListener("click", () => {
+          // Set variables based on the row data and index
+          const userId = rowData.userId;
+          const email = rowData.userEmail;
+          const rowId = rowIndex + 1;
+  
+          console.log(`Delete button clicked for row ${rowId}`);
+          console.log(`User ID: ${userId}, Email: ${email}`);
+        });
+  
+        const editTd = document.createElement("td");
+        const deleteTd = document.createElement("td");
+        editTd.appendChild(editButton);
+        deleteTd.appendChild(deleteButton);
+        tr.appendChild(editTd);
+        tr.appendChild(deleteTd);
+  
+        // Add row to table body
+        tbody.appendChild(tr);
       });
-
-
-      const deleteButton = document.createElement("button");
-      deleteButton.textContent = "Delete";
-      deleteButton.classList.add("button", "is-small", "is-danger");
-
-      // Add click event listener for delete button
-      deleteButton.addEventListener("click", () => {
-        // Set variables based on the row data and index
-        const userId = rowData.userId;
-        const email = rowData.userEmail;
-        const rowId = rowIndex + 1;
-
-        console.log(`Delete button clicked for row ${rowId}`);
-        console.log(`User ID: ${userId}, Email: ${email}`);
-      });
-
-      const editTd = document.createElement("td");
-      const deleteTd = document.createElement("td");
-      editTd.appendChild(editButton);
-      deleteTd.appendChild(deleteButton);
-      tr.appendChild(editTd);
-      tr.appendChild(deleteTd);
-
-      // Add row to table body
-      tbody.appendChild(tr);
-    });
-
-    // Add table body to table
-    table.appendChild(tbody);
-
-    // Add table to page
-    const card2Body = document.getElementById("card2Body");
-    card2Body.appendChild(table);
-  })
-  .catch(error => console.error(error));
-
-} 
+  
+      /* --------------------------------------------------------------------Edit BUtton onclick ends here?
+       */
+  
+  
+      // Add table body to table
+      table.appendChild(tbody);
+  
+      // Add table to page
+      const card2Body = document.getElementById("card2Body");
+      card2Body.appendChild(table);
+    })
+    .catch(error => console.error(error));
+  
+  } 
+  
 
 
 

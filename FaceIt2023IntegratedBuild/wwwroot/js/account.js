@@ -352,29 +352,218 @@ async function adminGetAccounts(){
           const forename = rowData.forename;
           const surname = rowData.surname;
 
+          if (window.confirm("Are you sure you want to proceed Deleting Account: "+email+" ?")) {
+
+            try {
+              const url = 'https://localhost:7200/api/Accounts/' + userId;
+          
+              fetch(url, {
+                  method: 'DELETE',
+                  headers: {
+                    'accept': '*/*',
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({
+                    userId: userId,
+                    userEmail: email,
+                    userPassword: password,
+                    privilegeLevel: privilegeLevel,
+                    forename: forename,
+                    surname: surname
+                  })
+                })
+                .then(response => {
+                  if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                  }
+                  return response.text(); 
+                })
+                .then(data => {
+                  if (data) {
+                    try {
+                      const jsonData = JSON.parse(data);
+                      console.log(jsonData);
+                    } catch (error) {
+                      console.log('Response was not valid JSON:', error);
+                    }
+                  } else {
+                    console.log('Response was empty');
+                  }
+                })
+                .catch(error => {
+                  console.error('There was a problem with the fetch operation:', error);
+                });
+                alert("Success! Updating Records.");
+                location.reload();            
+               
+          
+            } catch {
+              console.log("something went wrong trying to PUT");
+              alert("Something went wrong and Changes couldn't be saved");
+              return;
+            }  
+             // Close modal
+            modal.classList.remove("is-active");
+    
+            console.log(`Delete button clicked for row ${rowId}`);
+            console.log(`User ID: ${userId}, Email: ${email}`);      
+
+
+          } else {
+            modal.classList.remove("is-active");
+          }
+          
+
+        });
+  
+        const editTd = document.createElement("td");
+        const deleteTd = document.createElement("td");
+        editTd.appendChild(editButton);
+        deleteTd.appendChild(deleteButton);
+        tr.appendChild(editTd);
+        tr.appendChild(deleteTd);
+  
+        // Add row to table body
+        tbody.appendChild(tr);
+      });  
+  
+  
+      // Add table body to table
+      table.appendChild(tbody);
+  
+      // Add table to page
+      const card2Body = document.getElementById("card2Body");
+      card2Body.appendChild(table);
+
+      // Create button that brings up a different modal
+      const createButton = document.createElement("button");
+      createButton.textContent = "Create a new Account";
+      createButton.classList.add("button", "is-small", "is-success", "is-5", "has-text-centered","mt-6", "mx-auto");  
+      
+      // Add flex container
+      const container = document.createElement("div");
+      container.classList.add("is-flex", "justify-content-center");
+      container.appendChild(createButton);
+      
+      // Add container to card2Body
+      card2Body.appendChild(container); 
+      
+      /*
+      *   CREATE ACCOUNT FEATURE
+      */
+      createButton.addEventListener("click", () => {       
+
+        // Display modal with input fields for editing the user data
+        const modal = document.getElementById("modal");
+        modal.classList.add("is-active");
+
+        // Set modal header
+        const modalHeader = document.getElementById("modalHeader");
+        modalHeader.textContent = "Create a Profile";
+        
+        //Creates input fields
+        const emailInput = document.createElement("input");
+        emailInput.classList.add("input", "is-medium");
+        emailInput.type = "email";
+        emailInput.placeholder = "Email Address";      
+
+        //Creates a password input
+        const passInput = document.createElement("input");
+        passInput.classList.add("input", "is-medium");
+        passInput.type = "password";
+        passInput.placeholder = "Password";
+
+        const forenameInput = document.createElement("input");
+        forenameInput.classList.add("input", "is-medium");
+        forenameInput.type = "text";
+        forenameInput.placeholder = "Forename";
+
+        const surnameInput = document.createElement("input");
+        surnameInput.classList.add("input", "is-medium");
+        surnameInput.type = "text";
+        surnameInput.placeholder = "Surname";
+        
+        //Creates a drio downSelect ----------------------------------
+        const privilegeLevelInput = document.createElement("select");
+        privilegeLevelInput.classList.add("select", "is-medium");
+        privilegeLevelInput.name = "privilege-level";
+
+        const optionElement1 = document.createElement("option");
+        optionElement1.value = 1;
+        optionElement1.textContent = "Admin";
+
+        const optionElement2 = document.createElement("option");
+        optionElement2.value = 2;
+        optionElement2.textContent = "Health Prof";
+
+        const optionElement3 = document.createElement("option");
+        optionElement3.value = 3;
+        optionElement3.textContent = "User";
+
+        privilegeLevelInput.appendChild(optionElement1);
+        privilegeLevelInput.appendChild(optionElement2);
+        privilegeLevelInput.appendChild(optionElement3);
+
+        const iconElement = document.createElement("span");
+        iconElement.classList.add("icon", "is-small");
+        iconElement.innerHTML = '<i class="fas fa-angle-down"></i>';
+
+        const modalBody = document.getElementById("modalBody");
+        modalBody.innerHTML = "";
+        modalBody.appendChild(forenameInput);
+        modalBody.appendChild(surnameInput);
+        modalBody.appendChild(emailInput);
+        modalBody.appendChild(passInput);        
+        modalBody.appendChild(privilegeLevelInput);
+        modalBody.appendChild(iconElement);   
+
+        // Add submit and cancel buttons to modal footer
+        const modalFooter = document.getElementById("modalFooter");
+        modalFooter.innerHTML = "";
+
+        const submitButton = document.createElement("button");
+        submitButton.textContent = "Submit";
+        submitButton.classList.add("button", "is-primary");
+        submitButton.addEventListener("click", () => {
+          console.log("Submit button clicked");
+
+          // Get updated values from input fields
+          const updatedEmail = emailInput.value;
+          const updatedPrivilegeLevel = privilegeLevelInput.value;
+          const updatedForename = forenameInput.value;
+          const updatedSurname = surnameInput.value;
+          const updatedPassword = passInput.value;
+          console.log("New Values:");
+          console.log(updatedEmail);
+          console.log(updatedPrivilegeLevel);
+          console.log(updatedForename);
+          console.log(updatedSurname);
+          console.log(updatedPassword);
+         
+
           try {
-            const url = 'https://localhost:7200/api/Accounts/' + userId;
+            const url = 'https://localhost:7200/api/Accounts';
         
             fetch(url, {
-                method: 'DELETE',
+                method: 'POST',
                 headers: {
                   'accept': '*/*',
                   'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                  userId: userId,
-                  userEmail: email,
-                  userPassword: password,
-                  privilegeLevel: privilegeLevel,
-                  forename: forename,
-                  surname: surname
+                  userId: 0,
+                  userEmail: updatedEmail,
+                  userPassword: updatedPassword,
+                  privilegeLevel: updatedPrivilegeLevel,
+                  forename: updatedForename,
+                  surname: updatedSurname
                 })
               })
               .then(response => {
                 if (!response.ok) {
                   throw new Error('Network response was not ok');
                 }
-                return response.text(); 
+                return response.text(); // use text() instead of json()
               })
               .then(data => {
                 if (data) {
@@ -393,6 +582,7 @@ async function adminGetAccounts(){
               });
               alert("Success! Updating Records.");
               location.reload();            
+  
              
         
           } catch {
@@ -403,37 +593,26 @@ async function adminGetAccounts(){
 
            // Close modal
           modal.classList.remove("is-active");
-
-  
-          console.log(`Delete button clicked for row ${rowId}`);
-          console.log(`User ID: ${userId}, Email: ${email}`);
         });
-  
-        const editTd = document.createElement("td");
-        const deleteTd = document.createElement("td");
-        editTd.appendChild(editButton);
-        deleteTd.appendChild(deleteButton);
-        tr.appendChild(editTd);
-        tr.appendChild(deleteTd);
-  
-        // Add row to table body
-        tbody.appendChild(tr);
+
+        const cancelButton = document.createElement("button");
+        cancelButton.textContent = "Cancel";
+        cancelButton.classList.add("button");
+        cancelButton.addEventListener("click", () => {
+          console.log("Cancel button clicked");
+
+          // Close modal
+          modal.classList.remove("is-active");
+        });
+
+        modalFooter.appendChild(submitButton);
+        modalFooter.appendChild(cancelButton);
       });
+
+      });      
+        
   
-      /* --------------------------------------------------------------------Edit BUtton onclick ends here?
-       */
-  
-  
-      // Add table body to table
-      table.appendChild(tbody);
-  
-      // Add table to page
-      const card2Body = document.getElementById("card2Body");
-      card2Body.appendChild(table);
-    })
-    .catch(error => console.error(error));
-  
-  } 
+  }
   
  
  

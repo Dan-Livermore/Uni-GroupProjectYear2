@@ -418,10 +418,7 @@ async function adminGetAccounts(){
   
         // Add row to table body
         tbody.appendChild(tr);
-      });
-  
-      /* --------------------------------------------------------------------Edit BUtton onclick ends here?
-       */
+      });  
   
   
       // Add table body to table
@@ -430,6 +427,17 @@ async function adminGetAccounts(){
       // Add table to page
       const card2Body = document.getElementById("card2Body");
       card2Body.appendChild(table);
+
+      // Create button that brings up a different modal
+      const createButton = document.createElement("button");
+      createButton.textContent = "Create a new Account";
+      //createButton.classList.add("button", "is-small", "is-success");
+      createButton.classList.add("button", "is-small", "is-success", "is-5", "has-text-centered","mt-6", "mx-auto");
+      //createButton.classList.add("button", "is-success", "mt-6", "mx-auto");  
+  
+      createButton.addEventListener("click", () => {});
+      
+      card2Body.appendChild(createButton);
     })
     .catch(error => console.error(error));
   

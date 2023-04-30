@@ -352,61 +352,69 @@ async function adminGetAccounts(){
           const forename = rowData.forename;
           const surname = rowData.surname;
 
-          try {
-            const url = 'https://localhost:7200/api/Accounts/' + userId;
-        
-            fetch(url, {
-                method: 'DELETE',
-                headers: {
-                  'accept': '*/*',
-                  'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                  userId: userId,
-                  userEmail: email,
-                  userPassword: password,
-                  privilegeLevel: privilegeLevel,
-                  forename: forename,
-                  surname: surname
+          if (window.confirm("Are you sure you want to proceed Deleting Account: "+email+" ?")) {
+
+            try {
+              const url = 'https://localhost:7200/api/Accounts/' + userId;
+          
+              fetch(url, {
+                  method: 'DELETE',
+                  headers: {
+                    'accept': '*/*',
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({
+                    userId: userId,
+                    userEmail: email,
+                    userPassword: password,
+                    privilegeLevel: privilegeLevel,
+                    forename: forename,
+                    surname: surname
+                  })
                 })
-              })
-              .then(response => {
-                if (!response.ok) {
-                  throw new Error('Network response was not ok');
-                }
-                return response.text(); 
-              })
-              .then(data => {
-                if (data) {
-                  try {
-                    const jsonData = JSON.parse(data);
-                    console.log(jsonData);
-                  } catch (error) {
-                    console.log('Response was not valid JSON:', error);
+                .then(response => {
+                  if (!response.ok) {
+                    throw new Error('Network response was not ok');
                   }
-                } else {
-                  console.log('Response was empty');
-                }
-              })
-              .catch(error => {
-                console.error('There was a problem with the fetch operation:', error);
-              });
-              alert("Success! Updating Records.");
-              location.reload();            
-             
-        
-          } catch {
-            console.log("something went wrong trying to PUT");
-            alert("Something went wrong and Changes couldn't be saved");
-            return;
+                  return response.text(); 
+                })
+                .then(data => {
+                  if (data) {
+                    try {
+                      const jsonData = JSON.parse(data);
+                      console.log(jsonData);
+                    } catch (error) {
+                      console.log('Response was not valid JSON:', error);
+                    }
+                  } else {
+                    console.log('Response was empty');
+                  }
+                })
+                .catch(error => {
+                  console.error('There was a problem with the fetch operation:', error);
+                });
+                alert("Success! Updating Records.");
+                location.reload();            
+               
+          
+            } catch {
+              console.log("something went wrong trying to PUT");
+              alert("Something went wrong and Changes couldn't be saved");
+              return;
+            }  
+             // Close modal
+            modal.classList.remove("is-active");
+    
+            console.log(`Delete button clicked for row ${rowId}`);
+            console.log(`User ID: ${userId}, Email: ${email}`);      
+
+
+          } else {
+            modal.classList.remove("is-active");
           }
+          
 
-           // Close modal
-          modal.classList.remove("is-active");
-
-  
-          console.log(`Delete button clicked for row ${rowId}`);
-          console.log(`User ID: ${userId}, Email: ${email}`);
+          
         });
   
         const editTd = document.createElement("td");
@@ -431,13 +439,18 @@ async function adminGetAccounts(){
       // Create button that brings up a different modal
       const createButton = document.createElement("button");
       createButton.textContent = "Create a new Account";
-      //createButton.classList.add("button", "is-small", "is-success");
       createButton.classList.add("button", "is-small", "is-success", "is-5", "has-text-centered","mt-6", "mx-auto");
-      //createButton.classList.add("button", "is-success", "mt-6", "mx-auto");  
-  
+        
+
       createButton.addEventListener("click", () => {});
       
-      card2Body.appendChild(createButton);
+      // Add flex container
+      const container = document.createElement("div");
+      container.classList.add("is-flex", "justify-content-center");
+      container.appendChild(createButton);
+
+      // Add container to card2Body
+      card2Body.appendChild(container);
     })
     .catch(error => console.error(error));
   

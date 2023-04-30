@@ -560,6 +560,8 @@ var textField1 = document.getElementById("forenameField");
 textField1.value= forename;
 var textField2 = document.getElementById("surnameField");
 textField2.value = surname;
+var imageCog = document.getElementById("imageCog");
+ imageCog.style.display = "none";
 
 // set its display style property 
 nameChangerDiv.style.display = "block";
@@ -653,11 +655,15 @@ console.log("pressed email footer");
  var nameChangerDiv = document.getElementById("nameChanger");
  var emailChangerDiv = document.getElementById("emailChanger");
  var passChangerDiv = document.getElementById("passwordChanger");
+ var imageCog = document.getElementById("imageCog");
+ imageCog.style.display = "none";
 
  // set its display style property 
  nameChangerDiv.style.display = "none";
  emailChangerDiv.style.display = "block";
  passChangerDiv.style.display = "none";
+ 
+ 
 
  var textField3 = document.getElementById("newEmail");
  var textField4 = document.getElementById("enterPass2");
@@ -747,6 +753,8 @@ console.log("pressed password footer");
  var nameChangerDiv = document.getElementById("nameChanger");
  var emailChangerDiv = document.getElementById("emailChanger");
  var passChangerDiv = document.getElementById("passwordChanger");
+ var imageCog = document.getElementById("imageCog");
+ imageCog.style.display = "none";
 
  // set its display style property 
  nameChangerDiv.style.display = "none";

@@ -93,6 +93,19 @@ try {
 }
 }
 
+async function getPrivilegeTitle(privilegeLevel) {
+  switch (privilegeLevel) {
+    case "1":
+      return "Admin";
+    case "2":
+      return "Health Prof";
+    case "3":
+      return "User";
+    default:
+      return "";
+  }
+}
+
 async function adminGetAccounts(){
   /*  This function generates a html table from the database of all accounts with funcitionality of 
   * deleting and editing accounts. 
@@ -127,9 +140,23 @@ async function adminGetAccounts(){
         Object.entries(rowData).forEach(([key, value]) => {
           if (key !== "userPassword") {
             const td = document.createElement("td");
-            td.textContent = value;
+            if (key === "privilegeLevel") {
+              if (value === 1) {
+                td.textContent = "Admin";
+              } else if (value === 2) {
+                td.textContent = "Health Prof";
+              } else {
+                td.textContent = "User";
+              }
+              
+              
+              
+            } else {
+              td.textContent = value;
+            }
             tr.appendChild(td);
           }
+          
         });
   
         // Add "Edit" and "Delete" buttons
@@ -137,12 +164,6 @@ async function adminGetAccounts(){
         editButton.textContent = "Edit";
         editButton.classList.add("button", "is-small", "is-primary");
   
-        
-        /* ---------------------------------------------------The edit button's onlcik starts here!
-        *
-        *
-        * 
-        */
         editButton.addEventListener("click", () => {
           // Set variables based on the row data and index
           const userId = rowData.userId;
@@ -189,12 +210,6 @@ async function adminGetAccounts(){
           surnameInput.type = "text";
           surnameInput.placeholder = "Surname";
           surnameInput.value = surname;
-  
-          // const privilegeLevelInput = document.createElement("select");
-          // privilegeLevelInput.classList.add("select", "is-medium");
-          // privilegeLevelInput.type = "text";
-          // privilegeLevelInput.placeholder = "Privilege Level";
-          // privilegeLevelInput.value = privilegeLevel;
           
           //Creates a drio downSelect ----------------------------------
           const privilegeLevelInput = document.createElement("select");
@@ -228,10 +243,7 @@ async function adminGetAccounts(){
           modalBody.appendChild(emailInput);
           modalBody.appendChild(passInput);        
           modalBody.appendChild(privilegeLevelInput);
-          modalBody.appendChild(iconElement);
-  
-          
-  
+          modalBody.appendChild(iconElement);   
   
           // Add submit and cancel buttons to modal footer
           const modalFooter = document.getElementById("modalFooter");
@@ -367,8 +379,8 @@ async function adminGetAccounts(){
   
   } 
   
-  
-
+ 
+ 
 
 
 //Need to also add a function to call stored procedure to return all users by healthProf's ID

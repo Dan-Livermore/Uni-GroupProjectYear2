@@ -441,8 +441,20 @@ async function adminGetAccounts(){
       createButton.textContent = "Create a new Account";
       createButton.classList.add("button", "is-small", "is-success", "is-5", "has-text-centered","mt-6", "mx-auto");
         
+      
+      /*
+      *   CREATE ACCOUNT FEATURE
+      */
+      createButton.addEventListener("click", () => {
 
-      createButton.addEventListener("click", () => {});
+
+        const modal = document.getElementById("createAccModal");
+          modal.classList.add("is-active");
+
+
+
+
+      });
       
       // Add flex container
       const container = document.createElement("div");

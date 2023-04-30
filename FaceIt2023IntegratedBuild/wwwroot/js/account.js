@@ -248,6 +248,64 @@ async function adminGetAccounts(){
             const updatedPrivilegeLevel = privilegeLevelInput.value;
             const updatedForename = forenameInput.value;
             const updatedSurname = surnameInput.value;
+            const updatedPassword = passInput.value;
+            console.log("New Values:");
+            console.log(updatedEmail);
+            console.log(updatedPrivilegeLevel);
+            console.log(updatedForename);
+            console.log(updatedSurname);
+            console.log(updatedPassword);
+           
+  
+            try {
+              const url = 'https://localhost:7200/api/Accounts/' + userId;
+          
+              fetch(url, {
+                  method: 'PUT',
+                  headers: {
+                    'accept': '*/*',
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({
+                    userId: userId,
+                    userEmail: updatedEmail,
+                    userPassword: updatedPassword,
+                    privilegeLevel: updatedPrivilegeLevel,
+                    forename: updatedForename,
+                    surname: updatedSurname
+                  })
+                })
+                .then(response => {
+                  if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                  }
+                  return response.text(); // use text() instead of json()
+                })
+                .then(data => {
+                  if (data) {
+                    try {
+                      const jsonData = JSON.parse(data);
+                      console.log(jsonData);
+                    } catch (error) {
+                      console.log('Response was not valid JSON:', error);
+                    }
+                  } else {
+                    console.log('Response was empty');
+                  }
+                })
+                .catch(error => {
+                  console.error('There was a problem with the fetch operation:', error);
+                });
+                alert("Success! Updating Records.");
+                location.reload();            
+    
+               
+          
+            } catch {
+              console.log("something went wrong trying to PUT");
+              alert("Something went wrong and Changes couldn't be saved");
+              return;
+            }
   
              // Close modal
             modal.classList.remove("is-active");
@@ -308,6 +366,7 @@ async function adminGetAccounts(){
     .catch(error => console.error(error));
   
   } 
+  
   
 
 

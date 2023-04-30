@@ -93,6 +93,19 @@ try {
 }
 }
 
+async function setPrivilegeTitle(privilegeLevel) {
+  switch (privilegeLevel) {
+    case "Admin":
+      return 1;
+    case "Health":
+      return 2;
+    case "User":
+      return 3;
+    default:
+      return 999;
+  }
+}
+
 async function adminGetAccounts(){
   /*  This function generates a html table from the database of all accounts with funcitionality of 
   * deleting and editing accounts. 
@@ -127,9 +140,23 @@ async function adminGetAccounts(){
         Object.entries(rowData).forEach(([key, value]) => {
           if (key !== "userPassword") {
             const td = document.createElement("td");
-            td.textContent = value;
+            if (key === "privilegeLevel") {
+              if (value === 1) {
+                td.textContent = "Admin";
+              } else if (value === 2) {
+                td.textContent = "Health Prof";
+              } else {
+                td.textContent = "User";
+              }
+              
+              
+              
+            } else {
+              td.textContent = value;
+            }
             tr.appendChild(td);
           }
+          
         });
   
         // Add "Edit" and "Delete" buttons
@@ -137,12 +164,6 @@ async function adminGetAccounts(){
         editButton.textContent = "Edit";
         editButton.classList.add("button", "is-small", "is-primary");
   
-        
-        /* ---------------------------------------------------The edit button's onlcik starts here!
-        *
-        *
-        * 
-        */
         editButton.addEventListener("click", () => {
           // Set variables based on the row data and index
           const userId = rowData.userId;
@@ -189,12 +210,6 @@ async function adminGetAccounts(){
           surnameInput.type = "text";
           surnameInput.placeholder = "Surname";
           surnameInput.value = surname;
-  
-          // const privilegeLevelInput = document.createElement("select");
-          // privilegeLevelInput.classList.add("select", "is-medium");
-          // privilegeLevelInput.type = "text";
-          // privilegeLevelInput.placeholder = "Privilege Level";
-          // privilegeLevelInput.value = privilegeLevel;
           
           //Creates a drio downSelect ----------------------------------
           const privilegeLevelInput = document.createElement("select");
@@ -228,10 +243,7 @@ async function adminGetAccounts(){
           modalBody.appendChild(emailInput);
           modalBody.appendChild(passInput);        
           modalBody.appendChild(privilegeLevelInput);
-          modalBody.appendChild(iconElement);
-  
-          
-  
+          modalBody.appendChild(iconElement);   
   
           // Add submit and cancel buttons to modal footer
           const modalFooter = document.getElementById("modalFooter");
@@ -248,6 +260,64 @@ async function adminGetAccounts(){
             const updatedPrivilegeLevel = privilegeLevelInput.value;
             const updatedForename = forenameInput.value;
             const updatedSurname = surnameInput.value;
+            const updatedPassword = passInput.value;
+            console.log("New Values:");
+            console.log(updatedEmail);
+            console.log(updatedPrivilegeLevel);
+            console.log(updatedForename);
+            console.log(updatedSurname);
+            console.log(updatedPassword);
+           
+  
+            try {
+              const url = 'https://localhost:7200/api/Accounts/' + userId;
+          
+              fetch(url, {
+                  method: 'PUT',
+                  headers: {
+                    'accept': '*/*',
+                    'Content-Type': 'application/json'
+                  },
+                  body: JSON.stringify({
+                    userId: userId,
+                    userEmail: updatedEmail,
+                    userPassword: updatedPassword,
+                    privilegeLevel: updatedPrivilegeLevel,
+                    forename: updatedForename,
+                    surname: updatedSurname
+                  })
+                })
+                .then(response => {
+                  if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                  }
+                  return response.text(); // use text() instead of json()
+                })
+                .then(data => {
+                  if (data) {
+                    try {
+                      const jsonData = JSON.parse(data);
+                      console.log(jsonData);
+                    } catch (error) {
+                      console.log('Response was not valid JSON:', error);
+                    }
+                  } else {
+                    console.log('Response was empty');
+                  }
+                })
+                .catch(error => {
+                  console.error('There was a problem with the fetch operation:', error);
+                });
+                alert("Success! Updating Records.");
+                location.reload();            
+    
+               
+          
+            } catch {
+              console.log("something went wrong trying to PUT");
+              alert("Something went wrong and Changes couldn't be saved");
+              return;
+            }
   
              // Close modal
             modal.classList.remove("is-active");
@@ -309,7 +379,8 @@ async function adminGetAccounts(){
   
   } 
   
-
+ 
+ 
 
 
 //Need to also add a function to call stored procedure to return all users by healthProf's ID

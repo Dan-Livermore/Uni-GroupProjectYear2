@@ -93,16 +93,16 @@ try {
 }
 }
 
-async function getPrivilegeTitle(privilegeLevel) {
+async function setPrivilegeTitle(privilegeLevel) {
   switch (privilegeLevel) {
-    case "1":
-      return "Admin";
-    case "2":
-      return "Health Prof";
-    case "3":
-      return "User";
+    case "Admin":
+      return 1;
+    case "Health":
+      return 2;
+    case "User":
+      return 3;
     default:
-      return "";
+      return 999;
   }
 }
 

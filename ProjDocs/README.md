@@ -10,7 +10,7 @@ https://youtu.be/xnW3gnVoauw
 
   
   # What is it ? #
- This project is a web application written in html, CSS , Javascript and uses the CSS Framework Bulma. This is our first collaborative coding effort and we will be working together to make the charity FaceIt's old website again with improvements!
+ This project is a web application written in html, CSS , Javascript and uses the CSS Framework Bulma. This is our first collaborative coding effort and we will be working together to make the charity FaceIt's old website again with improvements! =
  
  ## OUR GOALS ##
  1) To make a faster and cleaner version of the existing website that works on mobile browsers as well as desktop.

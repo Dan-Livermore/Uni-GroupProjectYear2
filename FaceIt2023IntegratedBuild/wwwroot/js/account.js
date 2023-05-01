@@ -90,6 +90,7 @@ try {
   return ListMyMentees;
 } catch (error) {
   console.error(error);
+  return [];
 }
 }
 
@@ -670,27 +671,24 @@ if (privLevel === 3) {
         document.getElementById("card2Title").innerHTML = "Hi: " + forename + " !";
         document.getElementById("card2Body").innerHTML = "It looks like our server is having difficulties right now, try again later!";
       }
-    }
-
-  
-
-
-  
+    }  
 
   return;
 }
 else if(privLevel==2){
-
-
+  
   document.getElementById("card2Title").innerHTML = "Welcome Health Professional!";        
 
   var myMentees = await getMyMentees(myID); //an array of integers for use in a get by id
 
   menteeDetails = []; //an empty array for storing mentee string variables 
-
-  console.log(myMentees);
+  console.log("mentee details is: "+menteeDetails);
   console.log(myMentees.length);
-  console.log(Array.isArray(myMentees));        
+  
+  
+  // console.log(myMentees);
+   //console.log(myMentees.length);
+  // console.log(Array.isArray(myMentees));        
 
   // Loop through the length of the integer array , collecting string about mentees .
   for (var i = 0; i < myMentees.length; i++) {           
@@ -774,13 +772,13 @@ else if(privLevel==2){
 
     //The onClick that posts the create Pairing Stored Proc Call.
     goAddBtn.addEventListener("click", async () => {
-      //myID
+      var myID = localStorage.getItem("user_id")
       const theirEmail = newInput.value;
 
             // Make the POST request
       const url = "https://localhost:7200/api/healthProfIDandUserEmails/create";
       const requestBody = {
-        prof_id: 9,
+        prof_id: myID,
         userEmail: theirEmail
       };
       const response = await fetch(url, {

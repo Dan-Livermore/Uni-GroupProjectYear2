@@ -11065,11 +11065,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceItAPI\\FaceItAPI.csproj",
+      "projectUniqueName": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\May01\\comp2003_2022-team-z\\FaceItAPI\\FaceItAPI.csproj",
       "projectName": "FaceItAPI",
-      "projectPath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceItAPI\\FaceItAPI.csproj",
+      "projectPath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\May01\\comp2003_2022-team-z\\FaceItAPI\\FaceItAPI.csproj",
       "packagesPath": "C:\\Users\\eliot\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\demonstrate\\comp2003_2022-team-z\\FaceItAPI\\obj\\",
+      "outputPath": "C:\\Users\\eliot\\OneDrive\\Documents\\university\\comp2003\\May01\\comp2003_2022-team-z\\FaceItAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

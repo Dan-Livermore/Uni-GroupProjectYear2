@@ -46,6 +46,28 @@ try {
 }
 }
 
+async function deleteAccountById(id) {
+  const url = `https://localhost:7200/api/Accounts/${id}`;
+  try {
+    const response = await fetch(url, {
+      method: 'DELETE',
+      headers: {
+        'accept': '*/*',
+      },
+    });
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+    console.log(data);
+    return true;
+  } catch (error) {
+    console.error('There was a problem with the fetch operation:', error);
+    return false;
+  }
+}
+
+
 async function getMyMentees(hpID) {
 
 /* This Function Is for a getting mentees for the health prof, (priv 2) 
@@ -651,18 +673,35 @@ else if(privLevel==2){
 
   // Loop through the length of the integer array , collecting string about mentees .
   for (var i = 0; i < myMentees.length; i++) {           
-    mentee=myMentees[i];
-    var details = await getMenteeDetails(mentee);
-    aMentee = [details['forename'], details['surname'], details['userEmail']];
-    str1 = details['forename'];
-    str2 = details['surname'];
-    str3 = details['userEmail'];
+        try{
+          mentee=myMentees[i];
+        var details = await getMenteeDetails(mentee);
+        aMentee = [details['forename'], details['surname'], details['userEmail']];
+        str1 = details['forename'];
+        str2 = details['surname'];
+        str3 = details['userEmail'];
 
-    listEntry = "Your Mentee: "+str1+ " "+str2+"'s email address is :"+str3+ ". \n"+ " \n"; 
-    //listEntry = "Your Mentee: <b>" + str1 + "</b> <b>" + str2 + "</b>'s email address is: <b>" + str3 + "</b><br>";
-     
+        listEntry = "Your Mentee: "+str1+ " "+str2+"'s email address is :"+str3+ ". \n"+ " \n";         
 
-    menteeDetails.push(listEntry);          
+        menteeDetails.push(listEntry);
+        }catch(error){
+          if (error.status === 404) {
+            try{
+              const success = await deleteAccountById(myMentees[i]);
+                if (success) {
+                  console.log('Cleaned a deleted Account');
+                } else {
+                  console.log('Failed to delete account.');
+                  aMentee = ["Deleted Account", "Deleted Account", "Deleted Account"];
+                  listEntry = "Error: this Mentee's account details are missing.\n\n";
+                  menteeDetails.push(listEntry);
+                }
+            }catch{console.log("Found a deleted account and could clean it up.")}            
+        } else {
+            console.error('There was a problem getting the mentee details:', error);
+        }
+        }
+        
         
   }
   console.log("              !           !      "+menteeDetails);

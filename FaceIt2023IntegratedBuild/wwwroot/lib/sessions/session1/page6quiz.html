@@ -18,7 +18,7 @@
       Session 1 Quiz
     </p>
     <p class="subtitle">
-      Answer the questions on a scale of 1-10
+      Answer the questions on a scale of 1-7
     </p>
   </div>
 </section>
@@ -44,55 +44,39 @@
 
             Take some time to really think about the kind of person you are and whether you often experience anxiety.<br>
             <br>
-             1 = Not anxious at all | 10 = Very anxious<br>
+             1 = Not anxious at all | 7 = Very anxious<br>
             <br>
 
             <b>Do you get worried or anxious when you meet people or go out to public places?</b><br>
 
             
                 <label class="radio">
-                  <input type="radio" name="s1Anxiety">
+                  <input type="radio" name="Anxiety" value="1" onclick="setquiz1Answer1(this.value)">
                   1
                 </label>
                 <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Anxiety" value="2" onclick="setquiz1Answer1(this.value)">
                     2
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Anxiety" value="3" onclick="setquiz1Answer1(this.value)">
                     3
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Anxiety" value="4" onclick="setquiz1Answer1(this.value)">
                     4
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Anxiety" value="5" onclick="setquiz1Answer1(this.value)">
                     5
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Anxiety" value="6" onclick="setquiz1Answer1(this.value)">
                     6
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    6
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Anxiety" value="7" onclick="setquiz1Answer1(this.value)">
                     7
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    8
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    9
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    10
                   </label>
                  
         </p>
@@ -104,57 +88,39 @@
 
             Take some time to really think about the kind of person you are and whether you often experience a depressed or low mood because of the way you look.<br>
              <br>
-            1 = Not depressed at all | 10 = Very depressed<br>
+            1 = Not depressed at all | 7 = Very depressed<br>
              <br>
             <b>Do you feel depressed because of your appearance?</b><br>
 
             
                 <label class="radio">
-                  <input type="radio" name="s1Anxiety">
+                  <input type="radio" name="FeelingDepressed" value="1" onclick="setquiz1Answer2(this.value)">
                   1
                 </label>
                 <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="FeelingDepressed" value="2" onclick="setquiz1Answer2(this.value)">
                     2
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="FeelingDepressed" value="3" onclick="setquiz1Answer2(this.value)">
                     3
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="FeelingDepressed" value="4" onclick="setquiz1Answer2(this.value)">
                     4
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="FeelingDepressed" value="5" onclick="setquiz1Answer2(this.value)">
                     5
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="FeelingDepressed" value="6" onclick="setquiz1Answer2(this.value)">
                     6
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    6
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="FeelingDepressed" value="7" onclick="setquiz1Answer2(this.value)">
                     7
                   </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    8
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    9
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    10
-                  </label>
-               
-              
         </p>
       </div>
 
@@ -165,148 +131,99 @@
         <p>The questions below ask you to rate your feelings about your appearance on a scale of 1 to 10, where 1 is not at all bothered and 10 is very concerned.</p>
 
             <p>Take some time to really think about the kind of person you are and whether you often feel bothered about your appearance.</p> <br>
-            <p>1 = Not at all | 10 = Very much</p>
+            <p>1 = Not at all | 7 = Very much</p>
             <br>
 
                 <b>Are you bothered about the way you look?</b><br>
                 <label class="radio">
-                  <input type="radio" name="s1Anxiety">
+                  <input type="radio" name="Appearance1" value="1" onclick="setquiz1Answer3(this.value)">
                   1
                 </label>
                 <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance1" value="2" onclick="setquiz1Answer3(this.value)">
                     2
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance1" value="3" onclick="setquiz1Answer3(this.value)">
                     3
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance1" value="4" onclick="setquiz1Answer3(this.value)">
                     4
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance1" value="5" onclick="setquiz1Answer3(this.value)">
                     5
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance1" value="6" onclick="setquiz1Answer3(this.value)">
                     6
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    6
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance1" value="7" onclick="setquiz1Answer3(this.value)">
                     7
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    8
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    9
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    10
-                  </label>             
+                  </label>           
                   <br>
               
                 <b>Do other people notice your visible difference? </b><br>
                 <label class="radio">
-                  <input type="radio" name="s1Anxiety">
+                  <input type="radio" name="Appearance2" value="1" onclick="setquiz1Answer4(this.value)">
                   1
                 </label>
                 <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance2" value="2" onclick="setquiz1Answer4(this.value)">
                     2
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance2" value="3" onclick="setquiz1Answer4(this.value)">
                     3
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance2" value="4" onclick="setquiz1Answer4(this.value)">
                     4
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance2" value="5" onclick="setquiz1Answer4(this.value)">
                     5
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance2" value="6" onclick="setquiz1Answer4(this.value)">
                     6
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    6
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance2" value="7" onclick="setquiz1Answer4(this.value)">
                     7
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    8
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    9
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    10
-                  </label>             
+                  </label>          
                   <br>
                 <b>Have you experienced negative reactions from others because of how you look? </b><br>
                 <label class="radio">
-                  <input type="radio" name="s1Anxiety">
+                  <input type="radio" name="Appearance3" value="1" onclick="setquiz1Answer5(this.value)">
                   1
                 </label>
                 <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance3" value="2" onclick="setquiz1Answer5(this.value)">
                     2
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance3" value="3" onclick="setquiz1Answer5(this.value)">
                     3
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance3" value="4" onclick="setquiz1Answer5(this.value)">
                     4
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance3" value="5" onclick="setquiz1Answer5(this.value)">
                     5
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance3" value="6" onclick="setquiz1Answer5(this.value)">
                     6
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    6
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Appearance3" value="7" onclick="setquiz1Answer5(this.value)">
                     7
                   </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    8
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    9
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    10
-                  </label>             
-        </p>
       </div>
 
       <div class="box">
@@ -314,157 +231,109 @@
         <p>
             The questions below asks you to rate your difficulties socialising (meeting and talking) with other people on a scale of 1 to 10, where 1 is not really any problems at all and 10 is very severe problems indeed. <br>
              <br>
-            1 = Not at all | 10 = Really very much <br>
+            1 = Not at all | 7 = Really very much <br>
             <br>   
            
 
             
                 <b>Do you have problems socialising with other people?</b><br>
                 <label class="radio">
-                  <input type="radio" name="s1Anxiety">
+                  <input type="radio" name="Socialising1" value="1" onclick="setquiz1Answer6(this.value)">
                   1
                 </label>
                 <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising1" value="2" onclick="setquiz1Answer6(this.value)">
                     2
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising1" value="3" onclick="setquiz1Answer6(this.value)">
                     3
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising1" value="4" onclick="setquiz1Answer6(this.value)">
                     4
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising1" value="5" onclick="setquiz1Answer6(this.value)">
                     5
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising1" value="6" onclick="setquiz1Answer6(this.value)">
                     6
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    6
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising1" value="7" onclick="setquiz1Answer6(this.value)">
                     7
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    8
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    9
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    10
-                  </label>             
+                  </label>           
                   <br>
                 <b>Do you feel worried or nervous about going out? </b><br>
                 <label class="radio">
-                  <input type="radio" name="s1Anxiety">
+                  <input type="radio" name="Socialising2" value="1" onclick="setquiz1Answer7(this.value)">
                   1
                 </label>
                 <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising2" value="2" onclick="setquiz1Answer7(this.value)">
                     2
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising2" value="3" onclick="setquiz1Answer7(this.value)">
                     3
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising2" value="4" onclick="setquiz1Answer7(this.value)">
                     4
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising2" value="5" onclick="setquiz1Answer7(this.value)">
                     5
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising2" value="6" onclick="setquiz1Answer7(this.value)">
                     6
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    6
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising2" value="7" onclick="setquiz1Answer7(this.value)">
                     7
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    8
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    9
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    10
-                  </label>             
-                  <br>
+                  </label> <br>
                 <b> Do you feel left out by other people?</b><br>
                 <label class="radio">
-                  <input type="radio" name="s1Anxiety">
+                  <input type="radio" name="Socialising3" value="1" onclick="setquiz1Answer8(this.value)">
                   1
                 </label>
                 <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising3" value="2" onclick="setquiz1Answer8(this.value)">
                     2
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising3" value="3" onclick="setquiz1Answer8(this.value)">
                     3
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising3" value="4" onclick="setquiz1Answer8(this.value)">
                     4
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising3" value="5" onclick="setquiz1Answer8(this.value)">
                     5
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising3" value="6" onclick="setquiz1Answer8(this.value)">
                     6
                   </label>
                   <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    6
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
+                    <input type="radio" name="Socialising3" value="7" onclick="setquiz1Answer8(this.value)">
                     7
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    8
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    9
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="s1Anxiety">
-                    10
-                  </label>             
-               
-              
+                  </label>      
         </p>
       </div>
-      <br>
       <div class="box">
         
         <b>Thank you for completing all the questions. They will help you to identify problem areas you need to work on.</b><br>
-        In the final session of this program you'll have a chance to go back over these questions and see whether there has been any improvement.
+        In the final session of this program you'll have a chance to go back over these questions and see whether there has been any improvement. 
+        <br> <br>
+        <div class="container has-text-centered">
+          <button type="button" id="submitQuiz1" class="button is-rounded">Submit</button>
+        </div>
     </div>
     <div class="box">
         <h1 class="title"> Congratulations you've completed the quiz for Session  </h1>

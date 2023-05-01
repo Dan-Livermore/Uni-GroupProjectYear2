@@ -884,19 +884,13 @@ else if(privLevel==2){
       }       
 
 
-    });
-
-    
+    });   
 
     // Append new elements to card body
     newDiv.appendChild(newLabel);
     newDiv.appendChild(newInput);
     newDiv.appendChild(goAddBtn);
     card2Body.appendChild(newDiv);
-
-
-
-
   });
 
 

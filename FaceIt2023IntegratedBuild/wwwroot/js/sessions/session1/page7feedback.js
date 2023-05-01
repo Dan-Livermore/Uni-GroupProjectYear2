@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			var userID = localStorage.getItem("user_id")
 			const feedbackText = document.getElementById("Feedback1AnswerText").value
 		
-			const url = 'https://localhost:7200/api/FeedbackForms' + userID;
+			const url = 'https://localhost:7200/api/FeedbackForms/' + userID;
 			const data = {
 				userId: userID,
 				  sessionNumber: 1,

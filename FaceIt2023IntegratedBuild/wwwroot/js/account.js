@@ -798,6 +798,7 @@ else if(privLevel==2){
       } else {
         // Display an error message
         console.error("Failed to add mentee.");
+        window.alert("This account doesn't exist on our database, check spelling and try again");
       }
 
       
@@ -853,11 +854,12 @@ else if(privLevel==2){
     goAddBtn.addEventListener("click", async () => {
       //myID
       const theirEmail = newInput.value;
+      const thisID = localStorage.getItem("user_id");
 
             // Make the POST request
       const url = 'https://localhost:7200/api/DeletehealthProfbyemails/delete';
       const requestBody = {
-        prof_id: 9,
+        prof_id: thisID,
         userEmail: theirEmail
       };
       const response = await fetch(url, {

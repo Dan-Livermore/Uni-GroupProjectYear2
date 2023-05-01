@@ -17,8 +17,8 @@ async function getMyHealthProf2(myID) {
 const apiUrl = "https://localhost:7200/api/UserAssignedHealthProfInputs?ID=";
 const apiUrl2 = "https://localhost:7200/api/Accounts/"
 var my_Health_prof_id = 999;
-var my_Health_prof_name = " <Name not Found> ";
-var my_Health_prof_email = " <No email address found> ";
+var my_Health_prof_name = " --NAME NOT FOUND-- ";
+var my_Health_prof_email = " --NO EMAIL ADDRESS YET-- ";
 
 try {
   const response1 = await fetch(apiUrl + myID);
@@ -650,11 +650,32 @@ const forename = localStorage.getItem('forename');
 if (privLevel === 3) {
   console.log("Priv level was determined to be 3");
 
-  const { name, email } = await getMyHealthProf2(myID);
+    try {
+      const { name, email } = await getMyHealthProf2(myID);
+      document.getElementById("card2Title").innerHTML = "Hi: " + forename + " !";
+      document.getElementById("card2Body").innerHTML = "Your Health Prof is: " + name + " You can contact them at: " + email;
+      if(name==" --NAME NOT FOUND-- "){
+        document.getElementById("card2Body").innerHTML = "It looks like your account is still being set up! Soon you will have an assigned Health Professional and you will be provided a way to contact them here!";
+      }
+      else{document.getElementById("card2Body").innerHTML = "Your Health Prof is: " + name + " You can contact them at: " + email;}
+      console.log("now going to change text on html:");
+      console.log(name)
+    } catch (error) {
+      if (error.response && error.response.status === 404) {
+        console.log("doesnt exist!")
+        document.getElementById("card2Title").innerHTML = "Hi: " + forename + " !";
+        document.getElementById("card2Body").innerHTML = "You don't yet have a Health Professional, but bear with us, we are setting up your account!";
+      } else {
+        console.log("Couldn't talk to server!")
+        document.getElementById("card2Title").innerHTML = "Hi: " + forename + " !";
+        document.getElementById("card2Body").innerHTML = "It looks like our server is having difficulties right now, try again later!";
+      }
+    }
 
-  console.log("now going to change text on html:");
-  document.getElementById("card2Title").innerHTML = "Hi: " + forename + " !";
-  document.getElementById("card2Body").innerHTML = "Your Health Prof is: " + name + " You can contact them at: " + email;
+  
+
+
+  
 
   return;
 }

@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				  throw new Error('Failed to update Feedback data.');
 				}
 				console.log('Feedback data updated successfully.');
+				window.alert("Feedback Submitted Successfully!");
 			  })
 			  .catch(error => {
 				console.error(error);

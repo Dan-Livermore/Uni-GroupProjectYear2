@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		navbarMenu.classList.toggle("is-active");
 		event.preventDefault();
 	});
+
+	function goToJournal(){
+		window.location.href("/wwwroot/lib/Journal.html");
+	}
 	
 
 	const textarea = document.getElementById("session1ActivityAnswer1");
@@ -26,12 +30,15 @@ document.addEventListener("DOMContentLoaded", () => {
     
 	button.addEventListener("click", function() {
 		localStorage.setItem("session1ActivityAnswer1", textarea.value);
+		window.alert("Journal entry created successfully.");
 	  });
 	  button1.addEventListener("click", function() {
 		localStorage.setItem("session1ActivityAnswer2", textarea1.value);
+		window.alert("Journal entry created successfully.");
 	  });
 	  button2.addEventListener("click", function() {
 		localStorage.setItem("session1ActivityAnswer3", textarea2.value);
+		window.alert("Journal entry created successfully.");
 	  });
 
 	  const createJournalEntry = () => {
@@ -60,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			  throw new Error('Failed to create Journal entry.');
 			}
 			console.log('Journal entry created successfully.');
+			
 		  })
 		  .catch(error => {
 			console.error(error);
@@ -97,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			  throw new Error('Failed to update Journal data.');
 			}
 			console.log('Journal data updated successfully.');
+			window.alert("Journal entry created successfully.");
 		  })
 		  .catch(error => {
 			console.error(error);
@@ -108,6 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		createJournalEntry()
 		  .then(() => {
 			console.log('Journal entry created successfully.');
+			window.alert("Journal entry created successfully.");
 			return updateJournalData();
 		  })
 		  .then(() => {

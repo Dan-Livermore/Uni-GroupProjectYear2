@@ -109,10 +109,12 @@ let quiz1Answer8;
 			  throw new Error('Failed to update quiz data.');
 			}
 			console.log('Quiz data updated successfully.');
+			window.alert("Successfully Submitted results!");
 		  })
 		  .catch(error => {
 			console.error(error);
 		  });
+		  
 	  };
 	  
 	  

@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			if (!response.ok) {
 			  throw new Error('Failed to create Journal entry.');
 			}
-			console.log('Journal entry created successfully.');
+			//console.log('Journal entry created successfully.');
 			
 		  })
 		  .catch(error => {
@@ -97,6 +97,8 @@ document.addEventListener("DOMContentLoaded", () => {
 	  const updateButton = document.querySelector('#save4');
 	  updateButton.addEventListener('click', () => {
 		
+		createJournalEntry()
+		
 		localStorage.setItem("session1ActivityAnswer1", textarea.value);
 		console.log("Journal entry 1 created successfully.");
 		
@@ -106,17 +108,20 @@ document.addEventListener("DOMContentLoaded", () => {
 		localStorage.setItem("session1ActivityAnswer3", textarea2.value);
 		console.log("Journal entry 3 created successfully.");
 		
-		createJournalEntry()
-		  .then(() => {
-			console.log('Journal entry 4 created successfully.');
-			return updateJournalData();
-		  })
-		  .then(() => {
-			window.alert('Journal data updated successfully.');
-		  })
-		  .catch(error => {
-			console.error(error);
-		  });
+		
+		window.alert('Journal data updated successfully.');
+		//   .then(() => {
+		//   });
+		// 	console.log('Journal entry 4 created successfully.');
+		// 	return updateJournalData();
+		//   })
+		//   .then(() => {
+		// 	window.alert('Journal data updated successfully.');
+		// 	createJournalEntry.disabled = true;
+		//   })
+		//   .catch(error => {
+		// 	console.error(error);
+		//   });
 	  });
 
 	  

@@ -123,6 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		
 		localStorage.setItem("session1ActivityAnswer3", textarea2.value);
 		window.alert("Journal entry 3 created successfully.");
+		
 		createJournalEntry()
 		  .then(() => {
 			console.log('Journal entry 4 created successfully.');

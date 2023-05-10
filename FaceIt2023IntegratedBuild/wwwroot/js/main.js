@@ -6,7 +6,7 @@
 
        // Set the link for the account page based on login status
        const accountLink = isLoggedIn ? "/wwwroot/lib/account.html" : "/wwwroot/lib/login.html";
-       const accountImage = isLoggedIn ?  "../images/userIcon1.png": "../images/login.png" 
+       const accountImage = isLoggedIn ?  "/wwwroot/images/userIcon1.png": "/wwwroot/images/login.png" 
        const forename = localStorage.getItem("forename");
        const nameString = forename+" 's Account";
 

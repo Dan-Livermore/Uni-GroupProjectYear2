@@ -18,28 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
 		window.location.href("/wwwroot/lib/Journal.html");
 	}
 	
+	
 
 	const textarea = document.getElementById("session1ActivityAnswer1");
-	//const button = document.getElementById("save1");
-
 	const textarea1 = document.getElementById("session1ActivityAnswer2");
-	//const button1 = document.getElementById("save2");
-
 	const textarea2 = document.getElementById("session1ActivityAnswer3");
-	//const button2 = document.getElementById("save3");
     
-	// button.addEventListener("click", function() {
-	// 	localStorage.setItem("session1ActivityAnswer1", textarea.value);
-	// 	window.alert("Journal entry created successfully.");
-	// });
-	// button1.addEventListener("click", function() {
-	// 	localStorage.setItem("session1ActivityAnswer2", textarea1.value);
-	// 	window.alert("Journal entry created successfully.");
-	// });
-	// button2.addEventListener("click", function() {
-	// 	localStorage.setItem("session1ActivityAnswer3", textarea2.value);
-	// 	window.alert("Journal entry created successfully.");
-	// });
 
 	  const createJournalEntry = () => {
 		var userID = localStorage.getItem("user_id");
@@ -66,12 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
 			if (!response.ok) {
 			  throw new Error('Failed to create Journal entry.');
 			}
-			console.log('Journal entry created successfully.');
+			//console.log('Journal entry created successfully.');
 			
 		  })
 		  .catch(error => {
 			console.error(error);
 		  });
+
 	  };
 
 	  
@@ -104,40 +89,39 @@ document.addEventListener("DOMContentLoaded", () => {
 			if (!response.ok) {
 			  throw new Error('Failed to update Journal data.');
 			}
-			console.log('Journal data updated successfully.');
-			window.alert("Journal entry created successfully.");
 		  })
 		  .catch(error => {
 			console.error(error);
 		  });
-	  };
+	};
 
-	  const updateButton = document.querySelector('#save4');
-	  updateButton.addEventListener('click', () => {
+	const updateButton = document.querySelector('#save4');
+	updateButton.addEventListener('click', () => {
+		createJournalEntry()
 		
 		localStorage.setItem("session1ActivityAnswer1", textarea.value);
-		window.alert("Journal entry 1 created successfully.");
+		console.log("Journal entry 1 created successfully.");
 		
 		localStorage.setItem("session1ActivityAnswer2", textarea1.value);
-		window.alert("Journal entry 2 created successfully.");
+		console.log("Journal entry 2 created successfully.");
 		
 		localStorage.setItem("session1ActivityAnswer3", textarea2.value);
-		window.alert("Journal entry 3 created successfully.");
+		console.log("Journal entry 3 created successfully.");
 		
-		createJournalEntry()
-		  .then(() => {
-			console.log('Journal entry 4 created successfully.');
-			window.alert("Journal entry 4created successfully.");
-			return updateJournalData();
-		  })
-		  .then(() => {
-			console.log('Journal data updated successfully.');
-		  })
-		  .catch(error => {
-			console.error(error);
-		  });
-	  });
-
-	  
-  });
-
+		
+		window.alert('Journal data updated successfully.');
+		//   .then(() => {
+		//   });
+		// 	console.log('Journal entry 4 created successfully.');
+		// 	return updateJournalData();
+		//   })
+		//   .then(() => {
+		// 	window.alert('Journal data updated successfully.');
+		// 	createJournalEntry.disabled = true;
+		//   })
+		//   .catch(error => {
+		// 	console.error(error);
+		//   });
+	  //});
+  	});
+}

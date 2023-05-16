@@ -56,5 +56,18 @@ This also helps the team save money as they no longer need to pay to update thei
 ![Academic Poster](https://user-images.githubusercontent.com/91668533/235814301-3cb69f62-c1f6-4d9e-8932-c4e9dced1cb0.png)
 
 ---
+Try Loggin in with these two accounts, Admins can create more accounts if you would like to experience more:
+
+Admin Details: 
+
+Email: admin@uat.com 
+
+Password: opensesame 
+
+Health Prof Details: 
+
+Email : healthprof@uat.com 
+
+Password: letmein 
 
 Developed by: Dan Livermore, Eliot New, Lucas Pawley, Hubert Czernicki
